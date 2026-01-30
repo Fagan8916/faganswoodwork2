@@ -14,13 +14,13 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
-            <p className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-4 animate-fade-up">
+            <p className="text-muted-foreground font-light tracking-[0.3em] uppercase text-sm mb-4 animate-fade-up">
               Handcrafted Excellence
             </p>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up-delay-1">
+            <h1 className="font-sans text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6 animate-fade-up-delay-1">
               <span className="text-foreground">Fagan's</span>
               <br />
-              <span className="text-gradient">Woodwork</span>
+              <span className="text-foreground/80">Woodwork</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-up-delay-2">
               Each piece is hand-designed with love, care, and meticulous attention to detail. 
