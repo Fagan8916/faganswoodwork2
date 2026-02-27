@@ -12,14 +12,14 @@ import product9 from "@/assets/product-9.jpeg";
 import product10 from "@/assets/product-10.jpeg";
 import product11 from "@/assets/product-11.jpeg";
 import product12 from "@/assets/product-12.jpeg";
-import product13 from "@/assets/product-13.jpeg";
+import heroBoard from "@/assets/hero-chopping-board.jpeg";
 
 const galleryItems = [
   {
     id: 1,
-    image: product13,
-    title: "Striped Serving Boards",
-    category: "Serving Boards",
+    image: heroBoard,
+    title: "End Grain Chopping Board",
+    category: "Cutting Boards",
   },
   {
     id: 2,
