@@ -7,53 +7,88 @@ import product4 from "@/assets/product-4.jpeg";
 import product5 from "@/assets/product-5.jpeg";
 import product6 from "@/assets/product-6.jpeg";
 import product7 from "@/assets/product-7.jpeg";
-import heroImage from "@/assets/hero-chopping-board.jpeg";
+import product8 from "@/assets/product-8.jpeg";
+import product9 from "@/assets/product-9.jpeg";
+import product10 from "@/assets/product-10.jpeg";
+import product11 from "@/assets/product-11.jpeg";
+import product12 from "@/assets/product-12.jpeg";
+import product13 from "@/assets/product-13.jpeg";
 
 const galleryItems = [
   {
     id: 1,
+    image: product13,
+    title: "Striped Serving Boards",
+    category: "Serving Boards",
+  },
+  {
+    id: 2,
+    image: product8,
+    title: "Mahogany End Grain Board",
+    category: "Cutting Boards",
+  },
+  {
+    id: 3,
+    image: product9,
+    title: "3D Pattern Board",
+    category: "Cutting Boards",
+  },
+  {
+    id: 4,
+    image: product10,
+    title: "Engraved Diamond Board",
+    category: "Cutting Boards",
+  },
+  {
+    id: 5,
+    image: product11,
+    title: "Walnut End Grain Board",
+    category: "Cutting Boards",
+  },
+  {
+    id: 6,
+    image: product12,
+    title: "Engraved Detail Close-Up",
+    category: "Cutting Boards",
+  },
+  {
+    id: 7,
     image: product1,
     title: "Epoxy River Table",
     category: "Tables",
   },
   {
-    id: 2,
+    id: 8,
     image: product2,
     title: "Live Edge Serving Board",
     category: "Serving Boards",
   },
   {
-    id: 3,
+    id: 9,
     image: product3,
     title: "Rustic Wood Slice",
     category: "Serving Boards",
   },
   {
-    id: 4,
+    id: 10,
     image: product4,
     title: "Artisan Cutting Board",
     category: "Cutting Boards",
   },
   {
-    id: 5,
-    image: heroImage,
-    title: "Premium Chopping Board",
-    category: "Cutting Boards",
-  },
-  {
-    id: 6,
+    id: 11,
     image: product5,
     title: "Modern Coffee Table",
     category: "Tables",
   },
   {
-    id: 7,
+    id: 12,
     image: product6,
     title: "End Grain Board",
     category: "Cutting Boards",
   },
   {
-    id: 8,
+    id: 13,
     image: product7,
     title: "Signature Bench",
     category: "Furniture",
