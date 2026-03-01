@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Playfair Display", "serif"],
-        sans: ["Inter", "sans-serif"],
+        serif: ["Cormorant Garamond", "serif"],
+        sans: ["Source Sans 3", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -55,6 +55,14 @@ export default {
           light: "hsl(var(--gold-light))",
           DEFAULT: "hsl(var(--primary))",
           dark: "hsl(var(--gold-dark))",
+        },
+        forest: {
+          DEFAULT: "hsl(var(--forest))",
+          foreground: "hsl(var(--forest-foreground))",
+        },
+        warm: {
+          DEFAULT: "hsl(var(--warm-white))",
+          foreground: "hsl(var(--warm-white-foreground))",
         },
       },
       borderRadius: {
