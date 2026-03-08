@@ -210,14 +210,14 @@ export const galleryItems: GalleryItem[] = [
     }
   },
   {
-    id: "resin-log-slice-clock",
-    title: "Resin Log Slice Clock",
+    id: "oak-cookie-lazy-susan",
+    title: "Oak Cookie Lazy Susan",
     location: "England",
     images: [img9900, img9799, img9800, img9801, img9802, img9803],
     description: "Details coming soon.",
     specs: {
       pieceType: "Lazy Susan",
-      timber: "Oak with Resin Inlay",
+      timber: "Oak with Oak Bow Tie Inlays",
       dimensions: "45cm diameter",
       finish: "Rubio Monocoat",
       completed: "2024"
