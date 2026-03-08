@@ -147,8 +147,8 @@ export const galleryItems: GalleryItem[] = [
     description: "Details coming soon.",
     specs: {
       pieceType: "Chopping Board",
-      timber: "Oak",
-      dimensions: "35cm × 25cm × 4cm",
+      timber: "Oak & Ash",
+      dimensions: "45×40×3cm, 35×30×3cm & 25×25×3cm (set of 3)",
       finish: "Food-safe homemade butter",
       completed: "2024"
     }
