@@ -1,4 +1,9 @@
 import product1 from "@/assets/product-1.jpeg";
+import img9889 from "@/assets/gallery/IMG_9889.JPG";
+import img9883 from "@/assets/gallery/IMG_9883.PNG";
+import img9885 from "@/assets/gallery/IMG_9885.PNG";
+import img8568 from "@/assets/gallery/IMG_8568.JPEG";
+import img8569 from "@/assets/gallery/IMG_8569.JPEG";
 import product3 from "@/assets/product-3.jpeg";
 import product7 from "@/assets/product-7.jpeg";
 import product9 from "@/assets/product-9.jpeg";
@@ -63,7 +68,7 @@ export const products: Product[] = [
       finish: "Danish oil, hand-rubbed (3 coats)",
       care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
     },
-    images: [product3, product9, product1, product7],
+    images: [product3, product9, product1, product7, img9889, img9883, img9885, img8568, img8569],
   },
   {
     id: "ash-bowtie-lazy-susan",
