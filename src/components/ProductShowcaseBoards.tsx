@@ -41,9 +41,9 @@ const ProductShowcaseBoards = () => {
                 ))}
               </div>
 
-              <a href="#contact" className="btn-outline-gold">
+              <Link to="/#contact" className="btn-outline-gold">
                 Design Your Board
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
 

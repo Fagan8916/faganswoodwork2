@@ -64,13 +64,13 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <a
-        href="#philosophy"
+      <Link
+        to="/#philosophy"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
       >
         <span className="text-xs tracking-[0.3em] uppercase">Discover</span>
         <ChevronDown className="w-4 h-4 animate-bounce" />
-      </a>
+      </Link>
     </section>
   );
 };

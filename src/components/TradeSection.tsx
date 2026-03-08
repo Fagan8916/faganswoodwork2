@@ -53,9 +53,9 @@ const TradeSection = () => {
 
         <ScrollReveal delay={0.3}>
           <div className="text-center">
-            <a href="#contact" className="btn-outline-gold">
+            <Link to="/#contact" className="btn-outline-gold">
               Request Trade Portfolio
-            </a>
+            </Link>
           </div>
         </ScrollReveal>
       </div>

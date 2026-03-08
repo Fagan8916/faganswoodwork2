@@ -28,7 +28,10 @@ const GalleryDetail = () => {
     );
   }
 
-  const otherItems = galleryItems.filter((g) => g.id !== item.id).slice(0, 3);
+  // Show related pieces of the same type first, then fill with others
+  const sameType = galleryItems.filter((g) => g.id !== item.id && g.specs.pieceType === item.specs.pieceType);
+  const different = galleryItems.filter((g) => g.id !== item.id && g.specs.pieceType !== item.specs.pieceType);
+  const otherItems = [...sameType, ...different].slice(0, 3);
 
   const navigateLightbox = (dir: number) => {
     setSelectedImage((prev) => (prev + dir + item.images.length) % item.images.length);

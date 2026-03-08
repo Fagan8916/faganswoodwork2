@@ -45,9 +45,9 @@ const ProductShowcaseLazySusan = () => {
                 </span>
               </div>
 
-              <a href="#contact" className="btn-filled-gold">
+              <Link to="/#contact" className="btn-filled-gold">
                 View Available Timbers
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
         </div>
