@@ -118,14 +118,14 @@ const Navbar = () => {
               {item.children && (
                 <div className="pl-4">
                   {item.children.map((child) => (
-                    <a
+                    <Link
                       key={child.label}
-                      href={child.href}
+                      to={child.href}
                       onClick={() => setMobileOpen(false)}
                       className="block py-2 text-muted-foreground/70 hover:text-primary transition-colors text-xs tracking-widest uppercase"
                     >
                       {child.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}

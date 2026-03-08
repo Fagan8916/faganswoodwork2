@@ -28,13 +28,13 @@ const FooterSection = () => {
 
           <nav className="flex flex-wrap items-center justify-center gap-6">
             {links.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-muted-foreground hover:text-primary transition-colors text-xs tracking-widest uppercase"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
