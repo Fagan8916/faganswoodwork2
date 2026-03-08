@@ -85,6 +85,7 @@ export interface GalleryItem {
   quote?: string;
   author?: string;
   description: string;
+  productId?: string; // Links to a matching product in the Available Now section
   specs: {
     pieceType: string;
     timber: string;
