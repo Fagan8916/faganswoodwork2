@@ -89,6 +89,6 @@ export const products: Product[] = [
       finish: "Rubio Monocoat",
       care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
     },
-    images: [ashBowtie1, ashBowtie2, ashBowtie3, ashBowtie4],
+    images: [ashBowtie5, ashBowtie1, ashBowtie2, ashBowtie6, ashBowtie7, ashBowtie3, ashBowtie4],
   },
 ];
