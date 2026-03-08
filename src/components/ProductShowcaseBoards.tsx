@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
-import product8 from "@/assets/product-8.jpeg";
+import boardImage from "@/assets/gallery/IMG_9897-2.JPG";
 import { Ruler, Droplets, Footprints, PenTool } from "lucide-react";
 
 const features = [
@@ -50,7 +50,7 @@ const ProductShowcaseBoards = () => {
           <ScrollReveal delay={0.2} className="order-1 lg:order-2">
             <div className="relative">
               <motion.img
-                src={product8}
+                src={boardImage}
                 alt="Overhead shot of handcrafted end-grain chopping boards"
                 className="w-full rounded-sm gold-glow"
                 whileHover={{ scale: 1.02 }}
