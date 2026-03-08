@@ -20,7 +20,7 @@ const GalleryDetail = () => {
         <Navbar />
         <div className="text-center pt-24">
           <h1 className="font-serif text-4xl text-foreground mb-4">Piece Not Found</h1>
-          <Link to="/portfolio" className="text-primary hover:underline">
+          <Link to="/#gallery" className="text-primary hover:underline">
             Return to Portfolio
           </Link>
         </div>
@@ -84,7 +84,7 @@ const GalleryDetail = () => {
         <div className="container mx-auto px-6">
           {/* Back link */}
           <Link
-            to="/portfolio"
+            to="/#gallery"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm tracking-wide mb-10"
           >
             <ArrowLeft className="w-4 h-4" />

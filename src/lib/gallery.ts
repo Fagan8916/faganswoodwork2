@@ -59,6 +59,11 @@ import img9608 from "@/assets/gallery/IMG_9608.JPEG";
 import img9744 from "@/assets/gallery/IMG_9744.JPEG";
 import img9746 from "@/assets/gallery/IMG_9746.JPEG";
 import img9749 from "@/assets/gallery/IMG_9749.JPEG";
+import img9897_2 from "@/assets/gallery/IMG_9897-2.JPG";
+// Sapele chevron board
+import img9896 from "@/assets/gallery/IMG_9896.JPG";
+import img9403 from "@/assets/gallery/IMG_9403.JPEG";
+import img9404 from "@/assets/gallery/IMG_9404.JPEG";
 
 export interface GalleryItem {
   id: string;
@@ -180,7 +185,7 @@ export const galleryItems: GalleryItem[] = [
     id: "walnut-carving-boards",
     title: "Oak Carving Board with Stand",
     location: "England",
-    images: [img9602, img9603, img9605, img9606, img9607, img9608, img9744, img9746, img9749],
+    images: [img9897_2, img9602, img9603, img9605, img9606, img9607, img9608, img9744, img9746, img9749],
     description: "A substantial oak chopping board made for the Goldring family, featuring deep juice grooves and a handcrafted display stand. Built with an end-grain construction for durability and kindness to knives.",
     specs: {
       pieceType: "Chopping Board",
@@ -229,6 +234,20 @@ export const galleryItems: GalleryItem[] = [
       timber: "Ash with White Resin",
       dimensions: "40cm diameter",
       finish: "Rubio Monocoat",
+      completed: "2024"
+    }
+  },
+  {
+    id: "sapele-chevron-board",
+    title: "Sapele Chevron Chopping Board",
+    location: "England",
+    images: [img9896, img9403, img9404],
+    description: "A striking chevron pattern chopping board handcrafted from sustainable sapele wood.",
+    specs: {
+      pieceType: "Chopping Board",
+      timber: "Sapele",
+      dimensions: "35cm × 28cm × 3cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   }
