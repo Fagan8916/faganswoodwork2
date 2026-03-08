@@ -70,8 +70,8 @@ const MailingListSection = () => {
                   required
                   className="bg-muted/50 border-border/50 focus:border-primary flex-1"
                 />
-                <Button type="submit" className="px-8 tracking-widest uppercase text-xs">
-                  Notify Me
+                <Button type="submit" disabled={loading} className="px-8 tracking-widest uppercase text-xs">
+                  {loading ? "Joining…" : "Notify Me"}
                 </Button>
               </form>
             )}
