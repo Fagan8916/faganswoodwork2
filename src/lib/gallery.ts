@@ -81,98 +81,98 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "log-slice-table",
     title: "Log Slice Coffee Table",
-    location: "Ireland",
+    location: "England",
     images: [img9887],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Coffee Table",
-      timber: "To be confirmed",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Lazy Susan",
+      timber: "Ash",
+      dimensions: "40cm diameter",
+      finish: "Rubio Monocoat",
       completed: "2024"
     }
   },
   {
     id: "river-side-table",
     title: "River Side Table",
-    location: "Ireland",
+    location: "England",
     images: [img9888, img6737, img6738, img9870],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Side Table",
-      timber: "To be confirmed",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Lazy Susan",
+      timber: "Oak with Resin",
+      dimensions: "45cm diameter",
+      finish: "Rubio Monocoat",
       completed: "2024"
     }
   },
   {
     id: "live-edge-round",
     title: "Live Edge Round",
-    location: "Ireland",
+    location: "England",
     images: [img9889, img9883, img9885, img8568, img8569],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Round Board",
-      timber: "To be confirmed",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Lazy Susan",
+      timber: "Pine with Resin Inlay",
+      dimensions: "50cm diameter",
+      finish: "Rubio Monocoat",
       completed: "2024"
     }
   },
   {
     id: "striped-end-grain",
     title: "Striped End-Grain Board",
-    location: "Ireland",
+    location: "England",
     images: [img9890],
     description: "Details coming soon.",
     specs: {
-      pieceType: "End-Grain Board",
-      timber: "To be confirmed",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Chopping Board",
+      timber: "Oak and Sapele",
+      dimensions: "40cm × 30cm × 4cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   },
   {
     id: "oak-end-grain-set",
     title: "Oak End-Grain Set",
-    location: "Ireland",
+    location: "England",
     images: [img9891],
     description: "Details coming soon.",
     specs: {
-      pieceType: "End-Grain Set",
+      pieceType: "Chopping Board",
       timber: "Oak",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      dimensions: "35cm × 25cm × 4cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   },
   {
     id: "tri-wood-board",
     title: "Tri-Wood Serving Board",
-    location: "Ireland",
+    location: "England",
     images: [img9893],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Serving Board",
-      timber: "Mixed Hardwoods",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Chopping Board",
+      timber: "Maple, Oak, and Walnut",
+      dimensions: "45cm × 25cm × 3cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   },
   {
     id: "striped-serving-boards",
     title: "Striped Serving Boards",
-    location: "Ireland",
+    location: "England",
     images: [img9895, img9587, img9589, img9590, img9591, img9592, img9595, img9596, img9597, img9598, img9601],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Serving Board",
-      timber: "To be confirmed",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Chopping Board",
+      timber: "Ash and Sapele",
+      dimensions: "40cm × 30cm × 3cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   },
