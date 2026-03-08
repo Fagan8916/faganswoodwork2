@@ -35,8 +35,10 @@ const ProductShowcaseLazySusan = () => {
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 From intimate dinners to grand gatherings — rotating centrepieces 
-                carved from single blocks of walnut, oak, and olive wood. Each with 
-                unique grain patterns, natural edges, and hand-rubbed oil finishes.
+                carved from single blocks of walnut, oak, and olive wood. Each sits 
+                on a smooth-spinning bearing, letting guests effortlessly share dishes 
+                at the table. Unique grain patterns, natural edges, and hand-rubbed 
+                oil finishes.
               </p>
 
               <div className="flex items-center gap-4 mb-8">
