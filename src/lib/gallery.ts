@@ -201,16 +201,19 @@ export const galleryItems: GalleryItem[] = [
     }
   },
   {
-    id: "walnut-carving-boards",
-    title: "Oak Carving Board with Stand",
+    id: "oak-cookie-lazy-susan",
+    title: "Oak Cookie Lazy Susan",
     location: "England",
-    images: [img9897_2, img9602, img9603, img9605, img9606, img9607, img9608, img9744, img9746, img9749],
-    description: "A substantial oak chopping board made for the Goldring family, featuring deep juice grooves and a handcrafted display stand. Built with an end-grain construction for durability and kindness to knives. The juice groove was routed by hand in a single pass — no joins, no weak points — deep enough to catch the juices from a full Sunday roast. The matching stand was designed so the board can live upright on the counter between uses, turning a kitchen tool into a piece of furniture. The oak was selected for its tight, consistent grain, and the end-grain face will develop a beautiful patina as it ages through years of use.",
+    available: true,
+    price: 220,
+    badge: "Only 1 Available — Ready to Ship",
+    images: [img9900, img9799, img9800, img9801, img9802, img9803],
+    description: "A full cross-section — a 'cookie' — cut from a mature oak trunk, with the natural cracks stabilised using hand-cut oak bow tie inlays. The bow ties aren't just decorative; they're structural, preventing the cracks from spreading as the timber moves with the seasons. Each one was precisely fitted by hand with a chisel, no router, no template. The bark edge has been cleaned and sealed but otherwise left as the tree grew it. The growth rings radiate out from the centre, mapping decades of the tree's life in concentric circles. Mounted on a smooth-spinning bearing, it rotates effortlessly — perfect as a table centrepiece or a sharing platter for gatherings.",
     specs: {
-      pieceType: "Chopping Board",
-      timber: "Oak",
-      dimensions: "45cm × 38cm × 5cm",
-      finish: "Food-safe homemade butter",
+      pieceType: "Lazy Susan",
+      timber: "Oak with Oak Bow Tie Inlays",
+      dimensions: "25cm diameter",
+      finish: "Rubio Monocoat",
       completed: "2024"
     }
   },
@@ -229,19 +232,16 @@ export const galleryItems: GalleryItem[] = [
     }
   },
   {
-    id: "oak-cookie-lazy-susan",
-    title: "Oak Cookie Lazy Susan",
+    id: "walnut-carving-boards",
+    title: "Oak Carving Board with Stand",
     location: "England",
-    available: true,
-    price: 220,
-    badge: "Only 1 Available — Ready to Ship",
-    images: [img9900, img9799, img9800, img9801, img9802, img9803],
-    description: "A full cross-section — a 'cookie' — cut from a mature oak trunk, with the natural cracks stabilised using hand-cut oak bow tie inlays. The bow ties aren't just decorative; they're structural, preventing the cracks from spreading as the timber moves with the seasons. Each one was precisely fitted by hand with a chisel, no router, no template. The bark edge has been cleaned and sealed but otherwise left as the tree grew it. The growth rings radiate out from the centre, mapping decades of the tree's life in concentric circles. Mounted on a smooth-spinning bearing, it rotates effortlessly — perfect as a table centrepiece or a sharing platter for gatherings.",
+    images: [img9897_2, img9602, img9603, img9605, img9606, img9607, img9608, img9744, img9746, img9749],
+    description: "A substantial oak chopping board made for the Goldring family, featuring deep juice grooves and a handcrafted display stand. Built with an end-grain construction for durability and kindness to knives. The juice groove was routed by hand in a single pass — no joins, no weak points — deep enough to catch the juices from a full Sunday roast. The matching stand was designed so the board can live upright on the counter between uses, turning a kitchen tool into a piece of furniture. The oak was selected for its tight, consistent grain, and the end-grain face will develop a beautiful patina as it ages through years of use.",
     specs: {
-      pieceType: "Lazy Susan",
-      timber: "Oak with Oak Bow Tie Inlays",
-      dimensions: "25cm diameter",
-      finish: "Rubio Monocoat",
+      pieceType: "Chopping Board",
+      timber: "Oak",
+      dimensions: "45cm × 38cm × 5cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   },
