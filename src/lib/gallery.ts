@@ -236,5 +236,19 @@ export const galleryItems: GalleryItem[] = [
       finish: "Rubio Monocoat",
       completed: "2024"
     }
+  },
+  {
+    id: "sapele-chevron-board",
+    title: "Sapele Chevron Chopping Board",
+    location: "England",
+    images: [img9896, img9403, img9404],
+    description: "A striking chevron pattern chopping board handcrafted from sustainable sapele wood.",
+    specs: {
+      pieceType: "Chopping Board",
+      timber: "Sapele",
+      dimensions: "35cm × 28cm × 3cm",
+      finish: "Food-safe homemade butter",
+      completed: "2024"
+    }
   }
 ];
