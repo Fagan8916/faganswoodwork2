@@ -270,6 +270,7 @@ export const galleryItems: GalleryItem[] = [
     id: "ash-bowtie-lazy-susan",
     title: "Ash Lazy Susan with Sapele Bow Tie",
     location: "England",
+    productId: "ash-bowtie-lazy-susan",
     images: [img9912, img9911, img9910, img9909, img9908, img9907, img9906],
     description: "Cut from a 57-year-old ash tree, this full cross-section lazy susan features a natural crack stabilised with a hand-cut sapele bow tie inlay. The contrast between the pale, ring-rich ash and the deep reddish-brown sapele is entirely natural — no stain, no dye. The bow tie isn't just decorative; it's structural, locking the crack in place and preventing it from spreading as the timber breathes with the seasons. Every one of those 57 growth rings is visible on the surface, radiating out from the centre like a map of the tree's life — dry summers, wet winters, the years it thrived and the years it struggled. The crack itself, filled with clear resin, becomes a river running through that history. The bark edge has been cleaned and sealed but otherwise left exactly as the tree grew it, giving the piece an organic outline that no machine could replicate. Mounted on a concealed smooth-spinning bearing, it rotates effortlessly on any table — perfect as a dining centrepiece or a sharing platter for gatherings. Finished with Rubio Monocoat to protect the timber while letting every detail of the grain speak for itself.",
     specs: {
