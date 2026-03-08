@@ -59,6 +59,11 @@ import img9608 from "@/assets/gallery/IMG_9608.JPEG";
 import img9744 from "@/assets/gallery/IMG_9744.JPEG";
 import img9746 from "@/assets/gallery/IMG_9746.JPEG";
 import img9749 from "@/assets/gallery/IMG_9749.JPEG";
+import img9897_2 from "@/assets/gallery/IMG_9897-2.JPG";
+// Sapele chevron board
+import img9896 from "@/assets/gallery/IMG_9896.JPG";
+import img9403 from "@/assets/gallery/IMG_9403.JPEG";
+import img9404 from "@/assets/gallery/IMG_9404.JPEG";
 
 export interface GalleryItem {
   id: string;
