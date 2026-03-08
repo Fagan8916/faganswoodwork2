@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
-import { products } from "@/lib/products";
+import { galleryItems } from "@/lib/gallery";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const AvailableNowSection = () => {
+  const availableItems = galleryItems.filter((item) => item.available);
+
   return (
     <section id="available" className="py-28 relative">
       <div className="container mx-auto px-6">
@@ -23,17 +25,17 @@ const AvailableNowSection = () => {
         </ScrollReveal>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {products.map((product, i) => (
-            <ScrollReveal key={product.id} delay={i * 0.1}>
+          {availableItems.map((item, i) => (
+            <ScrollReveal key={item.id} delay={i * 0.1}>
               <Link
-                to={`/product/${product.id}`}
+                to={`/gallery/${item.id}`}
                 className="group block glass-card-hover overflow-hidden"
               >
                 <div className="overflow-hidden">
                   <AspectRatio ratio={4 / 3}>
                     <motion.img
-                      src={product.images[0]}
-                      alt={product.name}
+                      src={item.images[0]}
+                      alt={item.title}
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.6 }}
@@ -43,19 +45,19 @@ const AvailableNowSection = () => {
 
                 <div className="p-6 md:p-8">
                   <span className="inline-block text-xs tracking-widest uppercase text-primary border border-primary/30 px-3 py-1 rounded-sm mb-4">
-                    {product.badge}
+                    {item.badge}
                   </span>
 
                   <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {product.name}
+                    {item.title}
                   </h3>
 
                   <p className="text-primary font-serif text-xl mb-4">
-                    €{product.price}
+                    €{item.price}
                   </p>
 
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    {product.description}
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 line-clamp-3">
+                    {item.description}
                   </p>
 
                   <span className="btn-outline-gold text-xs py-2 px-6">
