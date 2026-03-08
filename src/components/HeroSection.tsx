@@ -56,9 +56,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
           >
-            <a href="#contact" className="btn-outline-gold">
+            <Link to="/#contact" className="btn-outline-gold">
               Commission Your Piece
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
