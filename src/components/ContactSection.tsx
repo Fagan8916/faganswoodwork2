@@ -52,17 +52,35 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: formData.enquiry_type === "purchase" ? "Purchase Request Sent" : "Commission Request Sent",
-      description: "Thank you. I'll respond within 48 hours.",
-    });
-    setTimeout(() => {
-      setFormData({ name: "", email: "", enquiry_type: "commission", looking_for: "Lazy Susan", size: "", message: "" });
-      setIsSubmitted(false);
-    }, 3000);
+    try {
+      const { error } = await supabase
+        .from("contact_enquiries" as any)
+        .insert({
+          name: formData.name.trim(),
+          email: formData.email.trim().toLowerCase(),
+          enquiry_type: formData.enquiry_type,
+          looking_for: formData.looking_for || null,
+          size: formData.size || null,
+          message: formData.message.trim(),
+        } as any);
+
+      if (error) throw error;
+
+      setIsSubmitted(true);
+      toast({
+        title: isPurchase ? "Purchase Request Sent" : "Commission Request Sent",
+        description: "Thank you. I'll respond within 48 hours.",
+      });
+      setTimeout(() => {
+        setFormData({ name: "", email: "", enquiry_type: "commission", looking_for: "Lazy Susan", size: "", message: "" });
+        setIsSubmitted(false);
+      }, 3000);
+    } catch (err) {
+      console.error("Contact form error:", err);
+      toast({ title: "Something went wrong", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const isPurchase = formData.enquiry_type === "purchase";
