@@ -59,6 +59,7 @@ export const products: Product[] = [
   },
   {
     id: "winter-walnut-lazy-susan",
+    galleryId: "live-edge-round",
     name: "The Winter Pine Lazy Susan",
     price: 420,
     badge: "Only 1 Available — Ready to Ship",
