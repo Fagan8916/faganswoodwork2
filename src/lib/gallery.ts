@@ -152,7 +152,7 @@ export const galleryItems: GalleryItem[] = [
     id: "chevron-pattern-board",
     title: "Chevron Pattern Board",
     location: "Ireland",
-    images: [img9898],
+    images: [img9898, img9689, img9690, img9691, img9692, img9693, img9694, img9696],
     description: "Details coming soon.",
     specs: {
       pieceType: "Pattern Board",
