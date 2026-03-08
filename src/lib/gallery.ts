@@ -32,6 +32,12 @@ import img9800 from "@/assets/gallery/IMG_9800.JPEG";
 import img9801 from "@/assets/gallery/IMG_9801.JPEG";
 import img9802 from "@/assets/gallery/IMG_9802.JPEG";
 import img9803 from "@/assets/gallery/IMG_9803.JPEG";
+// White resin river board additional images
+import img9858 from "@/assets/gallery/IMG_9858.JPEG";
+import img9859 from "@/assets/gallery/IMG_9859.JPEG";
+import img9860 from "@/assets/gallery/IMG_9860.JPEG";
+import img9861 from "@/assets/gallery/IMG_9861.JPEG";
+import img9862 from "@/assets/gallery/IMG_9862.JPEG";
 
 export interface GalleryItem {
   id: string;
