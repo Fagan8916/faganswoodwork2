@@ -1,9 +1,8 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, X, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import { galleryItems } from "@/lib/gallery";
-import { products } from "@/lib/products";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -14,7 +13,6 @@ const GalleryDetail = () => {
   const item = galleryItems.find((g) => g.id === id);
   const [selectedImage, setSelectedImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const linkedProduct = item?.productId ? products.find(p => p.id === item.productId) : null;
 
   if (!item) {
     return (
