@@ -78,6 +78,7 @@ export const products: Product[] = [
   },
   {
     id: "ash-bowtie-lazy-susan",
+    galleryId: "ash-bowtie-lazy-susan",
     name: "The Ash & Sapele Bow Tie Lazy Susan",
     price: 450,
     badge: "Only 1 Available — Ready to Ship",
