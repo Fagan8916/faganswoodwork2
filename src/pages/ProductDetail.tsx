@@ -14,6 +14,7 @@ const ProductDetail = () => {
   const product = products.find((p) => p.id === id);
   const [selectedImage, setSelectedImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const linkedGalleryItem = product?.galleryId ? galleryItems.find(g => g.id === product.galleryId) : null;
 
   if (!product) {
     return (
