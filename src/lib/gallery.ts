@@ -185,7 +185,7 @@ export const galleryItems: GalleryItem[] = [
     id: "walnut-carving-boards",
     title: "Oak Carving Board with Stand",
     location: "England",
-    images: [img9602, img9603, img9605, img9606, img9607, img9608, img9744, img9746, img9749],
+    images: [img9897_2, img9602, img9603, img9605, img9606, img9607, img9608, img9744, img9746, img9749],
     description: "A substantial oak chopping board made for the Goldring family, featuring deep juice grooves and a handcrafted display stand. Built with an end-grain construction for durability and kindness to knives.",
     specs: {
       pieceType: "Chopping Board",
