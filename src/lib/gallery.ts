@@ -105,7 +105,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Details coming soon.",
     specs: {
       pieceType: "Lazy Susan",
-      timber: "Oak with Resin",
+      timber: "Ash with Resin",
       dimensions: "45cm diameter",
       finish: "Rubio Monocoat",
       completed: "2024"
