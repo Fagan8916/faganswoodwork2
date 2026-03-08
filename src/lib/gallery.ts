@@ -7,6 +7,9 @@ import product9 from "@/assets/product-9.jpeg";
 import product10 from "@/assets/product-10.jpeg";
 import product11 from "@/assets/product-11.jpeg";
 
+// Inlaid Table gallery images - will be populated as user provides them
+// Placeholder using product1 until images are uploaded
+
 export interface GalleryItem {
   id: string;
   title: string;
