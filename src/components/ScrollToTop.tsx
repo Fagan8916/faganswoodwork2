@@ -6,7 +6,6 @@ const ScrollToTop = () => {
   const prevKey = useRef(key);
 
   useEffect(() => {
-    // Always process on location change (key changes on every navigation)
     if (hash) {
       const id = hash.replace("#", "").split("?")[0];
       let attempts = 0;
@@ -15,17 +14,18 @@ const ScrollToTop = () => {
       const tryScroll = () => {
         const el = document.getElementById(id);
         if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
+          // Use instant scroll for cross-page navigation to avoid visible jump
+          el.scrollIntoView({ behavior: "instant" });
         } else if (attempts < maxAttempts) {
           attempts++;
           requestAnimationFrame(tryScroll);
         }
       };
 
-      const timeout = setTimeout(tryScroll, 100);
-      return () => clearTimeout(timeout);
+      // Start immediately, no delay
+      tryScroll();
     } else if (prevKey.current !== key) {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: "instant" });
     }
 
     prevKey.current = key;
