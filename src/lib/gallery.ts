@@ -38,6 +38,17 @@ import img9859 from "@/assets/gallery/IMG_9859.JPEG";
 import img9860 from "@/assets/gallery/IMG_9860.JPEG";
 import img9861 from "@/assets/gallery/IMG_9861.JPEG";
 import img9862 from "@/assets/gallery/IMG_9862.JPEG";
+// Striped serving boards additional images
+import img9587 from "@/assets/gallery/IMG_9587.JPEG";
+import img9589 from "@/assets/gallery/IMG_9589.JPEG";
+import img9590 from "@/assets/gallery/IMG_9590.JPEG";
+import img9591 from "@/assets/gallery/IMG_9591.JPEG";
+import img9592 from "@/assets/gallery/IMG_9592.JPEG";
+import img9595 from "@/assets/gallery/IMG_9595.JPEG";
+import img9596 from "@/assets/gallery/IMG_9596.JPEG";
+import img9597 from "@/assets/gallery/IMG_9597.JPEG";
+import img9598 from "@/assets/gallery/IMG_9598.JPEG";
+import img9601 from "@/assets/gallery/IMG_9601.JPEG";
 
 export interface GalleryItem {
   id: string;
@@ -145,7 +156,7 @@ export const galleryItems: GalleryItem[] = [
     id: "striped-serving-boards",
     title: "Striped Serving Boards",
     location: "Ireland",
-    images: [img9895],
+    images: [img9895, img9587, img9589, img9590, img9591, img9592, img9595, img9596, img9597, img9598, img9601],
     description: "Details coming soon.",
     specs: {
       pieceType: "Serving Board",
