@@ -77,7 +77,7 @@ export const galleryItems: GalleryItem[] = [
     id: "live-edge-round",
     title: "Live Edge Round",
     location: "Ireland",
-    images: [img9889],
+    images: [img9889, img9883, img9885, img8568, img8569],
     description: "Details coming soon.",
     specs: {
       pieceType: "Round Board",
