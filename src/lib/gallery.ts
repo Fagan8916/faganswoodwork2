@@ -231,7 +231,9 @@ export const galleryItems: GalleryItem[] = [
     id: "oak-cookie-lazy-susan",
     title: "Oak Cookie Lazy Susan",
     location: "England",
-    productId: "oak-cookie-lazy-susan",
+    available: true,
+    price: 220,
+    badge: "Only 1 Available — Ready to Ship",
     images: [img9900, img9799, img9800, img9801, img9802, img9803],
     description: "A full cross-section — a 'cookie' — cut from a mature oak trunk, with the natural cracks stabilised using hand-cut oak bow tie inlays. The bow ties aren't just decorative; they're structural, preventing the cracks from spreading as the timber moves with the seasons. Each one was precisely fitted by hand with a chisel, no router, no template. The bark edge has been cleaned and sealed but otherwise left as the tree grew it. The growth rings radiate out from the centre, mapping decades of the tree's life in concentric circles. Mounted on a smooth-spinning bearing, it rotates effortlessly — perfect as a table centrepiece or a sharing platter for gatherings.",
     specs: {
