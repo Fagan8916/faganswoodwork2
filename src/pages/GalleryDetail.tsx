@@ -129,6 +129,7 @@ const GalleryDetail = () => {
                           src={img}
                           alt={`${item.title} view ${i + 1}`}
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </AspectRatio>
                     </button>
