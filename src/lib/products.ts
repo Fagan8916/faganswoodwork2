@@ -6,6 +6,10 @@ import product5 from "@/assets/product-5.jpeg";
 import product6 from "@/assets/product-6.jpeg";
 import product7 from "@/assets/product-7.jpeg";
 import product9 from "@/assets/product-9.jpeg";
+import ashBowtie1 from "@/assets/gallery/IMG_9912.JPEG";
+import ashBowtie2 from "@/assets/gallery/IMG_9911.JPEG";
+import ashBowtie3 from "@/assets/gallery/IMG_9909.JPEG";
+import ashBowtie4 from "@/assets/gallery/IMG_9907.JPEG";
 
 export interface Product {
   id: string;
