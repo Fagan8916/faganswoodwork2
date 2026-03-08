@@ -191,12 +191,12 @@ const GalleryDetail = () => {
                   </dl>
                 </div>
 
-                <a
-                  href="/#contact"
+                <Link
+                  to="/#contact"
                   className="btn-filled-gold w-full text-center block"
                 >
                   Commission a Similar Piece
-                </a>
+                </Link>
               </div>
             </ScrollReveal>
           </div>
