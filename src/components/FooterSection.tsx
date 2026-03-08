@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
