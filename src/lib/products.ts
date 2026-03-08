@@ -11,6 +11,9 @@ import ashBowtie1 from "@/assets/gallery/IMG_9912.JPEG";
 import ashBowtie2 from "@/assets/gallery/IMG_9911.JPEG";
 import ashBowtie3 from "@/assets/gallery/IMG_9909.JPEG";
 import ashBowtie4 from "@/assets/gallery/IMG_9907.JPEG";
+import ashBowtie5 from "@/assets/gallery/IMG_9906.JPEG";
+import ashBowtie6 from "@/assets/gallery/IMG_9908.JPEG";
+import ashBowtie7 from "@/assets/gallery/IMG_9910.JPEG";
 import oakCookie1 from "@/assets/gallery/IMG_9900.JPG";
 import oakCookie2 from "@/assets/gallery/IMG_9799.JPEG";
 import oakCookie3 from "@/assets/gallery/IMG_9800.JPEG";
@@ -86,6 +89,6 @@ export const products: Product[] = [
       finish: "Rubio Monocoat",
       care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
     },
-    images: [ashBowtie1, ashBowtie2, ashBowtie3, ashBowtie4],
+    images: [ashBowtie5, ashBowtie1, ashBowtie2, ashBowtie6, ashBowtie7, ashBowtie3, ashBowtie4],
   },
 ];
