@@ -126,6 +126,7 @@ const ProductDetail = () => {
                           src={img}
                           alt={`${product.name} view ${i + 1}`}
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </AspectRatio>
                     </button>
