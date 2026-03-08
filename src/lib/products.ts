@@ -68,7 +68,7 @@ export const products: Product[] = [
       finish: "Danish oil, hand-rubbed (3 coats)",
       care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
     },
-    images: [product3, product9, product1, product7, img9889, img9883, img9885, img8568, img8569],
+    images: [img9883, img9889, img9885, img8568, img8569],
   },
   {
     id: "ash-bowtie-lazy-susan",
