@@ -193,42 +193,42 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "chevron-pattern-board",
     title: "Chevron Pattern Board",
-    location: "Ireland",
+    location: "England",
     images: [img9898, img9689, img9690, img9691, img9692, img9693, img9694, img9696],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Pattern Board",
-      timber: "To be confirmed",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      pieceType: "Chopping Board",
+      timber: "Oak and Maple",
+      dimensions: "45cm × 35cm × 4cm",
+      finish: "Food-safe homemade butter",
       completed: "2024"
     }
   },
   {
     id: "resin-log-slice-clock",
     title: "Resin Log Slice Clock",
-    location: "Ireland",
+    location: "England",
     images: [img9900, img9799, img9800, img9801, img9802, img9803],
     description: "Details coming soon.",
     specs: {
-      pieceType: "Clock",
+      pieceType: "Lazy Susan",
       timber: "Oak with Resin Inlay",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      dimensions: "45cm diameter",
+      finish: "Rubio Monocoat",
       completed: "2024"
     }
   },
   {
     id: "white-resin-river-board",
     title: "White Resin River Board",
-    location: "Ireland",
+    location: "England",
     images: [img9901, img9858, img9859, img9860, img9861, img9862],
     description: "Details coming soon.",
     specs: {
-      pieceType: "River Board",
+      pieceType: "Lazy Susan",
       timber: "Ash with White Resin",
-      dimensions: "To be confirmed",
-      finish: "To be confirmed",
+      dimensions: "40cm diameter",
+      finish: "Rubio Monocoat",
       completed: "2024"
     }
   }
