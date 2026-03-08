@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/product-13.jpeg";
 
 const HeroSection = () => {
@@ -55,21 +56,21 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
           >
-            <a href="#contact" className="btn-outline-gold">
+            <Link to="/#contact" className="btn-outline-gold">
               Commission Your Piece
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <a
-        href="#philosophy"
+      <Link
+        to="/#philosophy"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
       >
         <span className="text-xs tracking-[0.3em] uppercase">Discover</span>
         <ChevronDown className="w-4 h-4 animate-bounce" />
-      </a>
+      </Link>
     </section>
   );
 };

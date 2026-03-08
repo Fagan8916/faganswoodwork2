@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import product3 from "@/assets/product-3.jpeg";
 
@@ -14,6 +15,7 @@ const ProductShowcaseLazySusan = () => {
                 src={product3}
                 alt="Walnut lazy Susan with natural edge on dining table"
                 className="w-full rounded-sm gold-glow"
+                loading="lazy"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.5 }}
               />
@@ -44,9 +46,9 @@ const ProductShowcaseLazySusan = () => {
                 </span>
               </div>
 
-              <a href="#contact" className="btn-filled-gold">
+              <Link to="/#contact" className="btn-filled-gold">
                 View Available Timbers
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
         </div>

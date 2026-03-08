@@ -28,7 +28,10 @@ const GalleryDetail = () => {
     );
   }
 
-  const otherItems = galleryItems.filter((g) => g.id !== item.id).slice(0, 3);
+  // Show related pieces of the same type first, then fill with others
+  const sameType = galleryItems.filter((g) => g.id !== item.id && g.specs.pieceType === item.specs.pieceType);
+  const different = galleryItems.filter((g) => g.id !== item.id && g.specs.pieceType !== item.specs.pieceType);
+  const otherItems = [...sameType, ...different].slice(0, 3);
 
   const navigateLightbox = (dir: number) => {
     setSelectedImage((prev) => (prev + dir + item.images.length) % item.images.length);
@@ -126,6 +129,7 @@ const GalleryDetail = () => {
                           src={img}
                           alt={`${item.title} view ${i + 1}`}
                           className="w-full h-full object-cover"
+                          loading="lazy"
                         />
                       </AspectRatio>
                     </button>
@@ -191,12 +195,12 @@ const GalleryDetail = () => {
                   </dl>
                 </div>
 
-                <a
-                  href="/#contact"
+                <Link
+                  to="/#contact"
                   className="btn-filled-gold w-full text-center block"
                 >
                   Commission a Similar Piece
-                </a>
+                </Link>
               </div>
             </ScrollReveal>
           </div>
@@ -216,10 +220,11 @@ const GalleryDetail = () => {
                     <Link to={`/gallery/${g.id}`} className="group block glass-card-hover overflow-hidden">
                       <div className="overflow-hidden">
                         <AspectRatio ratio={4 / 3}>
-                          <img
-                            src={g.images[0]}
-                            alt={g.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            <img
+                              src={g.images[0]}
+                              alt={g.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              loading="lazy"
                           />
                         </AspectRatio>
                       </div>

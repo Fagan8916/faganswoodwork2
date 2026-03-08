@@ -6,13 +6,22 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     if (hash) {
-      // Small delay to allow the page to render before scrolling to the section
-      const timeout = setTimeout(() => {
-        const el = document.getElementById(hash.replace("#", ""));
+      const id = hash.replace("#", "");
+      let attempts = 0;
+      const maxAttempts = 20;
+
+      const tryScroll = () => {
+        const el = document.getElementById(id);
         if (el) {
           el.scrollIntoView({ behavior: "smooth" });
+        } else if (attempts < maxAttempts) {
+          attempts++;
+          requestAnimationFrame(tryScroll);
         }
-      }, 100);
+      };
+
+      // Initial delay for route transition, then retry with rAF
+      const timeout = setTimeout(tryScroll, 50);
       return () => clearTimeout(timeout);
     } else {
       window.scrollTo(0, 0);

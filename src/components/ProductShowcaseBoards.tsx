@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import boardImage from "@/assets/gallery/IMG_9897-2.JPG";
 import { Ruler, Droplets, Footprints, PenTool } from "lucide-react";
@@ -40,9 +41,9 @@ const ProductShowcaseBoards = () => {
                 ))}
               </div>
 
-              <a href="#contact" className="btn-outline-gold">
+              <Link to="/#contact" className="btn-outline-gold">
                 Design Your Board
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
 
@@ -53,6 +54,7 @@ const ProductShowcaseBoards = () => {
                 src={boardImage}
                 alt="Overhead shot of handcrafted end-grain chopping boards"
                 className="w-full rounded-sm gold-glow"
+                loading="lazy"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.5 }}
               />
