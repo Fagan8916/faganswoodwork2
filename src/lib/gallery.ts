@@ -49,6 +49,16 @@ import img9596 from "@/assets/gallery/IMG_9596.JPEG";
 import img9597 from "@/assets/gallery/IMG_9597.JPEG";
 import img9598 from "@/assets/gallery/IMG_9598.JPEG";
 import img9601 from "@/assets/gallery/IMG_9601.JPEG";
+// Walnut carving boards additional images
+import img9602 from "@/assets/gallery/IMG_9602.JPEG";
+import img9603 from "@/assets/gallery/IMG_9603.JPEG";
+import img9605 from "@/assets/gallery/IMG_9605.JPEG";
+import img9606 from "@/assets/gallery/IMG_9606.JPEG";
+import img9607 from "@/assets/gallery/IMG_9607.JPEG";
+import img9608 from "@/assets/gallery/IMG_9608.JPEG";
+import img9744 from "@/assets/gallery/IMG_9744.JPEG";
+import img9746 from "@/assets/gallery/IMG_9746.JPEG";
+import img9749 from "@/assets/gallery/IMG_9749.JPEG";
 
 export interface GalleryItem {
   id: string;
