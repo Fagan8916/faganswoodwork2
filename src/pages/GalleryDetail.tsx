@@ -197,7 +197,7 @@ const GalleryDetail = () => {
 
                 {item.available ? (
                   <Link
-                    to={`/#contact?piece=${encodeURIComponent(item.title)}&type=purchase`}
+                    to={`/?type=purchase&piece=${encodeURIComponent(item.title)}#contact`}
                     className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
                   >
                     <ShoppingBag className="w-4 h-4" />
