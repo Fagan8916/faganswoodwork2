@@ -84,7 +84,7 @@ const GalleryDetail = () => {
         <div className="container mx-auto px-6">
           {/* Back link */}
           <Link
-            to="/#gallery"
+            to="/portfolio"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm tracking-wide mb-10"
           >
             <ArrowLeft className="w-4 h-4" />
