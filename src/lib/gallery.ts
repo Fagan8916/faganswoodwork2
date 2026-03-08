@@ -100,15 +100,18 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
-    id: "log-slice-table",
-    title: "Log Slice Coffee Table",
+    id: "oak-cookie-lazy-susan",
+    title: "Oak Cookie Lazy Susan",
     location: "England",
-    images: [img9887],
-    description: "This coffee table started as a single cross-section from a wind-fallen ash tree. Rather than squaring it off, the natural bark edge was preserved — every crack and contour tells the story of the tree's life. The surface was hand-sanded through progressively finer grits until it felt like glass, then sealed with Rubio Monocoat to bring out the cathedral grain pattern hiding beneath the raw timber. The base was designed to sit low and unobtrusive, letting the slab do the talking. It's the kind of piece guests reach out to touch before they even sit down.",
+    available: true,
+    price: 220,
+    badge: "Only 1 Available — Ready to Ship",
+    images: [img9900, img9799, img9800, img9801, img9802, img9803],
+    description: "A full cross-section — a 'cookie' — cut from a mature oak trunk, with the natural cracks stabilised using hand-cut oak bow tie inlays. The bow ties aren't just decorative; they're structural, preventing the cracks from spreading as the timber moves with the seasons. Each one was precisely fitted by hand with a chisel, no router, no template. The bark edge has been cleaned and sealed but otherwise left as the tree grew it. The growth rings radiate out from the centre, mapping decades of the tree's life in concentric circles. Mounted on a smooth-spinning bearing, it rotates effortlessly — perfect as a table centrepiece or a sharing platter for gatherings.",
     specs: {
       pieceType: "Lazy Susan",
-      timber: "Ash",
-      dimensions: "40cm diameter",
+      timber: "Oak with Oak Bow Tie Inlays",
+      dimensions: "25cm diameter",
       finish: "Rubio Monocoat",
       completed: "2024"
     }
@@ -201,18 +204,15 @@ export const galleryItems: GalleryItem[] = [
     }
   },
   {
-    id: "oak-cookie-lazy-susan",
-    title: "Oak Cookie Lazy Susan",
+    id: "log-slice-table",
+    title: "Log Slice Coffee Table",
     location: "England",
-    available: true,
-    price: 220,
-    badge: "Only 1 Available — Ready to Ship",
-    images: [img9900, img9799, img9800, img9801, img9802, img9803],
-    description: "A full cross-section — a 'cookie' — cut from a mature oak trunk, with the natural cracks stabilised using hand-cut oak bow tie inlays. The bow ties aren't just decorative; they're structural, preventing the cracks from spreading as the timber moves with the seasons. Each one was precisely fitted by hand with a chisel, no router, no template. The bark edge has been cleaned and sealed but otherwise left as the tree grew it. The growth rings radiate out from the centre, mapping decades of the tree's life in concentric circles. Mounted on a smooth-spinning bearing, it rotates effortlessly — perfect as a table centrepiece or a sharing platter for gatherings.",
+    images: [img9887],
+    description: "This coffee table started as a single cross-section from a wind-fallen ash tree. Rather than squaring it off, the natural bark edge was preserved — every crack and contour tells the story of the tree's life. The surface was hand-sanded through progressively finer grits until it felt like glass, then sealed with Rubio Monocoat to bring out the cathedral grain pattern hiding beneath the raw timber. The base was designed to sit low and unobtrusive, letting the slab do the talking. It's the kind of piece guests reach out to touch before they even sit down.",
     specs: {
       pieceType: "Lazy Susan",
-      timber: "Oak with Oak Bow Tie Inlays",
-      dimensions: "25cm diameter",
+      timber: "Ash",
+      dimensions: "40cm diameter",
       finish: "Rubio Monocoat",
       completed: "2024"
     }
