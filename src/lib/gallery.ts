@@ -38,6 +38,10 @@ import img9859 from "@/assets/gallery/IMG_9859.JPEG";
 import img9860 from "@/assets/gallery/IMG_9860.JPEG";
 import img9861 from "@/assets/gallery/IMG_9861.JPEG";
 import img9862 from "@/assets/gallery/IMG_9862.JPEG";
+// Striped end-grain additional images
+import img9854 from "@/assets/gallery/IMG_9854.JPEG";
+import img9855 from "@/assets/gallery/IMG_9855.JPEG";
+import img9856 from "@/assets/gallery/IMG_9856.JPEG";
 // Striped serving boards additional images
 import img9587 from "@/assets/gallery/IMG_9587.JPEG";
 import img9589 from "@/assets/gallery/IMG_9589.JPEG";
