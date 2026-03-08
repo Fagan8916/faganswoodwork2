@@ -69,14 +69,14 @@ const Navbar = () => {
                 {dropdownOpen === item.label && (
                   <div className="absolute top-full left-0 mt-2 bg-card/95 backdrop-blur-xl border border-border/50 rounded-sm min-w-[180px] py-2">
                     {item.children.map((child) => (
-                      <a
+                      <Link
                         key={child.label}
-                        href={child.href}
+                        to={child.href}
                         onClick={() => setDropdownOpen(null)}
                         className="block px-5 py-2 text-muted-foreground hover:text-primary hover:bg-muted/30 transition-colors text-sm tracking-wider"
                       >
                         {child.label}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
