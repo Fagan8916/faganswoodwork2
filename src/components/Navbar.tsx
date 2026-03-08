@@ -3,20 +3,20 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "Philosophy", href: "#philosophy" },
+  { label: "Philosophy", href: "/#philosophy" },
   {
     label: "Collection",
-    href: "#commissions",
+    href: "/#commissions",
     children: [
-      { label: "Lazy Susans", href: "#commissions" },
-      { label: "Chopping Boards", href: "#boards" },
+      { label: "Lazy Susans", href: "/#commissions" },
+      { label: "Chopping Boards", href: "/#boards" },
     ],
   },
-  { label: "Available Now", href: "#available" },
-  { label: "Process", href: "#process" },
-  { label: "Trade", href: "#trade" },
-  { label: "Portfolio", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Available Now", href: "/#available" },
+  { label: "Process", href: "/#process" },
+  { label: "Trade", href: "/#trade" },
+  { label: "Portfolio", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {

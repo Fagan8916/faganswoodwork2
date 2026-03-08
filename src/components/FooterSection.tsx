@@ -2,13 +2,13 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   const links = [
-    { label: "Philosophy", href: "#philosophy" },
-    { label: "Collection", href: "#commissions" },
-    { label: "Available Now", href: "#available" },
-    { label: "Process", href: "#process" },
-    { label: "Trade", href: "#trade" },
-    { label: "Portfolio", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "Philosophy", href: "/#philosophy" },
+    { label: "Collection", href: "/#commissions" },
+    { label: "Available Now", href: "/#available" },
+    { label: "Process", href: "/#process" },
+    { label: "Trade", href: "/#trade" },
+    { label: "Portfolio", href: "/#gallery" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
