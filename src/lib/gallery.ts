@@ -133,7 +133,7 @@ export const galleryItems: GalleryItem[] = [
     id: "striped-end-grain",
     title: "Striped End-Grain Board",
     location: "England",
-    images: [img9890],
+    images: [img9890, img9854, img9855, img9856],
     description: "Details coming soon.",
     specs: {
       pieceType: "Chopping Board",
