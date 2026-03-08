@@ -201,7 +201,7 @@ export const galleryItems: GalleryItem[] = [
     id: "white-resin-river-board",
     title: "White Resin River Board",
     location: "Ireland",
-    images: [img9901],
+    images: [img9901, img9858, img9859, img9860, img9861, img9862],
     description: "Details coming soon.",
     specs: {
       pieceType: "River Board",
