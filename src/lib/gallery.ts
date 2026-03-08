@@ -17,6 +17,10 @@ import img9692 from "@/assets/gallery/IMG_9692.JPEG";
 import img9693 from "@/assets/gallery/IMG_9693.JPEG";
 import img9694 from "@/assets/gallery/IMG_9694.JPEG";
 import img9696 from "@/assets/gallery/IMG_9696.JPEG";
+// River side table additional images
+import img6737 from "@/assets/gallery/IMG_6737.JPEG";
+import img6738 from "@/assets/gallery/IMG_6738.JPEG";
+import img9870 from "@/assets/gallery/IMG_9870.PNG";
 
 export interface GalleryItem {
   id: string;
