@@ -1,15 +1,15 @@
 import product1 from "@/assets/product-1.jpeg";
-import product2 from "@/assets/product-2.jpeg";
 import product3 from "@/assets/product-3.jpeg";
-import product4 from "@/assets/product-4.jpeg";
-import product5 from "@/assets/product-5.jpeg";
-import product6 from "@/assets/product-6.jpeg";
 import product7 from "@/assets/product-7.jpeg";
 import product9 from "@/assets/product-9.jpeg";
 import ashBowtie1 from "@/assets/gallery/IMG_9912.JPEG";
 import ashBowtie2 from "@/assets/gallery/IMG_9911.JPEG";
 import ashBowtie3 from "@/assets/gallery/IMG_9909.JPEG";
 import ashBowtie4 from "@/assets/gallery/IMG_9907.JPEG";
+import oakCookie1 from "@/assets/gallery/IMG_9900.JPG";
+import oakCookie2 from "@/assets/gallery/IMG_9799.JPEG";
+import oakCookie3 from "@/assets/gallery/IMG_9800.JPEG";
+import oakCookie4 from "@/assets/gallery/IMG_9801.JPEG";
 
 export interface Product {
   id: string;
