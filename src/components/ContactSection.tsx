@@ -71,6 +71,18 @@ const ContactSection = () => {
         title: isPurchase ? "Purchase Request Sent" : "Commission Request Sent",
         description: "Thank you. I'll respond within 48 hours.",
       });
+      // Fire-and-forget Slack notification
+      supabase.functions.invoke('notify-slack', {
+        body: {
+          type: 'contact_enquiry',
+          name: formData.name.trim(),
+          email: formData.email.trim().toLowerCase(),
+          enquiry_type: formData.enquiry_type,
+          looking_for: formData.looking_for || null,
+          size: formData.size || null,
+          message: formData.message.trim(),
+        },
+      }).catch(console.error);
       setTimeout(() => {
         setFormData({ name: "", email: "", enquiry_type: "commission", looking_for: "Lazy Susan", size: "", message: "" });
         setIsSubmitted(false);
