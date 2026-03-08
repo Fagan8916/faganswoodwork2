@@ -29,6 +29,10 @@ const MailingListSection = () => {
       } else {
         setSubmitted(true);
         toast({ title: "You're on the list", description: "We'll be in touch when something special drops." });
+        // Fire-and-forget Slack notification
+        supabase.functions.invoke('notify-slack', {
+          body: { type: 'mailing_list', email: email.trim().toLowerCase() },
+        }).catch(console.error);
         setTimeout(() => { setEmail(""); setSubmitted(false); }, 4000);
       }
     } catch (err) {
