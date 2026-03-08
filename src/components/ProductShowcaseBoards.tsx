@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
-import product8 from "@/assets/product-8.jpeg";
+import boardImage from "@/assets/gallery/IMG_9897-2.JPG";
 import { Ruler, Droplets, Footprints, PenTool } from "lucide-react";
 
 const features = [
