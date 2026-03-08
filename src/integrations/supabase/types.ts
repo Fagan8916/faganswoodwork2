@@ -14,6 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
+      contact_enquiries: {
+        Row: {
+          created_at: string
+          email: string
+          enquiry_type: string
+          id: string
+          looking_for: string | null
+          message: string
+          name: string
+          size: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          enquiry_type?: string
+          id?: string
+          looking_for?: string | null
+          message: string
+          name: string
+          size?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          enquiry_type?: string
+          id?: string
+          looking_for?: string | null
+          message?: string
+          name?: string
+          size?: string | null
+        }
+        Relationships: []
+      }
       mailing_list: {
         Row: {
           created_at: string
