@@ -49,7 +49,7 @@ const ProductShowcaseLazySusan = () => {
               </div>
 
               <Link to="/#contact" className="btn-filled-gold">
-                View Available Timbers
+                View Available Products
               </Link>
             </div>
           </ScrollReveal>
