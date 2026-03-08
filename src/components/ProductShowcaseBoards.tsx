@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import boardImage from "@/assets/gallery/IMG_9897-2.JPG";
 import { Ruler, Droplets, Footprints, PenTool } from "lucide-react";
