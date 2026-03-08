@@ -69,6 +69,17 @@ serve(async (req) => {
       throw new Error('No suitable Slack channel found');
     }
 
+    // Join the channel first (no-op if already a member)
+    await fetch(`${GATEWAY_URL}/conversations.join`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${LOVABLE_API_KEY}`,
+        'X-Connection-Api-Key': SLACK_API_KEY,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ channel: channelId }),
+    });
+
     const response = await fetch(`${GATEWAY_URL}/chat.postMessage`, {
       method: 'POST',
       headers: {
