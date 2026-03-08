@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import { Heart, Home, Building2 } from "lucide-react";
 
