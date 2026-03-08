@@ -101,4 +101,22 @@ export const products: Product[] = [
     },
     images: [product2, product5, product4, product6],
   },
+  {
+    id: "ash-bowtie-lazy-susan",
+    name: "The Ash & Sapele Bow Tie Lazy Susan",
+    price: 450,
+    badge: "Only 1 Available — Ready to Ship",
+    description:
+      "A 57-year-old ash tree, sliced to reveal every year of its life. A hand-cut sapele bow tie locks a natural crack in place — structural beauty at its finest. Spins effortlessly on a concealed bearing.",
+    story:
+      "Fifty-seven years of growth are written into the face of this piece. Cut from a single ash cross-section, the growth rings radiate outward from the centre — each one a record of a season lived. A natural crack runs through the slab, stabilised by a hand-cut sapele bow tie inlay that contrasts the pale ash with deep reddish-brown. The bow tie was fitted entirely by hand with a chisel — no router, no template — so it sits flush with the surface and locks the crack structurally, preventing it from moving as the timber expands and contracts through the seasons. The crack itself has been filled with clear resin, creating a translucent river that catches the light. The bark edge wraps around the full circumference, cleaned and sealed but otherwise exactly as the tree grew it. Finished with Rubio Monocoat to bring out the grain while protecting the surface, and mounted on a whisper-quiet stainless steel bearing. At 45cm across, it's sized for dinner parties and Sunday roasts — give it a spin and watch the rings blur into decades. Signed and dated on the underside.",
+    specs: {
+      dimensions: "45cm diameter × 5cm height",
+      timber: "Ash (57-year-old tree) with Sapele Bow Tie",
+      weight: "4.2kg",
+      finish: "Rubio Monocoat",
+      care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
+    },
+    images: [ashBowtie1, ashBowtie2, ashBowtie3, ashBowtie4],
+  },
 ];
