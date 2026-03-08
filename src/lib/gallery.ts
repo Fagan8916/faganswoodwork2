@@ -85,6 +85,7 @@ export interface GalleryItem {
   quote?: string;
   author?: string;
   description: string;
+  productId?: string; // Links to a matching product in the Available Now section
   specs: {
     pieceType: string;
     timber: string;
@@ -127,6 +128,7 @@ export const galleryItems: GalleryItem[] = [
     id: "live-edge-round",
     title: "The Winter Pine Lazy Susan",
     location: "England",
+    productId: "winter-walnut-lazy-susan",
     images: [img9889, img9883, img9885, img8568, img8569],
     description: "This lazy Susan began life as an 83-year-old pine tree — each ring in the grain a quiet record of another year's growth. The natural edge preserves the tree's original silhouette, so no two views of this piece are the same. The heartwood shifts from warm honey to deep amber depending on the light, with resin pockets that catch and scatter it. The surface was hand-planed, never machine-sanded, then finished with three coats of Danish oil rubbed in by hand over a week. The result is a surface that feels alive — warm to the touch, with a depth that photographs can only hint at. Ideal as a dining centrepiece for gatherings of 4–8, or as a statement piece on a kitchen island. Rotates on a whisper-quiet stainless steel bearing mechanism — give it a spin and it glides effortlessly. Signed and dated on the underside.",
     specs: {
@@ -225,6 +227,7 @@ export const galleryItems: GalleryItem[] = [
     id: "oak-cookie-lazy-susan",
     title: "Oak Cookie Lazy Susan",
     location: "England",
+    productId: "oak-cookie-lazy-susan",
     images: [img9900, img9799, img9800, img9801, img9802, img9803],
     description: "A full cross-section — a 'cookie' — cut from a mature oak trunk, with the natural cracks stabilised using hand-cut oak bow tie inlays. The bow ties aren't just decorative; they're structural, preventing the cracks from spreading as the timber moves with the seasons. Each one was precisely fitted by hand with a chisel, no router, no template. The bark edge has been cleaned and sealed but otherwise left as the tree grew it. The growth rings radiate out from the centre, mapping decades of the tree's life in concentric circles. Mounted on a smooth-spinning bearing, it rotates effortlessly — perfect as a table centrepiece or a sharing platter for gatherings.",
     specs: {
@@ -267,6 +270,7 @@ export const galleryItems: GalleryItem[] = [
     id: "ash-bowtie-lazy-susan",
     title: "Ash Lazy Susan with Sapele Bow Tie",
     location: "England",
+    productId: "ash-bowtie-lazy-susan",
     images: [img9912, img9911, img9910, img9909, img9908, img9907, img9906],
     description: "Cut from a 57-year-old ash tree, this full cross-section lazy susan features a natural crack stabilised with a hand-cut sapele bow tie inlay. The contrast between the pale, ring-rich ash and the deep reddish-brown sapele is entirely natural — no stain, no dye. The bow tie isn't just decorative; it's structural, locking the crack in place and preventing it from spreading as the timber breathes with the seasons. Every one of those 57 growth rings is visible on the surface, radiating out from the centre like a map of the tree's life — dry summers, wet winters, the years it thrived and the years it struggled. The crack itself, filled with clear resin, becomes a river running through that history. The bark edge has been cleaned and sealed but otherwise left exactly as the tree grew it, giving the piece an organic outline that no machine could replicate. Mounted on a concealed smooth-spinning bearing, it rotates effortlessly on any table — perfect as a dining centrepiece or a sharing platter for gatherings. Finished with Rubio Monocoat to protect the timber while letting every detail of the grain speak for itself.",
     specs: {

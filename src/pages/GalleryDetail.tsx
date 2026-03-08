@@ -1,8 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, X, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import { galleryItems } from "@/lib/gallery";
+import { products } from "@/lib/products";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -13,6 +14,7 @@ const GalleryDetail = () => {
   const item = galleryItems.find((g) => g.id === id);
   const [selectedImage, setSelectedImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const linkedProduct = item?.productId ? products.find(p => p.id === item.productId) : null;
 
   if (!item) {
     return (
@@ -195,12 +197,22 @@ const GalleryDetail = () => {
                   </dl>
                 </div>
 
-                <Link
-                  to="/#contact"
-                  className="btn-filled-gold w-full text-center block"
-                >
-                  Commission a Similar Piece
-                </Link>
+                {linkedProduct ? (
+                  <Link
+                    to={`/product/${linkedProduct.id}`}
+                    className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
+                  >
+                    <ShoppingBag className="w-4 h-4" />
+                    Available Now — €{linkedProduct.price}
+                  </Link>
+                ) : (
+                  <Link
+                    to="/#contact"
+                    className="btn-filled-gold w-full text-center block"
+                  >
+                    Commission a Similar Piece
+                  </Link>
+                )}
               </div>
             </ScrollReveal>
           </div>

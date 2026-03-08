@@ -26,6 +26,7 @@ export interface Product {
   badge: string;
   description: string;
   story: string;
+  galleryId?: string; // Links to a matching gallery/portfolio entry
   specs: {
     dimensions: string;
     timber: string;
@@ -39,6 +40,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "oak-cookie-lazy-susan",
+    galleryId: "oak-cookie-lazy-susan",
     name: "The Oak Cookie Lazy Susan",
     price: 220,
     badge: "Only 1 Available — Ready to Ship",
@@ -57,6 +59,7 @@ export const products: Product[] = [
   },
   {
     id: "winter-walnut-lazy-susan",
+    galleryId: "live-edge-round",
     name: "The Winter Pine Lazy Susan",
     price: 420,
     badge: "Only 1 Available — Ready to Ship",
@@ -75,6 +78,7 @@ export const products: Product[] = [
   },
   {
     id: "ash-bowtie-lazy-susan",
+    galleryId: "ash-bowtie-lazy-susan",
     name: "The Ash & Sapele Bow Tie Lazy Susan",
     price: 450,
     badge: "Only 1 Available — Ready to Ship",
