@@ -26,6 +26,7 @@ export interface Product {
   badge: string;
   description: string;
   story: string;
+  galleryId?: string; // Links to a matching gallery/portfolio entry
   specs: {
     dimensions: string;
     timber: string;
