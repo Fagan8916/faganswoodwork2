@@ -177,6 +177,16 @@ const ProductDetail = () => {
                 <p className="text-muted-foreground text-sm italic text-center border border-border/20 rounded-sm p-4">
                   Only 1 available — each piece is unique and will never be replicated.
                 </p>
+
+                {linkedGalleryItem && (
+                  <Link
+                    to={`/gallery/${linkedGalleryItem.id}`}
+                    className="mt-4 btn-outline-gold w-full text-center flex items-center justify-center gap-2"
+                  >
+                    <Images className="w-4 h-4" />
+                    View in Portfolio
+                  </Link>
+                )}
               </div>
             </ScrollReveal>
           </div>
