@@ -58,7 +58,7 @@ export const galleryItems: GalleryItem[] = [
     id: "river-side-table",
     title: "River Side Table",
     location: "Ireland",
-    images: [img9888],
+    images: [img9888, img6737, img6738, img9870],
     description: "Details coming soon.",
     specs: {
       pieceType: "Side Table",
