@@ -3,20 +3,20 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { label: "Philosophy", href: "#philosophy" },
+  { label: "Philosophy", href: "/#philosophy" },
   {
     label: "Collection",
-    href: "#commissions",
+    href: "/#commissions",
     children: [
-      { label: "Lazy Susans", href: "#commissions" },
-      { label: "Chopping Boards", href: "#boards" },
+      { label: "Lazy Susans", href: "/#commissions" },
+      { label: "Chopping Boards", href: "/#boards" },
     ],
   },
-  { label: "Available Now", href: "#available" },
-  { label: "Process", href: "#process" },
-  { label: "Trade", href: "#trade" },
-  { label: "Portfolio", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Available Now", href: "/#available" },
+  { label: "Process", href: "/#process" },
+  { label: "Trade", href: "/#trade" },
+  { label: "Portfolio", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {
@@ -69,26 +69,26 @@ const Navbar = () => {
                 {dropdownOpen === item.label && (
                   <div className="absolute top-full left-0 mt-2 bg-card/95 backdrop-blur-xl border border-border/50 rounded-sm min-w-[180px] py-2">
                     {item.children.map((child) => (
-                      <a
+                      <Link
                         key={child.label}
-                        href={child.href}
+                        to={child.href}
                         onClick={() => setDropdownOpen(null)}
                         className="block px-5 py-2 text-muted-foreground hover:text-primary hover:bg-muted/30 transition-colors text-sm tracking-wider"
                       >
                         {child.label}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-muted-foreground hover:text-primary transition-colors text-sm tracking-widest uppercase"
               >
                 {item.label}
-              </a>
+              </Link>
             )
           )}
         </div>
@@ -108,24 +108,24 @@ const Navbar = () => {
         <div className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border/50 px-6 pb-6">
           {navItems.map((item) => (
             <div key={item.label}>
-              <a
-                href={item.href}
+              <Link
+                to={item.href}
                 onClick={() => setMobileOpen(false)}
                 className="block py-3 text-muted-foreground hover:text-primary transition-colors text-sm tracking-widest uppercase"
               >
                 {item.label}
-              </a>
+              </Link>
               {item.children && (
                 <div className="pl-4">
                   {item.children.map((child) => (
-                    <a
+                    <Link
                       key={child.label}
-                      href={child.href}
+                      to={child.href}
                       onClick={() => setMobileOpen(false)}
                       className="block py-2 text-muted-foreground/70 hover:text-primary transition-colors text-xs tracking-widest uppercase"
                     >
                       {child.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
