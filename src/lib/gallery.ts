@@ -153,5 +153,33 @@ export const galleryItems: GalleryItem[] = [
       finish: "To be confirmed",
       completed: "2024"
     }
+  },
+  {
+    id: "resin-log-slice-clock",
+    title: "Resin Log Slice Clock",
+    location: "Ireland",
+    images: [img9900],
+    description: "Details coming soon.",
+    specs: {
+      pieceType: "Clock",
+      timber: "Oak with Resin Inlay",
+      dimensions: "To be confirmed",
+      finish: "To be confirmed",
+      completed: "2024"
+    }
+  },
+  {
+    id: "white-resin-river-board",
+    title: "White Resin River Board",
+    location: "Ireland",
+    images: [img9901],
+    description: "Details coming soon.",
+    specs: {
+      pieceType: "River Board",
+      timber: "Ash with White Resin",
+      dimensions: "To be confirmed",
+      finish: "To be confirmed",
+      completed: "2024"
+    }
   }
 ];
