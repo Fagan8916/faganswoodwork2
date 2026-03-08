@@ -40,6 +40,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "oak-cookie-lazy-susan",
+    galleryId: "oak-cookie-lazy-susan",
     name: "The Oak Cookie Lazy Susan",
     price: 220,
     badge: "Only 1 Available — Ready to Ship",
