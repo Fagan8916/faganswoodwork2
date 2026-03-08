@@ -33,12 +33,14 @@ const ProductShowcaseLazySusan = () => {
                 Lazy Susans,{" "}
                 <span className="italic text-gradient">Reimagined</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                From intimate dinners to grand gatherings — rotating centrepieces 
-                carved from single blocks of walnut, oak, and olive wood. Each sits 
-                on a smooth-spinning bearing, letting guests effortlessly share dishes 
-                at the table. Unique grain patterns, natural edges, and hand-rubbed 
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                From intimate dinners to grand gatherings — bespoke rotating centrepieces 
+                carved from single blocks of walnut, oak, and olive wood. Each handmade 
+                lazy Susan features unique grain patterns, natural edges, and hand-rubbed 
                 oil finishes.
+              </p>
+              <p className="text-primary/80 text-sm tracking-widest uppercase mb-8">
+                Handmade in England | Bespoke Lazy Susans UK
               </p>
 
               <div className="flex items-center gap-4 mb-8">

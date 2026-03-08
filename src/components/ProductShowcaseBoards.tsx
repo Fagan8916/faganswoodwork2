@@ -26,10 +26,13 @@ const ProductShowcaseBoards = () => {
                 The Last Board{" "}
                 <span className="italic text-gradient">You'll Need</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                 End-grain construction. Self-healing surface. Hand-rubbed with 
-                food-safe mineral oil and beeswax. Sized to your kitchen, 
-                not a factory spec.
+                food-safe mineral oil and beeswax. Our custom chopping boards are 
+                sized to your kitchen, not a factory spec.
+              </p>
+              <p className="text-primary/80 text-sm tracking-widest uppercase mb-8">
+                Handmade in England
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-10">

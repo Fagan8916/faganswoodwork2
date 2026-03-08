@@ -30,11 +30,17 @@ const TradeSection = () => {
               For Designers & Planners
             </p>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4">
-              Bespoke Partnerships
+              Bespoke Partnerships for Interior Designers & Wedding Planners
             </h2>
-            <p className="text-muted-foreground max-w-lg mx-auto">
+            <p className="text-muted-foreground max-w-lg mx-auto mb-4">
               Collaborating with wedding planners, interior designers, and architects
               on custom commissions and registry pieces.
+            </p>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
+              We collaborate with interior designers across the UK on custom homeware pieces, 
+              offering trade pricing and white-glove delivery. For wedding planners, our 
+              handmade lazy Susans and chopping boards make unforgettable luxury wedding gifts 
+              and registry additions.
             </p>
           </div>
         </ScrollReveal>
