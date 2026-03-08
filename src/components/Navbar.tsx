@@ -82,13 +82,13 @@ const Navbar = () => {
                 )}
               </div>
             ) : (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-muted-foreground hover:text-primary transition-colors text-sm tracking-widest uppercase"
               >
                 {item.label}
-              </a>
+              </Link>
             )
           )}
         </div>
