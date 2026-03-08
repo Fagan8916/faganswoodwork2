@@ -128,6 +128,7 @@ export const galleryItems: GalleryItem[] = [
     id: "live-edge-round",
     title: "The Winter Pine Lazy Susan",
     location: "England",
+    productId: "winter-walnut-lazy-susan",
     images: [img9889, img9883, img9885, img8568, img8569],
     description: "This lazy Susan began life as an 83-year-old pine tree — each ring in the grain a quiet record of another year's growth. The natural edge preserves the tree's original silhouette, so no two views of this piece are the same. The heartwood shifts from warm honey to deep amber depending on the light, with resin pockets that catch and scatter it. The surface was hand-planed, never machine-sanded, then finished with three coats of Danish oil rubbed in by hand over a week. The result is a surface that feels alive — warm to the touch, with a depth that photographs can only hint at. Ideal as a dining centrepiece for gatherings of 4–8, or as a statement piece on a kitchen island. Rotates on a whisper-quiet stainless steel bearing mechanism — give it a spin and it glides effortlessly. Signed and dated on the underside.",
     specs: {
