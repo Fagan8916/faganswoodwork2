@@ -203,7 +203,7 @@ const GalleryDetail = () => {
 
           {/* Related pieces */}
           {otherItems.length > 0 && (
-            <div className="mt-28">
+            <div className="mt-28 border-t border-border/20 pt-20">
               <ScrollReveal>
                 <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">
                   More From the Portfolio
