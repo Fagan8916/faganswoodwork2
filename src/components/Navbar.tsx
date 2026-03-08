@@ -108,13 +108,13 @@ const Navbar = () => {
         <div className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border/50 px-6 pb-6">
           {navItems.map((item) => (
             <div key={item.label}>
-              <a
-                href={item.href}
+              <Link
+                to={item.href}
                 onClick={() => setMobileOpen(false)}
                 className="block py-3 text-muted-foreground hover:text-primary transition-colors text-sm tracking-widest uppercase"
               >
                 {item.label}
-              </a>
+              </Link>
               {item.children && (
                 <div className="pl-4">
                   {item.children.map((child) => (
