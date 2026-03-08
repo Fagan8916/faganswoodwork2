@@ -21,26 +21,23 @@ const ContactSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
-  // Pre-fill from URL params (e.g. from gallery "Available Now" or "Commission" buttons)
+  // Pre-fill from URL query params (e.g. /?type=purchase&piece=Name#contact)
   useEffect(() => {
-    const hash = location.hash;
-    if (hash.includes("contact")) {
-      const params = new URLSearchParams(hash.split("?")[1] || "");
-      const piece = params.get("piece");
-      const type = params.get("type");
-      if (piece || type) {
-        setFormData((prev) => ({
-          ...prev,
-          enquiry_type: type === "purchase" ? "purchase" : "commission",
-          message: piece
-            ? type === "purchase"
-              ? `I'd like to purchase the ${piece}.`
-              : `I'd like to commission something similar to the ${piece}.`
-            : prev.message,
-        }));
-      }
+    const params = new URLSearchParams(location.search);
+    const piece = params.get("piece");
+    const type = params.get("type");
+    if (piece || type) {
+      setFormData((prev) => ({
+        ...prev,
+        enquiry_type: type === "purchase" ? "purchase" : "commission",
+        message: piece
+          ? type === "purchase"
+            ? `I'd like to purchase the ${piece}.`
+            : `I'd like to commission something similar to the ${piece}.`
+          : prev.message,
+      }));
     }
-  }, [location]);
+  }, [location.search]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -235,7 +232,7 @@ const ContactSection = () => {
 
                   <a
                     href="tel:+353000000000"
-                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm tracking-wide"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors text-sm tracking-wide"
                   >
                     <Phone className="w-4 h-4" />
                     Prefer to talk? Call me
