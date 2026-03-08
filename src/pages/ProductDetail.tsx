@@ -147,12 +147,12 @@ const ProductDetail = () => {
 
                 <p className="text-primary font-serif text-3xl mb-8">€{product.price}</p>
 
-                <a
-                  href="/#contact"
+                <Link
+                  to="/#contact"
                   className="btn-filled-gold w-full text-center block mb-8"
                 >
                   Request to Purchase
-                </a>
+                </Link>
 
                 <div className="border-t border-border/30 pt-8 mb-8">
                   <h2 className="font-serif text-2xl text-foreground mb-4">The Story</h2>
