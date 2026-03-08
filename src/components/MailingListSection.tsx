@@ -3,20 +3,40 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 import ScrollReveal from "./ScrollReveal";
 
 const MailingListSection = () => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder — will connect to backend
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    toast({ title: "You're on the list", description: "We'll be in touch when something special drops." });
-    setTimeout(() => { setEmail(""); setSubmitted(false); }, 4000);
+    setLoading(true);
+    try {
+      const { error } = await supabase
+        .from("mailing_list" as any)
+        .insert({ email: email.trim().toLowerCase() } as any);
+
+      if (error) {
+        if (error.code === "23505") {
+          toast({ title: "Already subscribed", description: "That email is already on the list!" });
+        } else {
+          throw error;
+        }
+      } else {
+        setSubmitted(true);
+        toast({ title: "You're on the list", description: "We'll be in touch when something special drops." });
+        setTimeout(() => { setEmail(""); setSubmitted(false); }, 4000);
+      }
+    } catch (err) {
+      console.error("Mailing list error:", err);
+      toast({ title: "Something went wrong", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
