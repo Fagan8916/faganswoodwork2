@@ -7,6 +7,8 @@ import img9893 from "@/assets/gallery/IMG_9893.JPG";
 import img9895 from "@/assets/gallery/IMG_9895.JPG";
 import img9897 from "@/assets/gallery/IMG_9897.JPG";
 import img9898 from "@/assets/gallery/IMG_9898.JPG";
+import img9900 from "@/assets/gallery/IMG_9900.JPG";
+import img9901 from "@/assets/gallery/IMG_9901.JPG";
 
 export interface GalleryItem {
   id: string;
@@ -147,6 +149,34 @@ export const galleryItems: GalleryItem[] = [
     specs: {
       pieceType: "Pattern Board",
       timber: "To be confirmed",
+      dimensions: "To be confirmed",
+      finish: "To be confirmed",
+      completed: "2024"
+    }
+  },
+  {
+    id: "resin-log-slice-clock",
+    title: "Resin Log Slice Clock",
+    location: "Ireland",
+    images: [img9900],
+    description: "Details coming soon.",
+    specs: {
+      pieceType: "Clock",
+      timber: "Oak with Resin Inlay",
+      dimensions: "To be confirmed",
+      finish: "To be confirmed",
+      completed: "2024"
+    }
+  },
+  {
+    id: "white-resin-river-board",
+    title: "White Resin River Board",
+    location: "Ireland",
+    images: [img9901],
+    description: "Details coming soon.",
+    specs: {
+      pieceType: "River Board",
+      timber: "Ash with White Resin",
       dimensions: "To be confirmed",
       finish: "To be confirmed",
       completed: "2024"
