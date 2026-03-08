@@ -8,7 +8,7 @@ const features = [
   { icon: Ruler, label: "Custom sizing" },
   { icon: Droplets, label: "Juice grooves optional" },
   { icon: Footprints, label: "Feet or flat base" },
-  { icon: PenTool, label: "Monogram engraving" },
+  { icon: PenTool, label: "Personalised engraving available" },
 ];
 
 const ProductShowcaseBoards = () => {
