@@ -27,16 +27,16 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "winter-walnut-lazy-susan",
-    name: "The Winter Walnut Lazy Susan",
+    name: "The Winter Pine Lazy Susan",
     price: 420,
     badge: "Only 1 Available — Ready to Ship",
     description:
-      "Crafted from a century-old walnut tree that stood in a Wicklow valley until 2023. The grain tells the story of a hundred winters. Finished with hand-rubbed Danish oil.",
+      "Crafted from an 83-year-old pine tree. The grain tells the story of eight decades of growth. Finished with hand-rubbed Danish oil and set on a smooth-spinning bearing.",
     story:
-      "This lazy Susan began as a fallen walnut from a Wicklow estate, felled by winter storms in 2023. The natural edge preserves the tree's original silhouette — no two views of this piece are the same. The heartwood shifts from deep chocolate to honey amber depending on the light. Each ring in the grain represents a year of growth, and this tree saw over a century of Irish seasons. The surface was hand-planed, never machine-sanded, then finished with three coats of Danish oil rubbed in by hand over a week. The result is a surface that feels alive — warm to the touch, with a depth that photographs can only hint at. Ideal as a dining centrepiece for gatherings of 4–8, or as a statement piece on a kitchen island. Rotates on a whisper-quiet bearing mechanism crafted from stainless steel. Signed and dated on the underside.",
+      "This lazy Susan began life as an 83-year-old pine tree — each ring in the grain a quiet record of another year's growth. The natural edge preserves the tree's original silhouette, so no two views of this piece are the same. The heartwood shifts from warm honey to deep amber depending on the light, with resin pockets that catch and scatter it. The surface was hand-planed, never machine-sanded, then finished with three coats of Danish oil rubbed in by hand over a week. The result is a surface that feels alive — warm to the touch, with a depth that photographs can only hint at. Ideal as a dining centrepiece for gatherings of 4–8, or as a statement piece on a kitchen island. Rotates on a whisper-quiet stainless steel bearing mechanism — give it a spin and it glides effortlessly. Signed and dated on the underside.",
     specs: {
       dimensions: "42cm diameter × 4.5cm height",
-      timber: "European Walnut (Juglans regia)",
+      timber: "Pine (83-year-old tree)",
       weight: "3.2kg",
       finish: "Danish oil, hand-rubbed (3 coats)",
       care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
