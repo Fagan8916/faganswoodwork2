@@ -156,7 +156,7 @@ export const galleryItems: GalleryItem[] = [
     id: "striped-serving-boards",
     title: "Striped Serving Boards",
     location: "Ireland",
-    images: [img9895],
+    images: [img9895, img9587, img9589, img9590, img9591, img9592, img9595, img9596, img9597, img9598, img9601],
     description: "Details coming soon.",
     specs: {
       pieceType: "Serving Board",
