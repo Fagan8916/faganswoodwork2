@@ -21,6 +21,11 @@ import img9696 from "@/assets/gallery/IMG_9696.JPEG";
 import img6737 from "@/assets/gallery/IMG_6737.JPEG";
 import img6738 from "@/assets/gallery/IMG_6738.JPEG";
 import img9870 from "@/assets/gallery/IMG_9870.PNG";
+// Live edge round additional images
+import img9883 from "@/assets/gallery/IMG_9883.PNG";
+import img9885 from "@/assets/gallery/IMG_9885.PNG";
+import img8568 from "@/assets/gallery/IMG_8568.JPEG";
+import img8569 from "@/assets/gallery/IMG_8569.JPEG";
 
 export interface GalleryItem {
   id: string;
