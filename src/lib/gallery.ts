@@ -69,6 +69,7 @@ import img9896 from "@/assets/gallery/IMG_9896.JPG";
 import img9403 from "@/assets/gallery/IMG_9403.JPEG";
 import img9404 from "@/assets/gallery/IMG_9404.JPEG";
 // Ash lazy susan with sapele bow tie
+import ashBowtieMain from "@/assets/gallery/ash-bowtie-main.png";
 import img9912 from "@/assets/gallery/IMG_9912.JPEG";
 import img9911 from "@/assets/gallery/IMG_9911.JPEG";
 import img9910 from "@/assets/gallery/IMG_9910.JPEG";
