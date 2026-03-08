@@ -230,7 +230,7 @@ export const galleryItems: GalleryItem[] = [
     specs: {
       pieceType: "Lazy Susan",
       timber: "Oak with Oak Bow Tie Inlays",
-      dimensions: "45cm diameter",
+      dimensions: "25cm diameter",
       finish: "Rubio Monocoat",
       completed: "2024"
     }
