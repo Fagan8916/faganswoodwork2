@@ -22,7 +22,7 @@ const AvailableNowSection = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {products.map((product, i) => (
             <ScrollReveal key={product.id} delay={i * 0.1}>
               <Link
