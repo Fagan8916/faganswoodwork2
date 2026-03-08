@@ -50,7 +50,7 @@ const ProductShowcaseBoards = () => {
           <ScrollReveal delay={0.2} className="order-1 lg:order-2">
             <div className="relative">
               <motion.img
-                src={product8}
+                src={boardImage}
                 alt="Overhead shot of handcrafted end-grain chopping boards"
                 className="w-full rounded-sm gold-glow"
                 whileHover={{ scale: 1.02 }}

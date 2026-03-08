@@ -4,7 +4,7 @@ import product3 from "@/assets/product-3.jpeg";
 
 const ProductShowcaseLazySusan = () => {
   return (
-    <section id="commissions" className="py-28 relative overflow-hidden">
+    <section id="commissions" className="py-16 md:py-28 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
