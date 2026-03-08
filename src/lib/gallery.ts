@@ -29,6 +29,22 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "inlaid-table-commission",
+    title: "Inlaid Table",
+    location: "Ireland",
+    images: [product1, product1, product1, product1], // Will be replaced with actual images
+    quote: "A masterpiece of traditional marquetry brought into a contemporary home.",
+    author: "Client",
+    description: "This stunning inlaid table showcases the art of marquetry at its finest. Each piece of veneer was carefully selected and hand-cut to create intricate geometric patterns that dance across the surface. The contrasting timbers create depth and visual interest, while the precision of the joinery demonstrates hours of meticulous craftsmanship. This piece bridges centuries of woodworking tradition with modern design sensibilities.",
+    specs: {
+      pieceType: "Inlaid Table",
+      timber: "Mixed Hardwoods with Veneer Inlay",
+      dimensions: "To be confirmed",
+      finish: "Hand-Rubbed Oil",
+      completed: "2024"
+    }
+  },
+  {
     id: "lazy-susan-sarah-dublin",
     title: "Lazy Susan for Sarah",
     location: "Dublin",
