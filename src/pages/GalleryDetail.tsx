@@ -195,21 +195,27 @@ const GalleryDetail = () => {
                   </dl>
                 </div>
 
-                {linkedProduct ? (
+                {item.available ? (
                   <Link
-                    to={`/product/${linkedProduct.id}`}
+                    to={`/#contact?piece=${encodeURIComponent(item.title)}&type=purchase`}
                     className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
                   >
                     <ShoppingBag className="w-4 h-4" />
-                    Available Now — €{linkedProduct.price}
+                    Available Now — €{item.price}
                   </Link>
                 ) : (
                   <Link
-                    to="/#contact"
+                    to={`/#contact?piece=${encodeURIComponent(item.title)}&type=commission`}
                     className="btn-filled-gold w-full text-center block"
                   >
                     Commission a Similar Piece
                   </Link>
+                )}
+
+                {item.available && (
+                  <p className="text-muted-foreground text-sm italic text-center border border-border/20 rounded-sm p-4 mt-4">
+                    Only 1 available — each piece is unique and will never be replicated.
+                  </p>
                 )}
               </div>
             </ScrollReveal>

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,9 +8,11 @@ import { CheckCircle, Phone } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const ContactSection = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    enquiry_type: "commission",
     looking_for: "Lazy Susan",
     size: "",
     message: "",
@@ -17,6 +20,27 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
+
+  // Pre-fill from URL params (e.g. from gallery "Available Now" or "Commission" buttons)
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash.includes("contact")) {
+      const params = new URLSearchParams(hash.split("?")[1] || "");
+      const piece = params.get("piece");
+      const type = params.get("type");
+      if (piece || type) {
+        setFormData((prev) => ({
+          ...prev,
+          enquiry_type: type === "purchase" ? "purchase" : "commission",
+          message: piece
+            ? type === "purchase"
+              ? `I'd like to purchase the ${piece}.`
+              : `I'd like to commission something similar to the ${piece}.`
+            : prev.message,
+        }));
+      }
+    }
+  }, [location]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -34,14 +58,16 @@ const ContactSection = () => {
     setIsSubmitting(false);
     setIsSubmitted(true);
     toast({
-      title: "Commission Request Sent",
-      description: "Thank you. I'll respond within 48 hours with timber options and a timeline.",
+      title: formData.enquiry_type === "purchase" ? "Purchase Request Sent" : "Commission Request Sent",
+      description: "Thank you. I'll respond within 48 hours.",
     });
     setTimeout(() => {
-      setFormData({ name: "", email: "", looking_for: "Lazy Susan", size: "", message: "" });
+      setFormData({ name: "", email: "", enquiry_type: "commission", looking_for: "Lazy Susan", size: "", message: "" });
       setIsSubmitted(false);
     }, 3000);
   };
+
+  const isPurchase = formData.enquiry_type === "purchase";
 
   return (
     <section id="contact" className="py-28 section-dark relative">
@@ -50,14 +76,14 @@ const ContactSection = () => {
           <ScrollReveal>
             <div className="text-center mb-14">
               <p className="text-primary font-sans tracking-[0.4em] uppercase text-xs mb-4">
-                Get Started
+                Get in Touch
               </p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4">
-                Begin Your Commission
+                Let's Talk
               </h2>
               <p className="text-muted-foreground max-w-lg mx-auto">
-                Tell me what you're envisioning. I'll respond within 48 hours 
-                with timber options and a timeline.
+                Whether you'd like to purchase an available piece or commission
+                something entirely new — I'd love to hear from you.
               </p>
             </div>
           </ScrollReveal>
@@ -70,11 +96,42 @@ const ContactSection = () => {
                   Thank You
                 </h3>
                 <p className="text-muted-foreground">
-                  Your commission request has been received. I'll be in touch soon.
+                  Your {isPurchase ? "purchase" : "commission"} request has been received. I'll be in touch soon.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Enquiry type toggle */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-foreground/80 tracking-wide">
+                    I'd like to…
+                  </label>
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setFormData((prev) => ({ ...prev, enquiry_type: "purchase" }))}
+                      className={`py-3 px-4 rounded-sm border text-sm tracking-wide transition-all ${
+                        isPurchase
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border/50 text-muted-foreground hover:border-primary/50"
+                      }`}
+                    >
+                      Buy an Available Piece
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setFormData((prev) => ({ ...prev, enquiry_type: "commission" }))}
+                      className={`py-3 px-4 rounded-sm border text-sm tracking-wide transition-all ${
+                        !isPurchase
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border/50 text-muted-foreground hover:border-primary/50"
+                      }`}
+                    >
+                      Commission Something New
+                    </button>
+                  </div>
+                </div>
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground/80 tracking-wide">
@@ -107,48 +164,54 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="looking_for" className="text-sm font-medium text-foreground/80 tracking-wide">
-                      What are you looking for?
-                    </label>
-                    <select
-                      id="looking_for"
-                      name="looking_for"
-                      value={formData.looking_for}
-                      onChange={handleChange}
-                      className="flex h-10 w-full rounded-md border border-border/50 bg-muted/50 px-3 py-2 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-                    >
-                      <option value="Lazy Susan">Lazy Susan</option>
-                      <option value="Chopping Board">Chopping Board</option>
-                      <option value="Something Else">Something Else</option>
-                    </select>
+                {!isPurchase && (
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label htmlFor="looking_for" className="text-sm font-medium text-foreground/80 tracking-wide">
+                        What are you looking for?
+                      </label>
+                      <select
+                        id="looking_for"
+                        name="looking_for"
+                        value={formData.looking_for}
+                        onChange={handleChange}
+                        className="flex h-10 w-full rounded-md border border-border/50 bg-muted/50 px-3 py-2 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                      >
+                        <option value="Lazy Susan">Lazy Susan</option>
+                        <option value="Chopping Board">Chopping Board</option>
+                        <option value="Something Else">Something Else</option>
+                      </select>
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="size" className="text-sm font-medium text-foreground/80 tracking-wide">
+                        Size Requirements
+                      </label>
+                      <Input
+                        id="size"
+                        name="size"
+                        value={formData.size}
+                        onChange={handleChange}
+                        placeholder="e.g. 40cm diameter"
+                        className="bg-muted/50 border-border/50 focus:border-primary"
+                      />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <label htmlFor="size" className="text-sm font-medium text-foreground/80 tracking-wide">
-                      Size Requirements
-                    </label>
-                    <Input
-                      id="size"
-                      name="size"
-                      value={formData.size}
-                      onChange={handleChange}
-                      placeholder="e.g. 40cm diameter"
-                      className="bg-muted/50 border-border/50 focus:border-primary"
-                    />
-                  </div>
-                </div>
+                )}
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-foreground/80 tracking-wide">
-                    Tell me about your vision
+                    {isPurchase ? "Your message" : "Tell me about your vision"}
                   </label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Wood type, style, special requirements, occasion..."
+                    placeholder={
+                      isPurchase
+                        ? "Which piece are you interested in? Any questions about the piece?"
+                        : "Wood type, style, special requirements, occasion..."
+                    }
                     required
                     rows={5}
                     className="bg-muted/50 border-border/50 focus:border-primary resize-none"
@@ -161,7 +224,11 @@ const ContactSection = () => {
                     disabled={isSubmitting}
                     className="w-full sm:w-auto px-10 py-6 text-sm tracking-widest uppercase"
                   >
-                    {isSubmitting ? "Sending..." : "Send Commission Request"}
+                    {isSubmitting
+                      ? "Sending..."
+                      : isPurchase
+                      ? "Send Purchase Request"
+                      : "Send Commission Request"}
                   </Button>
 
                   <span className="text-muted-foreground text-sm">or</span>
