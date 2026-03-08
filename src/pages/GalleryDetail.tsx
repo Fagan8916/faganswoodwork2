@@ -197,12 +197,22 @@ const GalleryDetail = () => {
                   </dl>
                 </div>
 
-                <Link
-                  to="/#contact"
-                  className="btn-filled-gold w-full text-center block"
-                >
-                  Commission a Similar Piece
-                </Link>
+                {linkedProduct ? (
+                  <Link
+                    to={`/product/${linkedProduct.id}`}
+                    className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
+                  >
+                    <ShoppingBag className="w-4 h-4" />
+                    Available Now — €{linkedProduct.price}
+                  </Link>
+                ) : (
+                  <Link
+                    to="/#contact"
+                    className="btn-filled-gold w-full text-center block"
+                  >
+                    Commission a Similar Piece
+                  </Link>
+                )}
               </div>
             </ScrollReveal>
           </div>
