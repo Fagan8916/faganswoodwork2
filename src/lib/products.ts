@@ -45,7 +45,7 @@ export const products: Product[] = [
       finish: "Rubio Monocoat",
       care: "Re-oil every 6–12 months. Wipe clean with damp cloth.",
     },
-    images: [product3, product9, product1, product7],
+    images: [oakCookie1, oakCookie2, oakCookie3, oakCookie4],
   },
   {
     id: "winter-walnut-lazy-susan",
