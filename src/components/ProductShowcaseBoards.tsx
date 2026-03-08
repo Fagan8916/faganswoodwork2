@@ -54,6 +54,7 @@ const ProductShowcaseBoards = () => {
                 src={boardImage}
                 alt="Overhead shot of handcrafted end-grain chopping boards"
                 className="w-full rounded-sm gold-glow"
+                loading="lazy"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.5 }}
               />

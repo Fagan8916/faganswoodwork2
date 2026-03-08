@@ -15,6 +15,7 @@ const ProductShowcaseLazySusan = () => {
                 src={product3}
                 alt="Walnut lazy Susan with natural edge on dining table"
                 className="w-full rounded-sm gold-glow"
+                loading="lazy"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.5 }}
               />
