@@ -1,14 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname, hash } = useLocation();
+  const { pathname, hash, search, key } = useLocation();
+  const prevKey = useRef(key);
 
   useEffect(() => {
+    // Always process on location change (key changes on every navigation)
     if (hash) {
-      const id = hash.replace("#", "");
+      const id = hash.replace("#", "").split("?")[0];
       let attempts = 0;
-      const maxAttempts = 20;
+      const maxAttempts = 30;
 
       const tryScroll = () => {
         const el = document.getElementById(id);
@@ -20,13 +22,14 @@ const ScrollToTop = () => {
         }
       };
 
-      // Initial delay for route transition, then retry with rAF
-      const timeout = setTimeout(tryScroll, 50);
+      const timeout = setTimeout(tryScroll, 100);
       return () => clearTimeout(timeout);
-    } else {
+    } else if (prevKey.current !== key) {
       window.scrollTo(0, 0);
     }
-  }, [pathname, hash]);
+
+    prevKey.current = key;
+  }, [pathname, hash, search, key]);
 
   return null;
 };

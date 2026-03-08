@@ -205,7 +205,7 @@ const GalleryDetail = () => {
                   </Link>
                 ) : (
                   <Link
-                    to={`/#contact?piece=${encodeURIComponent(item.title)}&type=commission`}
+                    to={`/?type=commission&piece=${encodeURIComponent(item.title)}#contact`}
                     className="btn-filled-gold w-full text-center block"
                   >
                     Commission a Similar Piece
