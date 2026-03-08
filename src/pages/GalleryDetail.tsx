@@ -201,7 +201,7 @@ const GalleryDetail = () => {
                     className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
                   >
                     <ShoppingBag className="w-4 h-4" />
-                    Available Now — €{item.price}
+                    Available Now — £{item.price}
                   </Link>
                 ) : (
                   <Link

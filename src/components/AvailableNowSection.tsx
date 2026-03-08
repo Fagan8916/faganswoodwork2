@@ -53,7 +53,7 @@ const AvailableNowSection = () => {
                   </h3>
 
                   <p className="text-primary font-serif text-xl mb-4">
-                    €{item.price}
+                    £{item.price}
                   </p>
 
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6 line-clamp-3">

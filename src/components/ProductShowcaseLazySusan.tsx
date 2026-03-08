@@ -42,7 +42,7 @@ const ProductShowcaseLazySusan = () => {
               </p>
 
               <div className="flex items-center gap-4 mb-8">
-                <span className="text-primary font-serif text-2xl">From €380</span>
+                <span className="text-primary font-serif text-2xl">From £380</span>
                 <span className="text-xs text-muted-foreground tracking-widest uppercase px-3 py-1 border border-border rounded-sm">
                   Made to Order · 4–6 Weeks
                 </span>
