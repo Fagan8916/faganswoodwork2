@@ -1,64 +1,35 @@
 
-# Fagan's Woodwork - Premium Showcase Website
 
-## Overview
-A stunning single-page website with glassmorphism design that positions Fagan's Woodwork as a luxury handcrafted brand. The dark, sophisticated aesthetic will make your beautiful wood pieces truly stand out.
+## Slack Notifications for New Signups and Enquiries
 
----
+**What this does:** Every time someone signs up to your mailing list or submits a contact enquiry, you'll get an instant Slack message with the details.
 
-## Design Direction
+**Cost:** Works with Slack's free plan — no paid subscription needed.
 
-### Visual Style
-- **Glassmorphism** throughout: frosted glass cards with subtle transparency, soft blur effects, and elegant borders
-- **Dark & Luxurious palette**: Deep charcoal/near-black backgrounds (#0a0a0a) with warm gold/copper accent highlights
-- **Typography**: Elegant serif font for headings to convey craftsmanship; clean sans-serif for body text
-- **Subtle animations**: Smooth fade-ins and gentle hover effects to feel premium
+### How it works
 
----
+1. **Connect Slack** — You'll be prompted to connect your Slack workspace through Lovable's built-in Slack connector. This takes about 30 seconds.
 
-## Page Sections
+2. **Create a backend function** — A serverless function that sends a formatted Slack message whenever it's called. It will send to a channel you choose (e.g. `#website-notifications`).
 
-### 1. Hero Section
-- Full-screen dramatic opening
-- The brown chopping board at an angle (IMG_8974) as the stunning centrepiece
-- Brand name "Fagan's Woodwork" with elegant typography
-- Tagline emphasizing handcrafted quality (e.g., "Handcrafted with Love & Precision")
-- Subtle scroll indicator
+3. **Update the mailing list and contact forms** — After saving to the database, each form will also call the backend function to trigger the Slack notification.
 
-### 2. About/Story Section
-- Glassmorphism card with brief brand story
-- Emphasis on: hand-designed, unique pieces, love & care in every creation
-- Perhaps a compelling line about the craftsmanship philosophy
+### What the Slack messages will look like
 
-### 3. Gallery/Featured Works
-- Showcase your product images in an elegant grid or masonry layout
-- Each piece displayed in a frosted glass frame
-- Products to feature:
-  - Epoxy river table with blue resin
-  - Live-edge wood slice serving boards
-  - Various chopping boards
-  - End-grain cutting boards
-  - The stunning bench/coffee table with black metal legs
-- Hover effects to highlight each piece
+- **Mailing list signup:** Channel gets a message like "New mailing list signup: john@example.com"
+- **Contact enquiry:** Channel gets a message with name, email, enquiry type, and message preview
 
-### 4. Contact Section
-- Glassmorphism contact form for inquiries
-- Fields: Name, Email, Message about what they're looking for
-- Call-to-action encouraging custom order discussions
-- Optional: Add your social media or email address
+### Technical details
 
-### 5. Footer
-- Clean, minimal footer with brand name
-- Copyright and any additional links
+- Edge function `notify-slack` handles sending messages via the Slack connector gateway
+- Both `MailingListSection` and `ContactSection` will call this function after successful database inserts using `supabase.functions.invoke('notify-slack', ...)`
+- The Slack connector provides authentication automatically — no manual API keys needed
+- `config.toml` updated with `verify_jwt = false` for the notify function (public forms, no auth)
 
----
+### Steps
 
-## Technical Notes
-- Fully responsive design (mobile, tablet, desktop)
-- All 8 product images will be incorporated throughout the site
-- Smooth scrolling navigation
-- Contact form will display success message (can be connected to a backend later if needed)
+1. Connect Slack connector to project
+2. Create `notify-slack` edge function
+3. Update `MailingListSection.tsx` to call the function after insert
+4. Update `ContactSection.tsx` to call the function after insert
 
----
-
-This will create a sophisticated, high-end feel that matches the quality of your handcrafted pieces!
