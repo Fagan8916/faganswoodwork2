@@ -48,7 +48,7 @@ const ProductShowcaseLazySusan = () => {
                 </span>
               </div>
 
-              <Link to="/#contact" className="btn-filled-gold">
+              <Link to="/#available" className="btn-filled-gold">
                 View Available Products
               </Link>
             </div>
