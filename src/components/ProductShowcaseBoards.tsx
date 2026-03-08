@@ -12,7 +12,7 @@ const features = [
 
 const ProductShowcaseBoards = () => {
   return (
-    <section className="py-28 section-forest relative overflow-hidden">
+    <section id="boards" className="py-28 section-forest relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text — left on desktop */}
