@@ -26,6 +26,12 @@ import img9883 from "@/assets/gallery/IMG_9883.PNG";
 import img9885 from "@/assets/gallery/IMG_9885.PNG";
 import img8568 from "@/assets/gallery/IMG_8568.JPEG";
 import img8569 from "@/assets/gallery/IMG_8569.JPEG";
+// Resin log slice clock additional images
+import img9799 from "@/assets/gallery/IMG_9799.JPEG";
+import img9800 from "@/assets/gallery/IMG_9800.JPEG";
+import img9801 from "@/assets/gallery/IMG_9801.JPEG";
+import img9802 from "@/assets/gallery/IMG_9802.JPEG";
+import img9803 from "@/assets/gallery/IMG_9803.JPEG";
 
 export interface GalleryItem {
   id: string;
@@ -175,7 +181,7 @@ export const galleryItems: GalleryItem[] = [
     id: "resin-log-slice-clock",
     title: "Resin Log Slice Clock",
     location: "Ireland",
-    images: [img9900],
+    images: [img9900, img9799, img9800, img9801, img9802, img9803],
     description: "Details coming soon.",
     specs: {
       pieceType: "Clock",
