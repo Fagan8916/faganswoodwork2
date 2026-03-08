@@ -220,10 +220,11 @@ const GalleryDetail = () => {
                     <Link to={`/gallery/${g.id}`} className="group block glass-card-hover overflow-hidden">
                       <div className="overflow-hidden">
                         <AspectRatio ratio={4 / 3}>
-                          <img
-                            src={g.images[0]}
-                            alt={g.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            <img
+                              src={g.images[0]}
+                              alt={g.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              loading="lazy"
                           />
                         </AspectRatio>
                       </div>
