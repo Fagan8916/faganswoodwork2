@@ -105,7 +105,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Details coming soon.",
     specs: {
       pieceType: "Lazy Susan",
-      timber: "Oak with Resin",
+      timber: "Ash with Resin",
       dimensions: "45cm diameter",
       finish: "Rubio Monocoat",
       completed: "2024"
@@ -161,7 +161,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Details coming soon.",
     specs: {
       pieceType: "Chopping Board",
-      timber: "Maple, Oak, and Walnut",
+      timber: "Oak, Maple, Ash, and Walnut",
       dimensions: "45cm × 25cm × 3cm",
       finish: "Food-safe homemade butter",
       completed: "2024"
@@ -203,7 +203,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Details coming soon.",
     specs: {
       pieceType: "Chopping Board",
-      timber: "Oak and Maple",
+      timber: "Sapele and Beech",
       dimensions: "45cm × 35cm × 4cm",
       finish: "Food-safe homemade butter",
       completed: "2024"
