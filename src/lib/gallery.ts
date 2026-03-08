@@ -181,7 +181,7 @@ export const galleryItems: GalleryItem[] = [
     id: "resin-log-slice-clock",
     title: "Resin Log Slice Clock",
     location: "Ireland",
-    images: [img9900],
+    images: [img9900, img9799, img9800, img9801, img9802, img9803],
     description: "Details coming soon.",
     specs: {
       pieceType: "Clock",
