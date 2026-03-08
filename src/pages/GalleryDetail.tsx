@@ -20,7 +20,7 @@ const GalleryDetail = () => {
         <Navbar />
         <div className="text-center pt-24">
           <h1 className="font-serif text-4xl text-foreground mb-4">Piece Not Found</h1>
-          <Link to="/portfolio" className="text-primary hover:underline">
+          <Link to="/#gallery" className="text-primary hover:underline">
             Return to Portfolio
           </Link>
         </div>
