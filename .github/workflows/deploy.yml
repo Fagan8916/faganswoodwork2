@@ -27,6 +27,9 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_SUPABASE_URL: https://heqsuqanwhagjtnfudmk.supabase.co
+          VITE_SUPABASE_PUBLISHABLE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhlcXN1cWFud2hhZ2p0bmZ1ZG1rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzODQ0MzMsImV4cCI6MjA4Nzk2MDQzM30.blzZlciplTCmWdE1Jj1OH-vTj8PpLwjiar0J79ffpaM
 
       - uses: actions/upload-pages-artifact@v3
         with:
