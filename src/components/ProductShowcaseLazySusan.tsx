@@ -35,7 +35,7 @@ const ProductShowcaseLazySusan = () => {
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                 From intimate dinners to grand gatherings — bespoke rotating centrepieces 
-                carved from single blocks of walnut, oak, and olive wood. Each handmade 
+                carved from single blocks of walnut, ash, oak, pine, or elm. Each handmade 
                 lazy Susan features unique grain patterns, natural edges, and hand-rubbed 
                 oil finishes.
               </p>
