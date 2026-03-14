@@ -29,7 +29,6 @@ const MailingListSection = () => {
       } else {
         setSubmitted(true);
         toast({ title: "You're on the list", description: "We'll be in touch when something special drops." });
-        // Fire-and-forget Slack notification
         supabase.functions.invoke('notify-slack', {
           body: { type: 'mailing_list', email: email.trim().toLowerCase() },
         }).catch(console.error);
@@ -44,7 +43,7 @@ const MailingListSection = () => {
   };
 
   return (
-    <section className="py-24 section-dark relative">
+    <section id="mailing-list" className="py-24 section-dark relative">
       <div className="container mx-auto px-6">
         <ScrollReveal>
           <div className="max-w-xl mx-auto text-center">
@@ -52,11 +51,10 @@ const MailingListSection = () => {
               Stay Close
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-4">
-              Be First to Know
+              See New Pieces Before They're Public
             </h2>
             <p className="text-muted-foreground mb-10">
-              New pieces drop irregularly and sell quickly. Join the list for early
-              access to available work before they're gone.
+              Most pieces sell within 48 hours of announcement. Get early access + 10% off your first commission.
             </p>
 
             {submitted ? (
@@ -75,12 +73,16 @@ const MailingListSection = () => {
                   className="bg-muted/50 border-border/50 focus:border-primary flex-1"
                 />
                 <Button type="submit" disabled={loading} className="px-8 tracking-widest uppercase text-xs">
-                  {loading ? "Joining…" : "Notify Me"}
+                  {loading ? "Joining…" : "Get Early Access"}
                 </Button>
               </form>
             )}
 
-            <p className="text-muted-foreground/40 text-xs mt-6 italic">
+            <p className="text-muted-foreground/60 text-sm mt-6">
+              Join 200+ collectors and interior designers who get first look
+            </p>
+
+            <p className="text-muted-foreground/40 text-xs mt-4 italic">
               No spam. Unsubscribe anytime. We only write when there's something worth showing.
             </p>
           </div>

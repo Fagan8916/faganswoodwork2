@@ -255,8 +255,8 @@ const ContactSection = () => {
                     {isSubmitting
                       ? "Sending..."
                       : isPurchase
-                      ? "Send Purchase Request"
-                      : "Send Commission Request"}
+                      ? "Buy This Piece"
+                      : "Start My Commission"}
                   </Button>
 
                   <span className="text-muted-foreground text-sm">or</span>
