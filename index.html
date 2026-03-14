@@ -23,6 +23,75 @@
     <meta name="twitter:title" content="Fagan's Woodwork | Handcrafted Bespoke Furniture" />
     <meta name="twitter:description" content="Quality woodworking and custom joinery. Hand-built with passion and precision." />
     <meta name="twitter:image" content="https://faganswoodwork.com/og-image.jpeg" />
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Fagan's Woodwork",
+      "description": "Handmade bespoke woodcraft including lazy Susans and chopping boards from single slabs of English timber",
+      "url": "https://faganswoodwork.com",
+      "email": "studio@faganswoodwork.com",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bespoke Woodcraft",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Handmade Lazy Susan",
+              "description": "Bespoke rotating centrepiece carved from single timber slab"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Custom Chopping Board",
+              "description": "End-grain or face-grain cutting board made to order"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Fagan's Woodwork",
+      "url": "https://faganswoodwork.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://faganswoodwork.com/gallery?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://faganswoodwork.com/"
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>
