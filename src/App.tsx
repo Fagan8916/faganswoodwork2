@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import GalleryDetail from "./pages/GalleryDetail";
 import LazySusan from "./pages/LazySusan";
+import ChoppingBoard from "./pages/ChoppingBoard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
