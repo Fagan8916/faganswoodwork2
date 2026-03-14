@@ -33,7 +33,7 @@ const GallerySection = () => {
               >
                 <motion.img
                   src={item.images[0]}
-                  alt={item.title}
+                  alt={`${item.title} — handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
                   className="w-full object-cover"
                   loading="lazy"
                   whileHover={{ scale: 1.05 }}

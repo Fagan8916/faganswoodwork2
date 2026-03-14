@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <motion.img
           src={heroImage}
-          alt="Premium walnut lazy Susan with natural edge — Fagan's Woodwork"
+          alt="Handmade walnut lazy Susan with natural live edge — bespoke woodcraft UK"
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -37,18 +37,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Bespoke Woodcraft for the{" "}
-            <span className="italic text-gradient">Discerning</span> Home
+            Handmade Lazy Susans From Single Slabs of{" "}
+            <span className="italic text-gradient">English Timber</span>
           </motion.h1>
-
-          <motion.p
-            className="text-primary font-sans tracking-[0.2em] uppercase text-sm mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-          >
-            Handmade Lazy Susans & Custom Chopping Boards
-          </motion.p>
 
           <motion.p
             className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-10 max-w-lg"
@@ -56,19 +47,35 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            Every piece is born from a single block of sustainably sourced timber 
-            and shaped by hand in our English workshop. No templates. No replicas. 
-            Just bespoke woodcraft made for your home.
+            Each piece is born from one tree, shaped by hand in my English workshop, 
+            and signed on completion. No templates. No replicas. Just yours.
           </motion.p>
 
           <motion.div
+            className="flex flex-col sm:flex-row items-start gap-4 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
           >
-            <Link to="/#contact" className="btn-outline-gold">
-              Commission Your Piece
+            <Link to="/#contact" className="btn-filled-gold">
+              Design Your Lazy Susan
             </Link>
+            <Link to="/#process" className="btn-outline-gold">
+              See How It Works →
+            </Link>
+          </motion.div>
+
+          {/* Testimonial card */}
+          <motion.div
+            className="glass-card p-6 max-w-sm"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.1, duration: 0.8 }}
+          >
+            <p className="font-serif text-base italic text-muted-foreground leading-relaxed mb-2">
+              "The centrepiece of every dinner party"
+            </p>
+            <span className="text-primary/70 text-xs tracking-widest uppercase">— Sarah, London</span>
           </motion.div>
         </div>
       </div>

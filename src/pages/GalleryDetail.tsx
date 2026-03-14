@@ -1,7 +1,8 @@
-import { useParams, Link, useSearchParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, X, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { galleryItems } from "@/lib/gallery";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
@@ -28,7 +29,6 @@ const GalleryDetail = () => {
     );
   }
 
-  // Show related pieces of the same type first, then fill with others
   const sameType = galleryItems.filter((g) => g.id !== item.id && g.specs.pieceType === item.specs.pieceType);
   const different = galleryItems.filter((g) => g.id !== item.id && g.specs.pieceType !== item.specs.pieceType);
   const otherItems = [...sameType, ...different].slice(0, 3);
@@ -37,8 +37,55 @@ const GalleryDetail = () => {
     setSelectedImage((prev) => (prev + dir + item.images.length) % item.images.length);
   };
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": item.title,
+    "image": item.images[0],
+    "description": item.description,
+    "brand": {
+      "@type": "Brand",
+      "name": "Fagan's Woodwork"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://faganswoodwork.com/gallery/${item.id}`,
+      "price": item.price || "",
+      "priceCurrency": "GBP",
+      "availability": item.available ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "GBP"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "GB"
+        }
+      }
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://faganswoodwork.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://faganswoodwork.com/#gallery" },
+      { "@type": "ListItem", "position": 3, "name": item.title, "item": `https://faganswoodwork.com/gallery/${item.id}` }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-background">
+      <Helmet>
+        <title>{item.title} | Fagan's Woodwork</title>
+        <meta name="description" content={item.description.slice(0, 155)} />
+        <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      </Helmet>
       <Navbar />
 
       {/* Lightbox */}
@@ -72,7 +119,7 @@ const GalleryDetail = () => {
             <motion.img
               key={selectedImage}
               src={item.images[selectedImage]}
-              alt={item.title}
+              alt={`${item.title} — handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
               className="max-w-[90vw] max-h-[85vh] object-contain"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -85,7 +132,6 @@ const GalleryDetail = () => {
 
       <div className="pt-24 pb-20">
         <div className="container mx-auto px-6">
-          {/* Back link */}
           <Link
             to="/#gallery"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm tracking-wide mb-10"
@@ -106,7 +152,7 @@ const GalleryDetail = () => {
                     <motion.img
                       key={selectedImage}
                       src={item.images[selectedImage]}
-                      alt={item.title}
+                      alt={`${item.title} — handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
                       className="w-full h-full object-cover"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -238,7 +284,7 @@ const GalleryDetail = () => {
                         <AspectRatio ratio={4 / 3}>
                             <img
                               src={g.images[0]}
-                              alt={g.title}
+                              alt={`${g.title} — handmade ${g.specs.timber} ${g.specs.pieceType} from Fagan's Woodwork UK`}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               loading="lazy"
                           />

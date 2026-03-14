@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import { galleryItems } from "@/lib/gallery";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Truck } from "lucide-react";
 
 const AvailableNowSection = () => {
   const availableItems = galleryItems.filter((item) => item.available);
@@ -19,55 +20,79 @@ const AvailableNowSection = () => {
               Available Now
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              One-of-a-kind pieces ready to ship. Once they're gone, they're gone.
+              Only {availableItems.length} pieces available — 2 sold this week
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {availableItems.map((item, i) => (
-            <ScrollReveal key={item.id} delay={i * 0.1}>
-              <Link
-                to={`/gallery/${item.id}`}
-                className="group block glass-card-hover overflow-hidden"
-              >
-                <div className="overflow-hidden">
-                  <AspectRatio ratio={4 / 3}>
-                    <motion.img
-                      src={item.images[0]}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.6 }}
-                    />
-                  </AspectRatio>
-                </div>
+        {availableItems.length > 0 ? (
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {availableItems.map((item, i) => (
+              <ScrollReveal key={item.id} delay={i * 0.1}>
+                <Link
+                  to={`/gallery/${item.id}`}
+                  className="group block glass-card-hover overflow-hidden"
+                >
+                  <div className="overflow-hidden">
+                    <AspectRatio ratio={4 / 3}>
+                      <motion.img
+                        src={item.images[0]}
+                        alt={`${item.title} — ${item.specs.timber} ${item.specs.pieceType} available now UK`}
+                        className="w-full h-full object-cover"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.6 }}
+                      />
+                    </AspectRatio>
+                  </div>
 
-                <div className="p-6 md:p-8">
-                  <span className="inline-block text-xs tracking-widest uppercase text-primary border border-primary/30 px-3 py-1 rounded-sm mb-4">
-                    {item.badge}
-                  </span>
+                  <div className="p-6 md:p-8">
+                    <span className="inline-block text-xs tracking-widest uppercase text-primary border border-primary/30 px-3 py-1 rounded-sm mb-4">
+                      {item.badge}
+                    </span>
 
-                  <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {item.title}
-                  </h3>
+                    <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {item.title}
+                    </h3>
 
-                  <p className="text-primary font-serif text-xl mb-4">
-                    £{item.price}
-                  </p>
+                    <p className="text-primary font-serif text-xl mb-2">
+                      £{item.price}
+                    </p>
 
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6 line-clamp-3">
-                    {item.description}
-                  </p>
+                    {/* Stock urgency */}
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Last one available
+                    </p>
 
-                  <span className="btn-outline-gold text-xs py-2 px-6">
-                    View Full Details
-                  </span>
-                </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-6 line-clamp-3">
+                      {item.description}
+                    </p>
+
+                    {/* Urgency badge */}
+                    <div className="flex items-center gap-2 text-xs text-primary/80 mb-4">
+                      <Truck className="w-3.5 h-3.5" />
+                      <span className="tracking-wide">Ships within 48 hours</span>
+                    </div>
+
+                    <span className="btn-outline-gold text-xs py-2 px-6">
+                      View Full Details
+                    </span>
+                  </div>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+        ) : (
+          <ScrollReveal>
+            <div className="text-center max-w-lg mx-auto">
+              <p className="text-muted-foreground text-lg mb-6">
+                Just sold out — join the waitlist for next quarter's pieces
+              </p>
+              <Link to="/#mailing-list" className="btn-filled-gold">
+                Join Waitlist
               </Link>
-            </ScrollReveal>
-          ))}
-        </div>
+            </div>
+          </ScrollReveal>
+        )}
       </div>
     </section>
   );

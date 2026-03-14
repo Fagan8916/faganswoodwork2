@@ -55,7 +55,7 @@ const ProductShowcaseBoards = () => {
             <div className="relative">
               <motion.img
                 src={boardImage}
-                alt="Overhead shot of handcrafted end-grain chopping boards"
+                alt="Custom end-grain chopping boards handmade in UK — personalised engraving available"
                 className="w-full rounded-sm gold-glow"
                 loading="lazy"
                 whileHover={{ scale: 1.02 }}
