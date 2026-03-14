@@ -8,7 +8,7 @@ import { galleryItems } from "@/lib/gallery";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { TreePine, Fingerprint, ShieldCheck, Ban, HelpCircle, Package } from "lucide-react";
 import heroImage from "@/assets/product-13.jpeg";
-import { Helmet } from "react-helmet-async";
+
 
 const lazySusanItems = galleryItems.filter(
   (item) => item.specs.pieceType === "Lazy Susan"
