@@ -50,9 +50,14 @@ const ProductShowcaseLazySusan = () => {
                 </span>
               </div>
 
-              <Link to="/#available" className="btn-filled-gold">
-                View Available Products
-              </Link>
+              <div className="flex flex-col sm:flex-row items-start gap-4">
+                <Link to="/#available" className="btn-filled-gold">
+                  Shop Ready-to-Ship Pieces
+                </Link>
+                <Link to="/#contact" className="btn-outline-gold text-sm py-3 px-6">
+                  Commission Similar Piece →
+                </Link>
+              </div>
             </div>
           </ScrollReveal>
         </div>
