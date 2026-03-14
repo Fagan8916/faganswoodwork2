@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import GalleryDetail from "./pages/GalleryDetail";
 import LazySusan from "./pages/LazySusan";
+import ChoppingBoard from "./pages/ChoppingBoard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/product/:id" element={<RedirectToGallery />} />
             <Route path="/gallery/:id" element={<GalleryDetail />} />
             <Route path="/lazy-susan" element={<LazySusan />} />
+            <Route path="/chopping-board" element={<ChoppingBoard />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

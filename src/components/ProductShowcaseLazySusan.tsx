@@ -58,6 +58,13 @@ const ProductShowcaseLazySusan = () => {
                   Commission Similar Piece →
                 </Link>
               </div>
+
+              <p className="text-sm text-muted-foreground mt-6">
+                Also need a board?{" "}
+                <Link to="/#boards" className="text-primary hover:underline">
+                  See chopping boards →
+                </Link>
+              </p>
             </div>
           </ScrollReveal>
         </div>
