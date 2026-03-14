@@ -7,6 +7,22 @@ import { Truck } from "lucide-react";
 
 const AvailableNowSection = () => {
   const availableItems = galleryItems.filter((item) => item.available);
+  const lazySusanCount = availableItems.filter(
+    (i) => i.specs.pieceType === "Lazy Susan"
+  ).length;
+  const boardCount = availableItems.filter(
+    (i) => i.specs.pieceType === "Chopping Board"
+  ).length;
+
+  const subtitleParts: string[] = [];
+  if (lazySusanCount > 0)
+    subtitleParts.push(
+      `${lazySusanCount} lazy Susan${lazySusanCount > 1 ? "s" : ""}`
+    );
+  if (boardCount > 0)
+    subtitleParts.push(
+      `${boardCount} chopping board${boardCount > 1 ? "s" : ""}`
+    );
 
   return (
     <section id="available" className="py-28 relative">
@@ -20,7 +36,8 @@ const AvailableNowSection = () => {
               Available Now
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              Only {availableItems.length} pieces available — 2 sold this week
+              Only {availableItems.length} pieces available
+              {subtitleParts.length > 0 && ` — ${subtitleParts.join(" · ")}`}
             </p>
           </div>
         </ScrollReveal>
@@ -33,7 +50,7 @@ const AvailableNowSection = () => {
                   to={`/gallery/${item.id}`}
                   className="group block glass-card-hover overflow-hidden"
                 >
-                  <div className="overflow-hidden">
+                  <div className="overflow-hidden relative">
                     <AspectRatio ratio={4 / 3}>
                       <motion.img
                         src={item.images[0]}
@@ -43,6 +60,10 @@ const AvailableNowSection = () => {
                         transition={{ duration: 0.6 }}
                       />
                     </AspectRatio>
+                    {/* Product type badge */}
+                    <span className="absolute top-3 left-3 text-xs tracking-widest uppercase bg-background/80 backdrop-blur-sm text-primary border border-primary/20 px-3 py-1 rounded-full">
+                      {item.specs.pieceType}
+                    </span>
                   </div>
 
                   <div className="p-6 md:p-8">
@@ -85,7 +106,8 @@ const AvailableNowSection = () => {
           <ScrollReveal>
             <div className="text-center max-w-lg mx-auto">
               <p className="text-muted-foreground text-lg mb-6">
-                Just sold out — join the waitlist for next quarter's pieces
+                Just sold out — join the waitlist for next quarter's lazy Susans
+                and chopping boards
               </p>
               <Link to="/#mailing-list" className="btn-filled-gold">
                 Join Waitlist

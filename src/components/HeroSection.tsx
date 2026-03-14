@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+{/* TODO: Rotate between lazy Susan and chopping board images */}
 import heroImage from "@/assets/product-13.jpeg";
 
 const HeroSection = () => {
@@ -37,7 +38,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Handmade Lazy Susans From Single Slabs of{" "}
+            Handmade Lazy Susans & Chopping Boards From Single Slabs of{" "}
             <span className="italic text-gradient">English Timber</span>
           </motion.h1>
 
@@ -47,12 +48,14 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            Each piece is born from one tree, shaped by hand in my English workshop, 
-            and signed on completion. No templates. No replicas. Just yours.
+            Each piece — whether a rotating centrepiece for your table or a daily
+            workhorse for your kitchen — is born from one tree, shaped by hand in
+            my English workshop, and signed on completion. No templates. No
+            replicas. Just yours.
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row items-start gap-4 mb-12"
+            className="flex flex-col sm:flex-row items-start gap-4 mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
@@ -60,22 +63,57 @@ const HeroSection = () => {
             <Link to="/#contact" className="btn-filled-gold">
               Design Your Lazy Susan
             </Link>
-            <Link to="/#process" className="btn-outline-gold">
+            <Link to="/#boards" className="btn-outline-gold">
+              Design Your Chopping Board
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.0, duration: 0.8 }}
+          >
+            <Link
+              to="/#process"
+              className="text-primary hover:text-primary/80 text-sm tracking-widest uppercase transition-colors"
+            >
               See How It Works →
             </Link>
           </motion.div>
 
-          {/* Testimonial card */}
+          {/* Testimonial cards */}
           <motion.div
-            className="glass-card p-6 max-w-sm"
+            className="flex flex-col sm:flex-row gap-6 max-w-2xl mt-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.8 }}
           >
-            <p className="font-serif text-base italic text-muted-foreground leading-relaxed mb-2">
-              "The centrepiece of every dinner party"
-            </p>
-            <span className="text-primary/70 text-xs tracking-widest uppercase">— Sarah, London</span>
+            <div className="glass-card p-6 flex-1">
+              <p className="font-serif text-base italic text-muted-foreground leading-relaxed mb-2">
+                "The centrepiece of every dinner party"
+              </p>
+              <div className="flex items-center justify-between">
+                <span className="text-primary/70 text-xs tracking-widest uppercase">
+                  — Sarah, London
+                </span>
+                <span className="text-xs text-primary/50 border border-primary/20 px-2 py-0.5 rounded-full">
+                  Lazy Susan
+                </span>
+              </div>
+            </div>
+            <div className="glass-card p-6 flex-1">
+              <p className="font-serif text-base italic text-muted-foreground leading-relaxed mb-2">
+                "The only board I use daily"
+              </p>
+              <div className="flex items-center justify-between">
+                <span className="text-primary/70 text-xs tracking-widest uppercase">
+                  — Michael, Bristol
+                </span>
+                <span className="text-xs text-primary/50 border border-primary/20 px-2 py-0.5 rounded-full">
+                  Chopping Board
+                </span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
