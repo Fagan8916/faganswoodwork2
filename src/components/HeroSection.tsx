@@ -38,7 +38,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Handmade Lazy Susans & Chopping Boards From Single Slabs of{" "}
+            Handmade Lazy Susans & Chopping Boards From{" "}
             <span className="italic text-gradient">English Timber</span>
           </motion.h1>
 
