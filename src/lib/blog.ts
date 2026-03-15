@@ -193,7 +193,7 @@ export const blogPosts: BlogPost[] = [
       "Every piece starts as a fallen tree. This is the story of one walnut slab that became a lazy Susan.",
     date: "November 2025",
     author: "Ryan",
-    image: blogImage5,
+    image: blogImgTreeToTable,
     metaTitle: "From Tree to Table: How Handmade Wood Pieces Are Crafted | Fagan's Woodwork",
     metaDescription:
       "The journey of a handmade lazy Susan from fallen tree to finished piece. Sourcing, drying, shaping, and finishing explained.",
