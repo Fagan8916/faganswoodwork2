@@ -231,7 +231,7 @@ export const blogPosts: BlogPost[] = [
       "I could buy a CNC machine. I could produce ten pieces a day. I choose to make four a month. Here's why.",
     date: "October 2025",
     author: "Ryan",
-    image: blogImage6,
+    image: blogImgHandmade,
     metaTitle: "Why Handmade Matters | Fagan's Woodwork",
     metaDescription:
       "The difference between handmade and mass-produced woodcraft. Sustainability, quality, and the value of one-of-a-kind pieces.",
