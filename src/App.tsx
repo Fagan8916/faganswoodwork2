@@ -30,6 +30,8 @@ const App = () => (
             <Route path="/gallery/:id" element={<GalleryDetail />} />
             <Route path="/lazy-susan" element={<LazySusan />} />
             <Route path="/chopping-board" element={<ChoppingBoard />} />
+            <Route path="/blog" element={<BlogIndex />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

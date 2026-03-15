@@ -16,6 +16,7 @@ const navItems = [
   { label: "Process", href: "/#process" },
   { label: "Trade", href: "/#trade" },
   { label: "Portfolio", href: "/#gallery" },
+  { label: "Journal", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];
 
