@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
       "A lazy Susan is more than a serving piece — it's a centrepiece. Here are five ways to make it shine.",
     date: "December 2025",
     author: "Ryan",
-    image: blogImage4,
+    image: blogImgStyling,
     metaTitle: "5 Ways to Style a Lazy Susan | Fagan's Woodwork",
     metaDescription:
       "Creative ways to style and use a lazy Susan for dinner parties. Cheese boards, condiment stations, and seasonal centrepieces.",
