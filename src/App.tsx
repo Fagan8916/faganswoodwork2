@@ -9,6 +9,8 @@ import Index from "./pages/Index";
 import GalleryDetail from "./pages/GalleryDetail";
 import LazySusan from "./pages/LazySusan";
 import ChoppingBoard from "./pages/ChoppingBoard";
+import BlogIndex from "./pages/BlogIndex";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
