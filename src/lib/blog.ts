@@ -1,9 +1,10 @@
-import blogImage1 from "@/assets/product-1.jpeg";
-import blogImage2 from "@/assets/product-2.jpeg";
-import blogImage3 from "@/assets/product-3.jpeg";
-import blogImage4 from "@/assets/product-4.jpeg";
-import blogImage5 from "@/assets/product-5.jpeg";
-import blogImage6 from "@/assets/product-6.jpeg";
+// Blog images — each matched to post topic, no duplicates
+import blogImgLazySusan from "@/assets/gallery/IMG_9888.JPG";       // River side table lazy susan — for "choosing wood"
+import blogImgEndGrain from "@/assets/gallery/IMG_9890.JPG";        // Striped end-grain board — for "end-grain vs face-grain"
+import blogImgCare from "@/assets/gallery/IMG_9893.JPG";            // Tri-wood serving board — for "caring for handmade wood"
+import blogImgStyling from "@/assets/gallery/IMG_9901.JPG";         // White resin river lazy susan — for "styling lazy susan"
+import blogImgTreeToTable from "@/assets/gallery/ash-bowtie-main.png"; // Ash bowtie craft shot — for "from tree to table"
+import blogImgHandmade from "@/assets/gallery/IMG_9898.JPG";        // Chevron board detail — for "why handmade matters"
 
 export interface BlogPost {
   slug: string;
