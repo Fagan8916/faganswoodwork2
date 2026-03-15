@@ -9,6 +9,8 @@ import Index from "./pages/Index";
 import GalleryDetail from "./pages/GalleryDetail";
 import LazySusan from "./pages/LazySusan";
 import ChoppingBoard from "./pages/ChoppingBoard";
+import BlogIndex from "./pages/BlogIndex";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="/gallery/:id" element={<GalleryDetail />} />
             <Route path="/lazy-susan" element={<LazySusan />} />
             <Route path="/chopping-board" element={<ChoppingBoard />} />
+            <Route path="/blog" element={<BlogIndex />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
