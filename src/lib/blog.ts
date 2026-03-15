@@ -1,9 +1,10 @@
-import blogImage1 from "@/assets/product-1.jpeg";
-import blogImage2 from "@/assets/product-2.jpeg";
-import blogImage3 from "@/assets/product-3.jpeg";
-import blogImage4 from "@/assets/product-4.jpeg";
-import blogImage5 from "@/assets/product-5.jpeg";
-import blogImage6 from "@/assets/product-6.jpeg";
+// Blog images — each matched to post topic, no duplicates
+import blogImgLazySusan from "@/assets/gallery/IMG_9888.JPG";       // River side table lazy susan — for "choosing wood"
+import blogImgEndGrain from "@/assets/gallery/IMG_9890.JPG";        // Striped end-grain board — for "end-grain vs face-grain"
+import blogImgCare from "@/assets/gallery/IMG_9893.JPG";            // Tri-wood serving board — for "caring for handmade wood"
+import blogImgStyling from "@/assets/gallery/IMG_9901.JPG";         // White resin river lazy susan — for "styling lazy susan"
+import blogImgTreeToTable from "@/assets/gallery/ash-bowtie-main.png"; // Ash bowtie craft shot — for "from tree to table"
+import blogImgHandmade from "@/assets/gallery/IMG_9898.JPG";        // Chevron board detail — for "why handmade matters"
 
 export interface BlogPost {
   slug: string;
@@ -32,7 +33,7 @@ export const blogPosts: BlogPost[] = [
       "Choosing the right wood isn't just about looks — it's about how the piece will age, how it handles spills, and whether it becomes a family heirloom or a regret.",
     date: "March 2026",
     author: "Ryan",
-    image: blogImage1,
+    image: blogImgLazySusan,
     metaTitle:
       "How to Choose the Right Wood for Your Lazy Susan | Fagan's Woodwork",
     metaDescription:
@@ -90,7 +91,7 @@ export const blogPosts: BlogPost[] = [
       "The construction method matters more than the wood species. Here's why end-grain chopping boards outlast face-grain by decades.",
     date: "February 2026",
     author: "Ryan",
-    image: blogImage2,
+    image: blogImgEndGrain,
     metaTitle: "End-Grain vs Face-Grain Chopping Boards | Fagan's Woodwork",
     metaDescription:
       "Complete guide to end-grain and face-grain chopping board construction. Durability, maintenance, and pricing compared.",
@@ -123,7 +124,7 @@ export const blogPosts: BlogPost[] = [
       "Handmade wood pieces improve with age — if you treat them right. Here's my decade-long care routine.",
     date: "January 2026",
     author: "Ryan",
-    image: blogImage3,
+    image: blogImgCare,
     metaTitle: "Caring for Handmade Wood: 10-Year Guide | Fagan's Woodwork",
     metaDescription:
       "How to care for handmade wooden chopping boards and lazy Susans. Oiling, cleaning, and restoration guide.",
@@ -157,7 +158,7 @@ export const blogPosts: BlogPost[] = [
       "A lazy Susan is more than a serving piece — it's a centrepiece. Here are five ways to make it shine.",
     date: "December 2025",
     author: "Ryan",
-    image: blogImage4,
+    image: blogImgStyling,
     metaTitle: "5 Ways to Style a Lazy Susan | Fagan's Woodwork",
     metaDescription:
       "Creative ways to style and use a lazy Susan for dinner parties. Cheese boards, condiment stations, and seasonal centrepieces.",
@@ -192,7 +193,7 @@ export const blogPosts: BlogPost[] = [
       "Every piece starts as a fallen tree. This is the story of one walnut slab that became a lazy Susan.",
     date: "November 2025",
     author: "Ryan",
-    image: blogImage5,
+    image: blogImgTreeToTable,
     metaTitle: "From Tree to Table: How Handmade Wood Pieces Are Crafted | Fagan's Woodwork",
     metaDescription:
       "The journey of a handmade lazy Susan from fallen tree to finished piece. Sourcing, drying, shaping, and finishing explained.",
@@ -230,7 +231,7 @@ export const blogPosts: BlogPost[] = [
       "I could buy a CNC machine. I could produce ten pieces a day. I choose to make four a month. Here's why.",
     date: "October 2025",
     author: "Ryan",
-    image: blogImage6,
+    image: blogImgHandmade,
     metaTitle: "Why Handmade Matters | Fagan's Woodwork",
     metaDescription:
       "The difference between handmade and mass-produced woodcraft. Sustainability, quality, and the value of one-of-a-kind pieces.",
