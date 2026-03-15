@@ -124,7 +124,7 @@ export const blogPosts: BlogPost[] = [
       "Handmade wood pieces improve with age — if you treat them right. Here's my decade-long care routine.",
     date: "January 2026",
     author: "Ryan",
-    image: blogImage3,
+    image: blogImgCare,
     metaTitle: "Caring for Handmade Wood: 10-Year Guide | Fagan's Woodwork",
     metaDescription:
       "How to care for handmade wooden chopping boards and lazy Susans. Oiling, cleaning, and restoration guide.",
