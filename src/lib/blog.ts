@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
       "The construction method matters more than the wood species. Here's why end-grain chopping boards outlast face-grain by decades.",
     date: "February 2026",
     author: "Ryan",
-    image: blogImage2,
+    image: blogImgEndGrain,
     metaTitle: "End-Grain vs Face-Grain Chopping Boards | Fagan's Woodwork",
     metaDescription:
       "Complete guide to end-grain and face-grain chopping board construction. Durability, maintenance, and pricing compared.",
