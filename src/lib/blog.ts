@@ -25,8 +25,7 @@ export const blogPosts: BlogPost[] = [
       "Choosing the right wood isn't just about looks — it's about how the piece will age, how it handles spills, and whether it becomes a family heirloom or a regret.",
     date: "March 2026",
     author: "Ryan",
-    image:
-      "https://images.unsplash.com/photo-1611486212557-88be5ff6f941?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    image: "/src/assets/product-1.jpeg",
     metaTitle:
       "How to Choose the Right Wood for Your Lazy Susan | Fagan's Woodwork",
     metaDescription:
