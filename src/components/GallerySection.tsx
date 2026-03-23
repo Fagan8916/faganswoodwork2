@@ -33,7 +33,7 @@ const GallerySection = () => {
               >
                 <motion.img
                   src={item.images[0]}
-                  alt={`${item.title} — handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
+                  alt={`${item.title} - handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
                   className="w-full object-cover"
                   loading="lazy"
                   whileHover={{ scale: 1.05 }}
@@ -51,10 +51,10 @@ const GallerySection = () => {
                       <p className="font-serif text-lg italic text-foreground text-center leading-relaxed mb-4">
                         "{item.quote}"
                       </p>
-                      <span className="text-primary text-sm tracking-widest uppercase">— {item.author}</span>
+                      <span className="text-primary text-sm tracking-widest uppercase"> - {item.author}</span>
                     </>
                   ) : (
-                    <p className="text-muted-foreground text-sm tracking-wide">{item.title} — {item.location}</p>
+                    <p className="text-muted-foreground text-sm tracking-wide">{item.title} - {item.location}</p>
                   )}
                 </div>
               </Link>

@@ -30,7 +30,7 @@ const painPoints = [
 const pillars = [
   { icon: TreePine, title: "One Tree, One Piece", desc: "Every lazy Susan comes from a single sustainably sourced slab" },
   { icon: Fingerprint, title: "Signed & Dated", desc: "Hand-signed on the underside with date of completion" },
-  { icon: ShieldCheck, title: "Lifetime Restoration", desc: "Send it back any time for refinishing — free of charge" },
+  { icon: ShieldCheck, title: "Lifetime Restoration", desc: "Send it back any time for refinishing - free of charge" },
 ];
 
 const testimonials = [
@@ -41,8 +41,8 @@ const testimonials = [
 
 const faqs = [
   { q: "How long does it take?", a: "4–6 weeks from design consultation to delivery. We'll keep you updated with photos throughout the process." },
-  { q: "Can I choose the wood?", a: "Yes — we offer a timber selection service. Choose from walnut, ash, oak, pine, or elm, and we'll send you photos of available slabs." },
-  { q: "Do you ship UK-wide?", a: "Yes — we offer white-glove delivery across the UK, ensuring your piece arrives safely." },
+  { q: "Can I choose the wood?", a: "Yes - we offer a timber selection service. Choose from walnut, ash, oak, pine, or elm, and we'll send you photos of available slabs." },
+  { q: "Do you ship UK-wide?", a: "Yes - we offer white-glove delivery across the UK, ensuring your piece arrives safely." },
   { q: "What if I don't like it?", a: "You'll see your slab before we start shaping, and receive progress photos throughout. Every piece is approved before final finishing." },
 ];
 
@@ -56,7 +56,7 @@ const LazySusan = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Handmade bespoke lazy Susan UK — carved from single timber slab"
+            alt="Handmade bespoke lazy Susan UK - carved from single timber slab"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/40" />
@@ -65,7 +65,7 @@ const LazySusan = () => {
         <div className="container relative z-10 mx-auto px-6 py-32">
           <div className="max-w-2xl">
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] text-foreground mb-6">
-              Handmade Lazy Susans UK —{" "}
+              Handmade Lazy Susans UK- {" "}
               <span className="italic text-gradient">Bespoke Rotating Centrepieces</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
@@ -118,7 +118,7 @@ const LazySusan = () => {
                 A Lazy Susan That Tells a Story
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Every Fagan's lazy Susan comes from a single tree — sustainably sourced, hand-selected for character, and shaped without templates.
+                Every Fagan's lazy Susan comes from a single tree - sustainably sourced, hand-selected for character, and shaped without templates.
               </p>
             </div>
           </ScrollReveal>
@@ -154,7 +154,7 @@ const LazySusan = () => {
                     <AspectRatio ratio={4 / 3}>
                       <img
                         src={item.images[0]}
-                        alt={`${item.title} — handmade ${item.specs.timber} lazy Susan from Fagan's Woodwork UK`}
+                        alt={`${item.title} - handmade ${item.specs.timber} lazy Susan from Fagan's Woodwork UK`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
@@ -232,7 +232,7 @@ const LazySusan = () => {
                   <p className="font-serif text-xl italic text-foreground leading-relaxed mb-4">
                     "{t.quote}"
                   </p>
-                  <span className="text-primary text-sm tracking-widest uppercase">— {t.author}</span>
+                  <span className="text-primary text-sm tracking-widest uppercase"> - {t.author}</span>
                 </div>
               </ScrollReveal>
             ))}

@@ -16,7 +16,7 @@ const ProductShowcaseBoards = () => {
     <section id="boards" className="py-28 section-forest relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Text — left on desktop */}
+          {/* Text - left on desktop */}
           <ScrollReveal className="order-2 lg:order-1">
             <div>
               <p className="text-primary font-sans tracking-[0.4em] uppercase text-xs mb-4">
@@ -32,7 +32,7 @@ const ProductShowcaseBoards = () => {
                 factory spec.
               </p>
               <p className="text-primary/80 text-sm tracking-widest uppercase mb-8">
-                From £100 — made to order in 4–6 weeks
+                From £100 - made to order in 4–6 weeks
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -57,7 +57,7 @@ const ProductShowcaseBoards = () => {
                   drawer."
                 </p>
                 <span className="text-primary/70 text-xs tracking-widest uppercase">
-                  — Michael, Bristol
+                  - Michael, Bristol
                 </span>
               </div>
 
@@ -91,12 +91,12 @@ const ProductShowcaseBoards = () => {
             </div>
           </ScrollReveal>
 
-          {/* Image — right */}
+          {/* Image - right */}
           <ScrollReveal delay={0.2} className="order-1 lg:order-2">
             <div className="relative">
               <motion.img
                 src={boardImage}
-                alt="Custom end-grain chopping boards handmade in UK — personalised engraving available"
+                alt="Custom end-grain chopping boards handmade in UK - personalised engraving available"
                 className="w-full rounded-sm gold-glow"
                 loading="lazy"
                 whileHover={{ scale: 1.02 }}
