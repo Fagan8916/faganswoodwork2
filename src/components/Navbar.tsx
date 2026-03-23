@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -51,8 +52,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="font-serif text-xl md:text-2xl font-semibold text-foreground tracking-wide">
-          Fagan's Woodwork
+        <Link to="/">
+          <img src={logo} alt="Fagan's Woodwork" className="h-7 md:h-9" style={{ filter: "invert(1)" }} />
         </Link>
 
         {/* Desktop nav */}
