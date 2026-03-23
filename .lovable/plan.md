@@ -1,30 +1,64 @@
 
+# Fagan's Woodwork - Premium Showcase Website
 
-## Replace "Fagan's Woodwork" Text with Logo Image
+## Overview
+A stunning single-page website with glassmorphism design that positions Fagan's Woodwork as a luxury handcrafted brand. The dark, sophisticated aesthetic will make your beautiful wood pieces truly stand out.
 
-The uploaded image is a brush-script handwritten logo reading "Fagan's Woodwork" in black on a white background.
+---
 
-### Approach: Use the image as a logo
+## Design Direction
 
-Rather than trying to match the font (it's a hand-drawn brush script, not a standard web font), the cleanest approach is to use the image directly with CSS filters to adapt it to the site's colour scheme.
+### Visual Style
+- **Glassmorphism** throughout: frosted glass cards with subtle transparency, soft blur effects, and elegant borders
+- **Dark & Luxurious palette**: Deep charcoal/near-black backgrounds (#0a0a0a) with warm gold/copper accent highlights
+- **Typography**: Elegant serif font for headings to convey craftsmanship; clean sans-serif for body text
+- **Subtle animations**: Smooth fade-ins and gentle hover effects to feel premium
 
-### Steps
+---
 
-1. **Copy the uploaded logo** to `src/assets/logo.jpeg`
+## Page Sections
 
-2. **Update Navbar.tsx** (line 53-56):
-   - Replace the text `<Link>` with an `<img>` tag importing the logo
-   - Apply CSS `filter: invert(1)` to make the black text white (matching the dark theme)
-   - Set height to ~28px on mobile, ~36px on desktop to fit the navbar
-   - Keep the `<Link to="/">` wrapper
+### 1. Hero Section
+- Full-screen dramatic opening
+- The brown chopping board at an angle (IMG_8974) as the stunning centrepiece
+- Brand name "Fagan's Woodwork" with elegant typography
+- Tagline emphasizing handcrafted quality (e.g., "Handcrafted with Love & Precision")
+- Subtle scroll indicator
 
-3. **Update FooterSection.tsx** (line 21-23):
-   - Replace the `<h3>Fagan's Woodwork</h3>` text with the same logo image
-   - Same invert filter and appropriate sizing (~28px height)
+### 2. About/Story Section
+- Glassmorphism card with brief brand story
+- Emphasis on: hand-designed, unique pieces, love & care in every creation
+- Perhaps a compelling line about the craftsmanship philosophy
 
-No other text on the site changes. Only the two places where "Fagan's Woodwork" appears as a brand name/logo element (navbar and footer) get the image treatment.
+### 3. Gallery/Featured Works
+- Showcase your product images in an elegant grid or masonry layout
+- Each piece displayed in a frosted glass frame
+- Products to feature:
+  - Epoxy river table with blue resin
+  - Live-edge wood slice serving boards
+  - Various chopping boards
+  - End-grain cutting boards
+  - The stunning bench/coffee table with black metal legs
+- Hover effects to highlight each piece
 
-### Technical Detail
+### 4. Contact Section
+- Glassmorphism contact form for inquiries
+- Fields: Name, Email, Message about what they're looking for
+- Call-to-action encouraging custom order discussions
+- Optional: Add your social media or email address
 
-Using `filter: invert(1)` on a black-on-white image produces white-on-transparent appearance on the dark background. Combined with `brightness` adjustments, we can tint it to match the warm foreground colour if needed.
+### 5. Footer
+- Clean, minimal footer with brand name
+- Copyright and any additional links
 
+---
+
+## Technical Notes
+- Fully responsive design (mobile, tablet, desktop)
+- All 8 product images will be incorporated throughout the site
+- Smooth scrolling navigation
+- Contact form will display success message (can be connected to a backend later if needed)
+
+---
+
+This will create a sophisticated, high-end feel that matches the quality of your handcrafted pieces!
