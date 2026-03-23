@@ -7,7 +7,7 @@ const mainQuote = {
 
 const gridTestimonials = [
   {
-    quote: "The grain is incredible — photos don't do it justice",
+    quote: "The grain is incredible - photos don't do it justice",
     author: "James, Manchester",
     product: "Lazy Susan",
   },
@@ -37,7 +37,7 @@ const TestimonialSection = () => {
               <span className="italic">{mainQuote.quote.split(". ")[1]}</span>"
             </h2>
             <p className="text-warm-foreground/60 text-sm">
-              — {mainQuote.author}
+              - {mainQuote.author}
             </p>
           </div>
         </ScrollReveal>
@@ -56,7 +56,7 @@ const TestimonialSection = () => {
                   "{t.quote}"
                 </p>
                 <span className="text-primary text-sm tracking-widest uppercase block mb-3">
-                  — {t.author}
+                  - {t.author}
                 </span>
                 <span className="inline-block text-xs tracking-widest uppercase text-primary/60 border border-primary/20 px-3 py-1 rounded-full">
                   {t.product}

@@ -119,7 +119,7 @@ const GalleryDetail = () => {
             <motion.img
               key={selectedImage}
               src={item.images[selectedImage]}
-              alt={`${item.title} — handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
+              alt={`${item.title} - handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
               className="max-w-[90vw] max-h-[85vh] object-contain"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -152,7 +152,7 @@ const GalleryDetail = () => {
                     <motion.img
                       key={selectedImage}
                       src={item.images[selectedImage]}
-                      alt={`${item.title} — handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
+                      alt={`${item.title} - handmade ${item.specs.timber} ${item.specs.pieceType} from Fagan's Woodwork UK`}
                       className="w-full h-full object-cover"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -204,7 +204,7 @@ const GalleryDetail = () => {
                     </p>
                     {item.author && (
                       <cite className="text-primary text-sm tracking-widest uppercase not-italic">
-                        — {item.author}
+                        - {item.author}
                       </cite>
                     )}
                   </blockquote>
@@ -247,7 +247,7 @@ const GalleryDetail = () => {
                     className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
                   >
                     <ShoppingBag className="w-4 h-4" />
-                    Available Now — £{item.price}
+                    Available Now - £{item.price}
                   </Link>
                 ) : (
                   <Link
@@ -260,7 +260,7 @@ const GalleryDetail = () => {
 
                 {item.available && (
                   <p className="text-muted-foreground text-sm italic text-center border border-border/20 rounded-sm p-4 mt-4">
-                    Only 1 available — each piece is unique and will never be replicated.
+                    Only 1 available - each piece is unique and will never be replicated.
                   </p>
                 )}
               </div>
@@ -284,7 +284,7 @@ const GalleryDetail = () => {
                         <AspectRatio ratio={4 / 3}>
                             <img
                               src={g.images[0]}
-                              alt={`${g.title} — handmade ${g.specs.timber} ${g.specs.pieceType} from Fagan's Woodwork UK`}
+                              alt={`${g.title} - handmade ${g.specs.timber} ${g.specs.pieceType} from Fagan's Woodwork UK`}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               loading="lazy"
                           />

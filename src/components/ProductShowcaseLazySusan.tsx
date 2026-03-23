@@ -13,7 +13,7 @@ const ProductShowcaseLazySusan = () => {
             <div className="relative">
               <motion.img
                 src={product3}
-                alt="Bespoke walnut lazy Susan centrepiece on dining table — handmade in England"
+                alt="Bespoke walnut lazy Susan centrepiece on dining table - handmade in England"
                 className="w-full rounded-sm gold-glow"
                 loading="lazy"
                 whileHover={{ scale: 1.02 }}
@@ -34,7 +34,7 @@ const ProductShowcaseLazySusan = () => {
                 <span className="italic text-gradient">Reimagined</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                From intimate dinners to grand gatherings — bespoke rotating centrepieces 
+                From intimate dinners to grand gatherings - bespoke rotating centrepieces 
                 carved from single blocks of walnut, ash, oak, pine, or elm. Each handmade 
                 lazy Susan features unique grain patterns, natural edges, and hand-rubbed 
                 oil finishes.

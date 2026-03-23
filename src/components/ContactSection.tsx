@@ -111,7 +111,7 @@ const ContactSection = () => {
               </h2>
               <p className="text-muted-foreground max-w-lg mx-auto">
                 Whether you'd like to purchase an available piece or commission
-                something entirely new — I'd love to hear from you.
+                something entirely new - I'd love to hear from you.
               </p>
             </div>
           </ScrollReveal>

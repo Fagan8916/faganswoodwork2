@@ -7,11 +7,11 @@ const pillars = [
   },
   {
     title: "No Replicas",
-    body: "Every creation is one-of-a-kind — signed and dated on completion. Limited commissions accepted per quarter to ensure each piece receives our full devotion.",
+    body: "Every creation is one-of-a-kind - signed and dated on completion. Limited commissions accepted per quarter to ensure each piece receives our full devotion.",
   },
   {
     title: "Lifetime Craft",
-    body: "Hand-planed, not machine-sanded. Built to last generations. If it ever needs care, we'll restore it — because heirlooms deserve that promise.",
+    body: "Hand-planed, not machine-sanded. Built to last generations. If it ever needs care, we'll restore it - because heirlooms deserve that promise.",
   },
 ];
 

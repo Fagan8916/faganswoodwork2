@@ -37,7 +37,7 @@ const AvailableNowSection = () => {
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
               Only {availableItems.length} pieces available
-              {subtitleParts.length > 0 && ` — ${subtitleParts.join(" · ")}`}
+              {subtitleParts.length > 0 && ` - ${subtitleParts.join(" · ")}`}
             </p>
           </div>
         </ScrollReveal>
@@ -54,7 +54,7 @@ const AvailableNowSection = () => {
                     <AspectRatio ratio={4 / 3}>
                       <motion.img
                         src={item.images[0]}
-                        alt={`${item.title} — ${item.specs.timber} ${item.specs.pieceType} available now UK`}
+                        alt={`${item.title} - ${item.specs.timber} ${item.specs.pieceType} available now UK`}
                         className="w-full h-full object-cover"
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.6 }}
@@ -106,7 +106,7 @@ const AvailableNowSection = () => {
           <ScrollReveal>
             <div className="text-center max-w-lg mx-auto">
               <p className="text-muted-foreground text-lg mb-6">
-                Just sold out — join the waitlist for next quarter's lazy Susans
+                Just sold out - join the waitlist for next quarter's lazy Susans
                 and chopping boards
               </p>
               <Link to="/#mailing-list" className="btn-filled-gold">

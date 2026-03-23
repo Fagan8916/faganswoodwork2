@@ -14,7 +14,7 @@ const BlogIndex = () => {
         <title>The Journal | Fagan's Woodwork</title>
         <meta
           name="description"
-          content="Stories from the workshop — wood selection guides, process insights, and the craft behind every handmade lazy Susan and chopping board."
+          content="Stories from the workshop - wood selection guides, process insights, and the craft behind every handmade lazy Susan and chopping board."
         />
       </Helmet>
 

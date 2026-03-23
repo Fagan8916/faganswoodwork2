@@ -175,7 +175,7 @@ const ProductDetail = () => {
                 </div>
 
                 <p className="text-muted-foreground text-sm italic text-center border border-border/20 rounded-sm p-4">
-                  Only 1 available — each piece is unique and will never be replicated.
+                  Only 1 available - each piece is unique and will never be replicated.
                 </p>
 
                 {linkedGalleryItem && (

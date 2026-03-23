@@ -37,7 +37,7 @@ const pillars = [
   {
     icon: Layers,
     title: "End-Grain Construction",
-    body: "Fibres stand upright so your blade slides between them — self-healing with every cut.",
+    body: "Fibres stand upright so your blade slides between them - self-healing with every cut.",
   },
   {
     icon: Stamp,
@@ -47,7 +47,7 @@ const pillars = [
   {
     icon: RefreshCw,
     title: "Lifetime Restoration",
-    body: "If it ever needs care, send it back. I'll re-sand, re-oil, and return it — free, forever.",
+    body: "If it ever needs care, send it back. I'll re-sand, re-oil, and return it - free, forever.",
   },
 ];
 
@@ -91,16 +91,16 @@ const testimonials = [
 
 const faqs = [
   {
-    q: "End-grain vs face-grain — what's the difference?",
+    q: "End-grain vs face-grain - what's the difference?",
     a: "End-grain boards are made with the wood fibres standing upright. Your knife slides between the fibres rather than cutting across them, making the surface self-healing and much kinder to your blades. Face-grain boards are beautiful but will show knife marks over time.",
   },
   {
     q: "How do I care for my board?",
-    a: "Simply wash with warm soapy water and dry immediately. Re-oil with food-safe mineral oil every few weeks — I include a bottle with every board. Never submerge in water or put in the dishwasher.",
+    a: "Simply wash with warm soapy water and dry immediately. Re-oil with food-safe mineral oil every few weeks - I include a bottle with every board. Never submerge in water or put in the dishwasher.",
   },
   {
     q: "Can I add juice grooves?",
-    a: "Absolutely. Juice grooves are hand-routed in a single pass — no joints, no weak points. They're deep enough to catch juices from a full Sunday roast. Just mention it when you commission your board.",
+    a: "Absolutely. Juice grooves are hand-routed in a single pass - no joints, no weak points. They're deep enough to catch juices from a full Sunday roast. Just mention it when you commission your board.",
   },
   {
     q: "What personalisation options are available?",
@@ -128,7 +128,7 @@ const ChoppingBoard = () => {
           <div className="absolute inset-0">
             <motion.img
               src={heroImage}
-              alt="Handmade end-grain chopping boards — bespoke woodcraft UK"
+              alt="Handmade end-grain chopping boards - bespoke woodcraft UK"
               className="w-full h-full object-cover"
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
@@ -229,8 +229,8 @@ const ChoppingBoard = () => {
                   A Chopping Board That Gets Better With Age
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Every board is made from sustainably sourced English timber — walnut, oak,
-                  ash, or elm — and shaped without templates.
+                  Every board is made from sustainably sourced English timber - walnut, oak,
+                  ash, or elm - and shaped without templates.
                 </p>
               </div>
             </ScrollReveal>
@@ -276,7 +276,7 @@ const ChoppingBoard = () => {
                       <div className="overflow-hidden">
                         <motion.img
                           src={item.images[0]}
-                          alt={`${item.title} — handmade ${item.specs.timber} chopping board UK`}
+                          alt={`${item.title} - handmade ${item.specs.timber} chopping board UK`}
                           className="w-full aspect-[4/3] object-cover"
                           whileHover={{ scale: 1.05 }}
                           transition={{ duration: 0.6 }}
@@ -373,7 +373,7 @@ const ChoppingBoard = () => {
                       "{t.quote}"
                     </p>
                     <span className="text-primary text-sm tracking-widest uppercase">
-                      — {t.author}
+                      - {t.author}
                     </span>
                   </div>
                 </ScrollReveal>

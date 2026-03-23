@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <motion.img
           src={heroImage}
-          alt="Handmade walnut lazy Susan with natural live edge — bespoke woodcraft UK"
+          alt="Handmade walnut lazy Susan with natural live edge - bespoke woodcraft UK"
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -48,8 +48,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            Each piece — whether a rotating centrepiece for your table or a daily
-            workhorse for your kitchen — is born from one tree, shaped by hand in
+            Each piece - whether a rotating centrepiece for your table or a daily
+            workhorse for your kitchen - is born from one tree, shaped by hand in
             my English workshop, and signed on completion. No templates. No
             replicas. Just yours.
           </motion.p>
@@ -94,7 +94,7 @@ const HeroSection = () => {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-primary/70 text-xs tracking-widest uppercase">
-                  — Sarah, London
+                  - Sarah, London
                 </span>
                 <span className="text-xs text-primary/50 border border-primary/20 px-2 py-0.5 rounded-full">
                   Lazy Susan
@@ -107,7 +107,7 @@ const HeroSection = () => {
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-primary/70 text-xs tracking-widest uppercase">
-                  — Michael, Bristol
+                  - Michael, Bristol
                 </span>
                 <span className="text-xs text-primary/50 border border-primary/20 px-2 py-0.5 rounded-full">
                   Chopping Board
