@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpeg";
 
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,7 @@ const FooterSection = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <img src={logo} alt="Fagan's Woodwork" className="h-10 mb-1" style={{ filter: "invert(1)" }} />
+            <img src={logo} alt="Fagan's Woodwork" className="h-7 mb-1" style={{ filter: "invert(1)" }} />
             <p className="text-muted-foreground text-xs tracking-widest uppercase">
               Bespoke Woodcraft · No Two Pieces Alike
             </p>
