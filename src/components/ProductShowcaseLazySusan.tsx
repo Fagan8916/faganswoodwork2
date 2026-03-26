@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
-import product3 from "@/assets/product-3.jpeg";
+import img9883 from "@/assets/gallery/IMG_9883.PNG";
 
 const ProductShowcaseLazySusan = () => {
   return (
@@ -12,7 +12,7 @@ const ProductShowcaseLazySusan = () => {
           <ScrollReveal>
             <div className="relative">
               <motion.img
-                src={product3}
+                src={img9883}
                 alt="Bespoke walnut lazy Susan centrepiece on dining table - handmade in England"
                 className="w-full rounded-sm gold-glow"
                 loading="lazy"
