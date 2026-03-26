@@ -12,17 +12,22 @@ import MailingListSection from "@/components/MailingListSection";
 import ContactSection from "@/components/ContactSection";
 import FooterSection from "@/components/FooterSection";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <TestimonialSection />
-      <PhilosophySection />
+      {!isMobile && <TestimonialSection />}
+      {!isMobile && <PhilosophySection />}
       <ProductShowcaseLazySusan />
       <AvailableNowSection />
       <ProductShowcaseBoards />
+      {isMobile && <TestimonialSection />}
+      {isMobile && <PhilosophySection />}
       <ProcessSection />
       <TradeSection />
       <GallerySection />
