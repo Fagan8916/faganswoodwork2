@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
-import img9883 from "@/assets/gallery/IMG_9883.PNG";
+import img9889 from "@/assets/gallery/IMG_9889.JPG";
 
 const ProductShowcaseLazySusan = () => {
   return (
