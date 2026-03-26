@@ -12,7 +12,7 @@ const ProductShowcaseLazySusan = () => {
           <ScrollReveal>
             <div className="relative">
               <motion.img
-                src={product3}
+                src={img9883}
                 alt="Bespoke walnut lazy Susan centrepiece on dining table - handmade in England"
                 className="w-full rounded-sm gold-glow"
                 loading="lazy"
