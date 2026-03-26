@@ -14,7 +14,6 @@ const ScrollToTop = () => {
       const tryScroll = () => {
         const el = document.getElementById(id);
         if (el) {
-          // Use instant scroll for cross-page navigation to avoid visible jump
           el.scrollIntoView({ behavior: "instant" });
         } else if (attempts < maxAttempts) {
           attempts++;
@@ -22,10 +21,9 @@ const ScrollToTop = () => {
         }
       };
 
-      // Start immediately, no delay
       tryScroll();
-    } else if (prevKey.current !== key) {
-      window.scrollTo({ top: 0, behavior: "instant" });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
 
     prevKey.current = key;
