@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import { galleryItems } from "@/lib/gallery";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Truck } from "lucide-react";
+import { Truck, ExternalLink } from "lucide-react";
 
 const AvailableNowSection = () => {
   const availableItems = galleryItems.filter((item) => item.available);
