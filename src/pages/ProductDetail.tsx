@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
+import { ArrowLeft, X, ChevronLeft, ChevronRight, Images, ExternalLink } from "lucide-react";
 import { products } from "@/lib/products";
 import { galleryItems } from "@/lib/gallery";
 import Navbar from "@/components/Navbar";
