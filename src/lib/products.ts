@@ -80,7 +80,7 @@ export const products: Product[] = [
     id: "ash-bowtie-lazy-susan",
     galleryId: "ash-bowtie-lazy-susan",
     name: "The Ash & Sapele Bow Tie Lazy Susan",
-    price: 450,
+    price: 199,
     badge: "Only 1 Available - Ready to Ship",
     description:
       "A 57-year-old ash tree, sliced to reveal every year of its life. A hand-cut sapele bow tie locks a natural crack in place - structural beauty at its finest. Spins effortlessly on a concealed bearing.",
