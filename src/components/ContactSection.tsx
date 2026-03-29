@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { CheckCircle, Phone } from "lucide-react";
+import { CheckCircle, Phone, ExternalLink } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import ScrollReveal from "./ScrollReveal";
 
@@ -267,6 +267,22 @@ const ContactSection = () => {
                   >
                     <Phone className="w-4 h-4" />
                     Prefer to talk? Call me
+                  </a>
+                </div>
+
+                {/* Etsy shop link */}
+                <div className="mt-8 pt-6 border-t border-border/30 text-center">
+                  <p className="text-muted-foreground text-sm mb-3">
+                    You can also purchase directly from my Etsy shop
+                  </p>
+                  <a
+                    href="https://faganswoodwork.etsy.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-[#F1641E] hover:bg-[#D35400] text-white rounded-sm text-sm tracking-widest uppercase transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Visit My Etsy Shop
                   </a>
                 </div>
               </form>

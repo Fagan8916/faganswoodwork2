@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import { galleryItems } from "@/lib/gallery";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Truck } from "lucide-react";
+import { Truck, ExternalLink } from "lucide-react";
 
 const AvailableNowSection = () => {
   const availableItems = galleryItems.filter((item) => item.available);
@@ -94,9 +94,21 @@ const AvailableNowSection = () => {
                       <span className="tracking-wide">Ships within 48 hours</span>
                     </div>
 
-                    <span className="btn-outline-gold text-xs py-2 px-6">
-                      View Full Details
-                    </span>
+                    <div className="flex flex-col gap-3">
+                      <span className="btn-outline-gold text-xs py-2 px-6 text-center">
+                        View Full Details
+                      </span>
+                      <a
+                        href="https://faganswoodwork.etsy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center justify-center gap-2 text-xs py-2 px-6 bg-[#F1641E] hover:bg-[#D35400] text-white rounded-sm tracking-widest uppercase transition-colors"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        Buy on Etsy
+                      </a>
+                    </div>
                   </div>
                 </Link>
               </ScrollReveal>
