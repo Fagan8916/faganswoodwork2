@@ -42,7 +42,7 @@ export const products: Product[] = [
     id: "oak-cookie-lazy-susan",
     galleryId: "oak-cookie-lazy-susan",
     name: "The Oak Cookie Lazy Susan",
-    price: 220,
+    price: 199,
     badge: "Only 1 Available - Ready to Ship",
     description:
       "A full cross-section from a mature oak trunk with hand-cut bow tie inlays stabilising natural cracks. 25cm of pure character - compact enough for any table, striking enough to steal the show.",
