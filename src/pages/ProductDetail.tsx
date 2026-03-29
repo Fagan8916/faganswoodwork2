@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
+import { ArrowLeft, X, ChevronLeft, ChevronRight, Images, ExternalLink } from "lucide-react";
 import { products } from "@/lib/products";
 import { galleryItems } from "@/lib/gallery";
 import Navbar from "@/components/Navbar";
@@ -152,10 +152,20 @@ const ProductDetail = () => {
 
                 <Link
                   to="/#contact"
-                  className="btn-filled-gold w-full text-center block mb-8"
+                  className="btn-filled-gold w-full text-center block mb-4"
                 >
                   Request to Purchase
                 </Link>
+
+                <a
+                  href="https://faganswoodwork.etsy.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center block mb-8 inline-flex items-center justify-center gap-2 bg-[#F1641E] hover:bg-[#D35400] text-white font-medium py-3 px-6 rounded-sm tracking-wide transition-colors text-sm"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Buy on Etsy
+                </a>
 
                 <div className="border-t border-border/30 pt-8 mb-8">
                   <h2 className="font-serif text-2xl text-foreground mb-4">The Story</h2>
