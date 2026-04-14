@@ -81,6 +81,11 @@ import img9906 from "@/assets/gallery/IMG_9906.JPEG";
 import img0280 from "@/assets/gallery/IMG_0280.jpg";
 import img0279 from "@/assets/gallery/IMG_0279.jpg";
 import img0281 from "@/assets/gallery/IMG_0281.jpg";
+// Sapele & Maple Ribbon Serving Board
+import img0274 from "@/assets/gallery/IMG_0274.jpg";
+import img0275 from "@/assets/gallery/IMG_0275.jpg";
+import img0277 from "@/assets/gallery/IMG_0277.jpg";
+import img0273 from "@/assets/gallery/IMG_0273.jpg";
 
 export interface GalleryItem {
   id: string;
@@ -296,7 +301,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "maple-beech-brickwork-board",
-    title: "Maple & Beech Brickwork Chopping Board",
+    title: "Maple & Beech Brickwork End-Grain Chopping Board",
     location: "England",
     available: true,
     price: 90,
@@ -307,6 +312,23 @@ export const galleryItems: GalleryItem[] = [
       pieceType: "Chopping Board",
       timber: "Maple & Beech End-Grain",
       dimensions: "37cm × 24cm × 4.5cm",
+      finish: "Food-safe mineral oil & beeswax",
+      completed: "2025"
+    }
+  },
+  {
+    id: "sapele-maple-ribbon-board",
+    title: "Sapele & Maple Ribbon Serving Board",
+    location: "England",
+    available: true,
+    price: 40,
+    badge: "Only 1 Available - Ready to Ship",
+    images: [img0274, img0277, img0275, img0273],
+    description: "Sapele is a wood that doesn't shout. It arrives quiet, almost plain, then reveals itself slowly as you work it — warm browns, subtle grain that catches the light differently at each hour of the day. I found this slab in a timber yard in Kent, tucked behind flashier exotics. It was waiting for the right partner.\n\nThe maple came from the same yard. Pale, steady, predictable. I cut it into thin ribbons and laid them across the sapele like tracks across a field. Three lines, evenly spaced, drawing your eye from corner to corner. The contrast is deliberate but not jarring — they belong together, these two woods.\n\nThe bow tie inlay sits in the corner, almost hidden until you look for it. It's functional — a small crack appeared as the timber settled, so I stabilised it the old way, with a hand-cut maple bow tie. Now it's part of the story, not a flaw to hide. The crack won't spread. The board will outlast the kitchen it's made for.\n\nFace grain construction, so it's best for serving and light prep rather than heavy chopping. At 2cm thick, it's light enough to move easily from counter to table. A board for the cook who cares about presentation as much as function.\n\nSigned and dated on the base. One of one.",
+    specs: {
+      pieceType: "Serving Board",
+      timber: "Sapele with Maple Inlay",
+      dimensions: "31cm × 22cm × 2cm",
       finish: "Food-safe mineral oil & beeswax",
       completed: "2025"
     }
