@@ -77,6 +77,10 @@ import img9909 from "@/assets/gallery/IMG_9909.JPEG";
 import img9908 from "@/assets/gallery/IMG_9908.JPEG";
 import img9907 from "@/assets/gallery/IMG_9907.JPEG";
 import img9906 from "@/assets/gallery/IMG_9906.JPEG";
+// Maple & Beech brickwork chopping board
+import img0280 from "@/assets/gallery/IMG_0280.jpg";
+import img0279 from "@/assets/gallery/IMG_0279.jpg";
+import img0281 from "@/assets/gallery/IMG_0281.jpg";
 
 export interface GalleryItem {
   id: string;
@@ -287,6 +291,23 @@ export const galleryItems: GalleryItem[] = [
       timber: "Ash (57-year-old tree) with Sapele Bow Tie Inlay",
       dimensions: "45cm diameter",
       finish: "Rubio Monocoat",
+      completed: "2025"
+    }
+  },
+  {
+    id: "maple-beech-brickwork-board",
+    title: "Maple & Beech Brickwork Chopping Board",
+    location: "England",
+    available: true,
+    price: 90,
+    badge: "Only 1 Available - Ready to Ship",
+    images: [img0280, img0279, img0281],
+    description: "This board started as two trees — a maple and a beech — felled within weeks of each other from the same Surrey estate. I kept them separate for months, not sure if they'd ever meet. Then the pattern came to me: brickwork. The way Victorian terraces interlock, each piece depending on its neighbour.\n\nThe maple runs in long ribbons, pale and steady. The beech cuts across in shorter blocks, darker, more dramatic. End-grain to end-grain, they form a surface that heals itself. Your knife slips between the fibres rather than severing them. Ten years from now, it'll look better than it does today.\n\nI cut the finger handles last. By hand, with a chisel and a lot of patience. No router template — that would leave every board looking identical. These grips fit this board, the way the grain flows, the way the weight sits when you lift it from the counter.\n\nAt 4.5cm thick, it doesn't slide. At 37cm by 24cm, it handles a proper Sunday roast prep without crowding your workspace. Heavy? Yes. That's how you know it's solid timber, not laminated nonsense. Built to outlast the kitchen it's made for.\n\nSigned and dated on the base. One of one.",
+    specs: {
+      pieceType: "Chopping Board",
+      timber: "Maple & Beech End-Grain",
+      dimensions: "37cm × 24cm × 4.5cm",
+      finish: "Food-safe mineral oil & beeswax",
       completed: "2025"
     }
   }
