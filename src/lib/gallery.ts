@@ -91,6 +91,12 @@ import img0268 from "@/assets/gallery/IMG_0268.jpg";
 import img0267 from "@/assets/gallery/IMG_0267.jpg";
 import img0270 from "@/assets/gallery/IMG_0270.jpg";
 import img0271 from "@/assets/gallery/IMG_0271.jpg";
+// Stormfall Lazy Susan
+import img0261 from "@/assets/gallery/IMG_0261.jpg";
+import img0262 from "@/assets/gallery/IMG_0262.jpg";
+import img0263 from "@/assets/gallery/IMG_0263.jpg";
+import img0264 from "@/assets/gallery/IMG_0264.jpg";
+import img0266 from "@/assets/gallery/IMG_0266.jpg";
 
 export interface GalleryItem {
   id: string;
@@ -352,6 +358,23 @@ export const galleryItems: GalleryItem[] = [
       timber: "Sapele & Maple / Ash & Sapele",
       dimensions: "25.5cm × 28cm × 2cm (each)",
       finish: "Food-safe mineral oil & beeswax",
+      completed: "2025"
+    }
+  },
+  {
+    id: "stormfall-lazy-susan",
+    title: "The Stormfall Lazy Susan",
+    location: "England",
+    available: true,
+    price: 50,
+    badge: "Only 1 Available - Ready to Ship",
+    images: [img0261, img0266, img0262, img0264, img0263],
+    description: "This tree came down in a storm. I found it in a garden in Kent, already cut into manageable sections by the homeowner who wanted it gone. The bark was still tight, the grain still sound. Some of the wood had started to discolour — a natural reaction to air and moisture, not rot. Character, not flaw.\n\nI sliced cross-sections from the trunk, keeping the bark intact on each piece. The species? I'm not certain. It has the density of oak, the grain pattern of ash, the colour of something in between. Garden wood is like that — untraceable, unrepeatable. It grew where someone planted it decades ago, survived droughts and downpours, then surrendered to one windy night.\n\nThe marbled black epoxy came first, poured between the slices to fill the gaps and stabilise the bark. Then clear epoxy over everything, building up layers until the surface became a lens — you can see the rings, the cracks, the texture of bark suspended like specimens in amber. The sides I left raw, the epoxy dripping and pooling in its own organic patterns. No sanding, no smoothing. The drips tell the story of the pour.\n\nAt 35cm across, it's a statement piece. The kind of thing that starts conversations. The discolouration in the wood — those darker patches — they're from the storm, from the time between falling and finding. I sealed them in, preserved them. Proof that this tree lived, died, and became something new.\n\nMounted on a smooth spinner. Turns like it was meant to rotate all along.\n\nSigned and dated on the base. One of one.",
+    specs: {
+      pieceType: "Lazy Susan",
+      timber: "Stormfall Garden Hardwood (species unknown)",
+      dimensions: "35cm diameter",
+      finish: "Marbled black epoxy + clear epoxy pour",
       completed: "2025"
     }
   }
