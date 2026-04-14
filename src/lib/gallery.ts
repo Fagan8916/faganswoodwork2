@@ -86,6 +86,11 @@ import img0274 from "@/assets/gallery/IMG_0274.jpg";
 import img0275 from "@/assets/gallery/IMG_0275.jpg";
 import img0277 from "@/assets/gallery/IMG_0277.jpg";
 import img0273 from "@/assets/gallery/IMG_0273.jpg";
+// Chevron Pair serving boards
+import img0268 from "@/assets/gallery/IMG_0268.jpg";
+import img0267 from "@/assets/gallery/IMG_0267.jpg";
+import img0270 from "@/assets/gallery/IMG_0270.jpg";
+import img0271 from "@/assets/gallery/IMG_0271.jpg";
 
 export interface GalleryItem {
   id: string;
@@ -329,6 +334,23 @@ export const galleryItems: GalleryItem[] = [
       pieceType: "Serving Board",
       timber: "Sapele with Maple Inlay",
       dimensions: "31cm × 22cm × 2cm",
+      finish: "Food-safe mineral oil & beeswax",
+      completed: "2025"
+    }
+  },
+  {
+    id: "chevron-pair-serving-boards",
+    title: "Chevron Pair — Sapele & Maple / Ash & Sapele Serving Boards",
+    location: "England",
+    available: true,
+    price: 69,
+    badge: "Only 1 Pair Available - Ready to Ship",
+    images: [img0268, img0267, img0270, img0271],
+    description: "These two boards started as an experiment in opposites. I had a beautiful plank of sapele — deep, warm, almost mahogany in tone — and a pale ash board that had been drying in my rack for two years. Same workshop, different stories.\n\nThe Sapele board became the canvas for maple chevrons. I cut the pattern by hand, each V-shape fitted precisely into the next. The points align perfectly down the centre, drawing your eye along the length of the board. It's the darker of the two, dramatic against a light countertop.\n\nIts partner went the other way. Ash as the base, with thin sapele stripes cutting across in the same chevron pattern. Lighter, airier, but with enough contrast to hold its own. Together they create a rhythm — one leads, one follows.\n\nI finished them as a pair because they belong together. Not identical twins, but siblings. Same pattern language, different personalities. Use them side by side for a long table, or keep one and gift the other. Either way, they carry the same DNA.\n\nFace grain construction, best for serving and light prep. At 2cm thick, they're substantial without being heavy. The chevron pattern isn't just decorative — the angled grain helps hide knife marks better than straight lines.\n\nBoth signed and dated on the base. One pair only.",
+    specs: {
+      pieceType: "Serving Board (Pair)",
+      timber: "Sapele & Maple / Ash & Sapele",
+      dimensions: "25.5cm × 28cm × 2cm (each)",
       finish: "Food-safe mineral oil & beeswax",
       completed: "2025"
     }
