@@ -81,6 +81,11 @@ import img9906 from "@/assets/gallery/IMG_9906.JPEG";
 import img0280 from "@/assets/gallery/IMG_0280.jpg";
 import img0279 from "@/assets/gallery/IMG_0279.jpg";
 import img0281 from "@/assets/gallery/IMG_0281.jpg";
+// Sapele & Maple Ribbon Serving Board
+import img0274 from "@/assets/gallery/IMG_0274.jpg";
+import img0275 from "@/assets/gallery/IMG_0275.jpg";
+import img0277 from "@/assets/gallery/IMG_0277.jpg";
+import img0273 from "@/assets/gallery/IMG_0273.jpg";
 
 export interface GalleryItem {
   id: string;
