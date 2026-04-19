@@ -97,6 +97,17 @@ import img0262 from "@/assets/gallery/IMG_0262.jpg";
 import img0263 from "@/assets/gallery/IMG_0263.jpg";
 import img0264 from "@/assets/gallery/IMG_0264.jpg";
 import img0266 from "@/assets/gallery/IMG_0266.jpg";
+// Black Heart and Healer uploads
+import img0346 from "@/assets/gallery/IMG_0346.jpeg";
+import img0348 from "@/assets/gallery/IMG_0348.jpeg";
+import img0350 from "@/assets/gallery/IMG_0350.jpeg";
+import img0351 from "@/assets/gallery/IMG_0351.jpeg";
+import img0352 from "@/assets/gallery/IMG_0352.jpeg";
+import img0357 from "@/assets/gallery/IMG_0357.jpeg";
+import img0360 from "@/assets/gallery/IMG_0360.jpeg";
+import img0361 from "@/assets/gallery/IMG_0361.jpeg";
+import img0364 from "@/assets/gallery/IMG_0364.jpeg";
+import img0365 from "@/assets/gallery/IMG_0365.jpeg";
 
 export interface GalleryItem {
   id: string;
@@ -318,7 +329,7 @@ export const galleryItems: GalleryItem[] = [
     price: 90,
     badge: "Only 1 Available - Ready to Ship",
     images: [img0280, img0279, img0281],
-    description: "This board started as two trees — a maple and a beech — felled within weeks of each other from the same Surrey estate. I kept them separate for months, not sure if they'd ever meet. Then the pattern came to me: brickwork. The way Victorian terraces interlock, each piece depending on its neighbour.\n\nThe maple runs in long ribbons, pale and steady. The beech cuts across in shorter blocks, darker, more dramatic. End-grain to end-grain, they form a surface that heals itself. Your knife slips between the fibres rather than severing them. Ten years from now, it'll look better than it does today.\n\nI cut the finger handles last. By hand, with a chisel and a lot of patience. No router template — that would leave every board looking identical. These grips fit this board, the way the grain flows, the way the weight sits when you lift it from the counter.\n\nAt 4.5cm thick, it doesn't slide. At 37cm by 24cm, it handles a proper Sunday roast prep without crowding your workspace. Heavy? Yes. That's how you know it's solid timber, not laminated nonsense. Built to outlast the kitchen it's made for.\n\nSigned and dated on the base. One of one.",
+    description: "This board started as two trees - a maple and a beech - felled within weeks of each other from the same Surrey estate. I kept them separate for months, not sure if they'd ever meet. Then the pattern came to me: brickwork. The way Victorian terraces interlock, each piece depending on its neighbour.\n\nThe maple runs in long ribbons, pale and steady. The beech cuts across in shorter blocks, darker, more dramatic. End-grain to end-grain, they form a surface that heals itself. Your knife slips between the fibres rather than severing them. Ten years from now, it'll look better than it does today.\n\nI cut the finger handles last. By hand, with a chisel and a lot of patience. No router template - that would leave every board looking identical. These grips fit this board, the way the grain flows, the way the weight sits when you lift it from the counter.\n\nAt 4.5cm thick, it doesn't slide. At 37cm by 24cm, it handles a proper Sunday roast prep without crowding your workspace. Heavy? Yes. That's how you know it's solid timber, not laminated nonsense. Built to outlast the kitchen it's made for.\n\nSigned and dated on the base. One of one.",
     specs: {
       pieceType: "Chopping Board",
       timber: "Maple & Beech End-Grain",
@@ -335,7 +346,7 @@ export const galleryItems: GalleryItem[] = [
     price: 40,
     badge: "Only 1 Available - Ready to Ship",
     images: [img0274, img0277, img0275, img0273],
-    description: "Sapele is a wood that doesn't shout. It arrives quiet, almost plain, then reveals itself slowly as you work it — warm browns, subtle grain that catches the light differently at each hour of the day. I found this slab in a timber yard in Kent, tucked behind flashier exotics. It was waiting for the right partner.\n\nThe maple came from the same yard. Pale, steady, predictable. I cut it into thin ribbons and laid them across the sapele like tracks across a field. Three lines, evenly spaced, drawing your eye from corner to corner. The contrast is deliberate but not jarring — they belong together, these two woods.\n\nThe bow tie inlay sits in the corner, almost hidden until you look for it. It's functional — a small crack appeared as the timber settled, so I stabilised it the old way, with a hand-cut maple bow tie. Now it's part of the story, not a flaw to hide. The crack won't spread. The board will outlast the kitchen it's made for.\n\nFace grain construction, so it's best for serving and light prep rather than heavy chopping. At 2cm thick, it's light enough to move easily from counter to table. A board for the cook who cares about presentation as much as function.\n\nSigned and dated on the base. One of one.",
+    description: "Sapele is a wood that doesn't shout. It arrives quiet, almost plain, then reveals itself slowly as you work it - warm browns, subtle grain that catches the light differently at each hour of the day. I found this slab in a timber yard in Kent, tucked behind flashier exotics. It was waiting for the right partner.\n\nThe maple came from the same yard. Pale, steady, predictable. I cut it into thin ribbons and laid them across the sapele like tracks across a field. Three lines, evenly spaced, drawing your eye from corner to corner. The contrast is deliberate but not jarring - they belong together, these two woods.\n\nThe bow tie inlay sits in the corner, almost hidden until you look for it. It's functional - a small crack appeared as the timber settled, so I stabilised it the old way, with a hand-cut maple bow tie. Now it's part of the story, not a flaw to hide. The crack won't spread. The board will outlast the kitchen it's made for.\n\nFace grain construction, so it's best for serving and light prep rather than heavy chopping. At 2cm thick, it's light enough to move easily from counter to table. A board for the cook who cares about presentation as much as function.\n\nSigned and dated on the base. One of one.",
     specs: {
       pieceType: "Serving Board",
       timber: "Sapele with Maple Inlay",
@@ -346,13 +357,13 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "chevron-pair-serving-boards",
-    title: "Chevron Pair — Sapele & Maple / Ash & Sapele Serving Boards",
+    title: "Chevron Pair - Sapele & Maple / Ash & Sapele Serving Boards",
     location: "England",
     available: true,
     price: 69,
     badge: "Only 1 Pair Available - Ready to Ship",
     images: [img0268, img0267, img0270, img0271],
-    description: "These two boards started as an experiment in opposites. I had a beautiful plank of sapele — deep, warm, almost mahogany in tone — and a pale ash board that had been drying in my rack for two years. Same workshop, different stories.\n\nThe Sapele board became the canvas for maple chevrons. I cut the pattern by hand, each V-shape fitted precisely into the next. The points align perfectly down the centre, drawing your eye along the length of the board. It's the darker of the two, dramatic against a light countertop.\n\nIts partner went the other way. Ash as the base, with thin sapele stripes cutting across in the same chevron pattern. Lighter, airier, but with enough contrast to hold its own. Together they create a rhythm — one leads, one follows.\n\nI finished them as a pair because they belong together. Not identical twins, but siblings. Same pattern language, different personalities. Use them side by side for a long table, or keep one and gift the other. Either way, they carry the same DNA.\n\nFace grain construction, best for serving and light prep. At 2cm thick, they're substantial without being heavy. The chevron pattern isn't just decorative — the angled grain helps hide knife marks better than straight lines.\n\nBoth signed and dated on the base. One pair only.",
+    description: "These two boards started as an experiment in opposites. I had a beautiful plank of sapele - deep, warm, almost mahogany in tone - and a pale ash board that had been drying in my rack for two years. Same workshop, different stories.\n\nThe Sapele board became the canvas for maple chevrons. I cut the pattern by hand, each V-shape fitted precisely into the next. The points align perfectly down the centre, drawing your eye along the length of the board. It's the darker of the two, dramatic against a light countertop.\n\nIts partner went the other way. Ash as the base, with thin sapele stripes cutting across in the same chevron pattern. Lighter, airier, but with enough contrast to hold its own. Together they create a rhythm - one leads, one follows.\n\nI finished them as a pair because they belong together. Not identical twins, but siblings. Same pattern language, different personalities. Use them side by side for a long table, or keep one and gift the other. Either way, they carry the same DNA.\n\nFace grain construction, best for serving and light prep. At 2cm thick, they're substantial without being heavy. The chevron pattern isn't just decorative - the angled grain helps hide knife marks better than straight lines.\n\nBoth signed and dated on the base. One pair only.",
     specs: {
       pieceType: "Serving Board (Pair)",
       timber: "Sapele & Maple / Ash & Sapele",
@@ -369,12 +380,46 @@ export const galleryItems: GalleryItem[] = [
     price: 50,
     badge: "Only 1 Available - Ready to Ship",
     images: [img0261, img0266, img0262, img0264, img0263],
-    description: "This tree came down in a storm. I found it in a garden in Kent, already cut into manageable sections by the homeowner who wanted it gone. The bark was still tight, the grain still sound. Some of the wood had started to discolour — a natural reaction to air and moisture, not rot. Character, not flaw.\n\nI sliced cross-sections from the trunk, keeping the bark intact on each piece. The species? I'm not certain. It has the density of oak, the grain pattern of ash, the colour of something in between. Garden wood is like that — untraceable, unrepeatable. It grew where someone planted it decades ago, survived droughts and downpours, then surrendered to one windy night.\n\nThe marbled black epoxy came first, poured between the slices to fill the gaps and stabilise the bark. Then clear epoxy over everything, building up layers until the surface became a lens — you can see the rings, the cracks, the texture of bark suspended like specimens in amber. The sides I left raw, the epoxy dripping and pooling in its own organic patterns. No sanding, no smoothing. The drips tell the story of the pour.\n\nAt 35cm across, it's a statement piece. The kind of thing that starts conversations. The discolouration in the wood — those darker patches — they're from the storm, from the time between falling and finding. I sealed them in, preserved them. Proof that this tree lived, died, and became something new.\n\nMounted on a smooth spinner. Turns like it was meant to rotate all along.\n\nSigned and dated on the base. One of one.",
+    description: "This tree came down in a storm. I found it in a garden in Kent, already cut into manageable sections by the homeowner who wanted it gone. The bark was still tight, the grain still sound. Some of the wood had started to discolour - a natural reaction to air and moisture, not rot. Character, not flaw.\n\nI sliced cross-sections from the trunk, keeping the bark intact on each piece. The species? I'm not certain. It has the density of oak, the grain pattern of ash, the colour of something in between. Garden wood is like that - untraceable, unrepeatable. It grew where someone planted it decades ago, survived droughts and downpours, then surrendered to one windy night.\n\nThe marbled black epoxy came first, poured between the slices to fill the gaps and stabilise the bark. Then clear epoxy over everything, building up layers until the surface became a lens - you can see the rings, the cracks, the texture of bark suspended like specimens in amber. The sides I left raw, the epoxy dripping and pooling in its own organic patterns. No sanding, no smoothing. The drips tell the story of the pour.\n\nAt 35cm across, it's a statement piece. The kind of thing that starts conversations. The discolouration in the wood - those darker patches - they're from the storm, from the time between falling and finding. I sealed them in, preserved them. Proof that this tree lived, died, and became something new.\n\nMounted on a smooth spinner. Turns like it was meant to rotate all along.\n\nSigned and dated on the base. One of one.",
     specs: {
       pieceType: "Lazy Susan",
       timber: "Stormfall Garden Hardwood (species unknown)",
       dimensions: "35cm diameter",
       finish: "Marbled black epoxy + clear epoxy pour",
+      completed: "2025"
+    }
+  },
+  {
+    id: "black-heart-ash-blue-epoxy-serving-board",
+    title: "The Black Heart - Ash & Blue Epoxy Serving Board",
+    location: "England",
+    available: true,
+    price: 99,
+    badge: "Only 1 Available - Ready to Ship",
+    images: [img0351, img0346, img0348, img0352, img0350],
+    description: "Every piece of timber tells a story. This slab started as a section of ash, ordinary enough on the surface - until you turn it and meet the black heart. A fungal condition that affects ash trees, black heart creates these extraordinary dark blue-black streaks through the grain, like shadows trapped in amber. It's beautiful, and it's a disease that eventually kills the tree.\n\nRather than fight the flaw, we leant into it. The largest void is filled with a deep ocean-blue epoxy that mirrors the darkness of the heart while letting it breathe. The contrast between the pale ash, the dark streaks, and the luminous blue is something we could never design - only discover and protect.\n\nFinished with Rubio Monocot hardwax oil.",
+    specs: {
+      pieceType: "Serving Board",
+      timber: "Ash with Black Heart figure",
+      dimensions: "33cm diameter",
+      finish: "Rubio Monocot hardwax oil",
+      completed: "2025"
+    }
+  },
+  {
+    id: "the-healer-ash-serving-board",
+    title: "The Healer - Ash Serving Board with Bow Tie Repairs",
+    location: "England",
+    available: true,
+    price: 99,
+    badge: "Only 1 Available - Ready to Ship",
+    images: [img0365, img0364, img0361, img0360, img0357],
+    description: "This board has survived something. A deep split runs through the ash - the kind that happens when wood moves, when seasons change, when a tree falls and nature starts to reclaim it. Rather than cut our losses, we chose repair.\n\nThree bow tie inlays in warm Sapele wood cross the crack like stitches - functional, deliberate, and unexpectedly beautiful. Between them, we've filled the remaining void with a forest-free epoxy that blends amber and gold into the grain. The result isn't a board that's been fixed - it's one that's been transformed.\n\nThe bow ties aren't just structural. They're a design choice. A reminder that damage doesn't mean diminished - it means character. Every time you pick this board up, you're holding something that was broken and made better.\n\nFinished with Rubio Monocot hardwax oil.",
+    specs: {
+      pieceType: "Serving Board",
+      timber: "Ash with Sapele bow tie inlays",
+      dimensions: "30cm diameter",
+      finish: "Rubio Monocot hardwax oil",
       completed: "2025"
     }
   }
