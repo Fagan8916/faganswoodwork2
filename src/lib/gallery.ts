@@ -396,7 +396,7 @@ export const galleryItems: GalleryItem[] = [
     available: true,
     price: 99,
     badge: "Only 1 Available - Ready to Ship",
-    images: [img0351, img0346, img0348, img0352, img0350],
+    images: [img0346, img0351, img0348, img0352, img0350],
     description: "Every piece of timber tells a story. This slab started as a section of ash, ordinary enough on the surface - until you turn it and meet the black heart. A fungal condition that affects ash trees, black heart creates these extraordinary dark blue-black streaks through the grain, like shadows trapped in amber. It's beautiful, and it's a disease that eventually kills the tree.\n\nRather than fight the flaw, we leant into it. The largest void is filled with a deep ocean-blue epoxy that mirrors the darkness of the heart while letting it breathe. The contrast between the pale ash, the dark streaks, and the luminous blue is something we could never design - only discover and protect.\n\nFinished with Rubio Monocot hardwax oil.",
     specs: {
       pieceType: "Serving Board",
