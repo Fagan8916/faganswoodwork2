@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, X, ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
+import { ArrowLeft, X, ChevronLeft, ChevronRight, ShoppingBag, ExternalLink } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { galleryItems } from "@/lib/gallery";
 import Navbar from "@/components/Navbar";
@@ -88,7 +88,6 @@ const GalleryDetail = () => {
       </Helmet>
       <Navbar />
 
-      {/* Lightbox */}
       <AnimatePresence>
         {lightboxOpen && (
           <motion.div
@@ -106,13 +105,19 @@ const GalleryDetail = () => {
             </button>
             <button
               className="absolute left-4 md:left-8 text-foreground hover:text-primary transition-colors"
-              onClick={(e) => { e.stopPropagation(); navigateLightbox(-1); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                navigateLightbox(-1);
+              }}
             >
               <ChevronLeft className="w-10 h-10" />
             </button>
             <button
               className="absolute right-4 md:right-8 text-foreground hover:text-primary transition-colors"
-              onClick={(e) => { e.stopPropagation(); navigateLightbox(1); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                navigateLightbox(1);
+              }}
             >
               <ChevronRight className="w-10 h-10" />
             </button>
@@ -141,7 +146,6 @@ const GalleryDetail = () => {
           </Link>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-            {/* Image gallery */}
             <ScrollReveal>
               <div>
                 <div
@@ -184,7 +188,6 @@ const GalleryDetail = () => {
               </div>
             </ScrollReveal>
 
-            {/* Details */}
             <ScrollReveal delay={0.2}>
               <div>
                 <span className="inline-block text-xs tracking-widest uppercase text-primary border border-primary/30 px-3 py-1 rounded-sm mb-4">
@@ -194,7 +197,7 @@ const GalleryDetail = () => {
                 <h1 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-2">
                   {item.title}
                 </h1>
-                
+
                 <p className="text-muted-foreground text-lg mb-8">{item.location}</p>
 
                 {item.quote && (
@@ -212,7 +215,7 @@ const GalleryDetail = () => {
 
                 <div className="border-t border-border/30 pt-8 mb-8">
                   <h2 className="font-serif text-2xl text-foreground mb-4">The Story</h2>
-                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{item.description}</p>
                 </div>
 
                 <div className="glass-card p-6 mb-8">
@@ -242,13 +245,24 @@ const GalleryDetail = () => {
                 </div>
 
                 {item.available ? (
-                  <Link
-                    to={`/?type=purchase&piece=${encodeURIComponent(item.title)}#contact`}
-                    className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
-                  >
-                    <ShoppingBag className="w-4 h-4" />
-                    Available Now - £{item.price}
-                  </Link>
+                  <div className="space-y-4">
+                    <Link
+                      to={`/?type=purchase&piece=${encodeURIComponent(item.title)}#contact`}
+                      className="btn-filled-gold w-full text-center flex items-center justify-center gap-2"
+                    >
+                      <ShoppingBag className="w-4 h-4" />
+                      Available Now - £{item.price}
+                    </Link>
+                    <a
+                      href="https://www.etsy.com/uk/shop/faganswoodwork"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-outline-gold w-full text-center flex items-center justify-center gap-2"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Buy on Etsy
+                    </a>
+                  </div>
                 ) : (
                   <Link
                     to={`/?type=commission&piece=${encodeURIComponent(item.title)}#contact`}
@@ -267,7 +281,6 @@ const GalleryDetail = () => {
             </ScrollReveal>
           </div>
 
-          {/* Related pieces */}
           {otherItems.length > 0 && (
             <div className="mt-28 border-t border-border/20 pt-20">
               <ScrollReveal>
@@ -282,11 +295,11 @@ const GalleryDetail = () => {
                     <Link to={`/gallery/${g.id}`} className="group block glass-card-hover overflow-hidden">
                       <div className="overflow-hidden">
                         <AspectRatio ratio={4 / 3}>
-                            <img
-                              src={g.images[0]}
-                              alt={`${g.title} - handmade ${g.specs.timber} ${g.specs.pieceType} from Fagan's Woodwork UK`}
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                              loading="lazy"
+                          <img
+                            src={g.images[0]}
+                            alt={`${g.title} - handmade ${g.specs.timber} ${g.specs.pieceType} from Fagan's Woodwork UK`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
                           />
                         </AspectRatio>
                       </div>
