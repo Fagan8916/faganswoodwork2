@@ -103,6 +103,7 @@ import img0348 from "@/assets/gallery/IMG_0348.jpeg";
 import img0350 from "@/assets/gallery/IMG_0350.jpeg";
 import img0351 from "@/assets/gallery/IMG_0351.jpeg";
 import img0352 from "@/assets/gallery/IMG_0352.jpeg";
+import img0356 from "@/assets/gallery/IMG_0356.jpeg";
 import img0357 from "@/assets/gallery/IMG_0357.jpeg";
 import img0360 from "@/assets/gallery/IMG_0360.jpeg";
 import img0361 from "@/assets/gallery/IMG_0361.jpeg";
@@ -413,7 +414,7 @@ export const galleryItems: GalleryItem[] = [
     available: true,
     price: 99,
     badge: "Only 1 Available - Ready to Ship",
-    images: [img0365, img0364, img0361, img0360, img0357],
+    images: [img0356, img0365, img0364, img0361, img0360, img0357],
     description: "This board has survived something. A deep split runs through the ash - the kind that happens when wood moves, when seasons change, when a tree falls and nature starts to reclaim it. Rather than cut our losses, we chose repair.\n\nThree bow tie inlays in warm Sapele wood cross the crack like stitches - functional, deliberate, and unexpectedly beautiful. Between them, we've filled the remaining void with a forest-free epoxy that blends amber and gold into the grain. The result isn't a board that's been fixed - it's one that's been transformed.\n\nThe bow ties aren't just structural. They're a design choice. A reminder that damage doesn't mean diminished - it means character. Every time you pick this board up, you're holding something that was broken and made better.\n\nFinished with Rubio Monocot hardwax oil.",
     specs: {
       pieceType: "Lazy Susan",
