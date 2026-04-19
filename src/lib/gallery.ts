@@ -391,7 +391,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "black-heart-ash-blue-epoxy-serving-board",
-    title: "The Black Heart - Ash & Blue Epoxy Serving Board",
+    title: "The Black Heart - Ash & Blue Epoxy Lazy Susan",
     location: "England",
     available: true,
     price: 99,
@@ -399,7 +399,7 @@ export const galleryItems: GalleryItem[] = [
     images: [img0346, img0351, img0348, img0352, img0350],
     description: "Every piece of timber tells a story. This slab started as a section of ash, ordinary enough on the surface - until you turn it and meet the black heart. A fungal condition that affects ash trees, black heart creates these extraordinary dark blue-black streaks through the grain, like shadows trapped in amber. It's beautiful, and it's a disease that eventually kills the tree.\n\nRather than fight the flaw, we leant into it. The largest void is filled with a deep ocean-blue epoxy that mirrors the darkness of the heart while letting it breathe. The contrast between the pale ash, the dark streaks, and the luminous blue is something we could never design - only discover and protect.\n\nFinished with Rubio Monocot hardwax oil.",
     specs: {
-      pieceType: "Serving Board",
+      pieceType: "Lazy Susan",
       timber: "Ash with Black Heart figure",
       dimensions: "33cm diameter",
       finish: "Rubio Monocot hardwax oil",
@@ -408,7 +408,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "the-healer-ash-serving-board",
-    title: "The Healer - Ash Serving Board with Bow Tie Repairs",
+    title: "The Healer - Ash Lazy Susan with Bow Tie Repairs",
     location: "England",
     available: true,
     price: 99,
@@ -416,7 +416,7 @@ export const galleryItems: GalleryItem[] = [
     images: [img0365, img0364, img0361, img0360, img0357],
     description: "This board has survived something. A deep split runs through the ash - the kind that happens when wood moves, when seasons change, when a tree falls and nature starts to reclaim it. Rather than cut our losses, we chose repair.\n\nThree bow tie inlays in warm Sapele wood cross the crack like stitches - functional, deliberate, and unexpectedly beautiful. Between them, we've filled the remaining void with a forest-free epoxy that blends amber and gold into the grain. The result isn't a board that's been fixed - it's one that's been transformed.\n\nThe bow ties aren't just structural. They're a design choice. A reminder that damage doesn't mean diminished - it means character. Every time you pick this board up, you're holding something that was broken and made better.\n\nFinished with Rubio Monocot hardwax oil.",
     specs: {
-      pieceType: "Serving Board",
+      pieceType: "Lazy Susan",
       timber: "Ash with Sapele bow tie inlays",
       dimensions: "30cm diameter",
       finish: "Rubio Monocot hardwax oil",
