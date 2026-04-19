@@ -103,6 +103,7 @@ import img0348 from "@/assets/gallery/IMG_0348.jpeg";
 import img0350 from "@/assets/gallery/IMG_0350.jpeg";
 import img0351 from "@/assets/gallery/IMG_0351.jpeg";
 import img0352 from "@/assets/gallery/IMG_0352.jpeg";
+import img0356 from "@/assets/gallery/IMG_0356.jpeg";
 import img0357 from "@/assets/gallery/IMG_0357.jpeg";
 import img0360 from "@/assets/gallery/IMG_0360.jpeg";
 import img0361 from "@/assets/gallery/IMG_0361.jpeg";
