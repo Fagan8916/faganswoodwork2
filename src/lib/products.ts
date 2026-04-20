@@ -42,7 +42,7 @@ export const products: Product[] = [
     id: "oak-cookie-lazy-susan",
     galleryId: "oak-cookie-lazy-susan",
     name: "The Oak Cookie Lazy Susan",
-    price: 199,
+    price: 129,
     badge: "Only 1 Available - Ready to Ship",
     description:
       "A full cross-section from a mature oak trunk with hand-cut bow tie inlays stabilising natural cracks. 25cm of pure character - compact enough for any table, striking enough to steal the show.",
@@ -61,7 +61,7 @@ export const products: Product[] = [
     id: "winter-walnut-lazy-susan",
     galleryId: "live-edge-round",
     name: "The Winter Pine Lazy Susan",
-    price: 420,
+    price: 129,
     badge: "Only 1 Available - Ready to Ship",
     description:
       "Crafted from an 83-year-old pine tree. The grain tells the story of eight decades of growth. Finished with hand-rubbed Danish oil and set on a smooth-spinning bearing.",
@@ -80,7 +80,7 @@ export const products: Product[] = [
     id: "ash-bowtie-lazy-susan",
     galleryId: "ash-bowtie-lazy-susan",
     name: "The Ash & Sapele Bow Tie Lazy Susan",
-    price: 199,
+    price: 149,
     badge: "Only 1 Available - Ready to Ship",
     description:
       "A 57-year-old ash tree, sliced to reveal every year of its life. A hand-cut sapele bow tie locks a natural crack in place - structural beauty at its finest. Spins effortlessly on a concealed bearing.",
